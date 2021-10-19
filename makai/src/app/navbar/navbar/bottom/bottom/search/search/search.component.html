@@ -1,0 +1,5 @@
+<input placeholder="Search..." type="text" *ngIf="isClicked" class="clicked" [@fadeIn]>
+<span class="imageWrapper" (mouseenter)="changeHover()" (mouseleave)="reverse()">
+  <img src="../../../../../../../assets/search_black.svg" class="image" (click)="change()"  alt="" [@hover]="!hover ? 'active' : 'inactive'">
+  <img src="../../../../../../../assets/searchblue.svg" class="image" (click)="change()" alt="" [@hoverBlue]="hover ? 'active' : 'inactive'">
+</span>

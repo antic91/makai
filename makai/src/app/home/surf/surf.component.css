@@ -1,0 +1,118 @@
+.imageSurf{
+  position: relative;
+  height: 100%;
+  z-index: 9;
+}
+
+.divWrapper{
+  position: absolute;
+  width: 300px;
+  height: 140x;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-right: 5px;
+}
+/*SETTING POSITIONS*/
+.firstLeft{
+  top: 210px;
+  left: 161.75px;
+  overflow: visible!important;
+}
+
+.secLeft{
+  top: 410px;
+  left: 101.75px;
+  overflow: visible !important;
+}
+
+.thirdLeft{
+  top: 610px;
+  left: 161.75px;
+  overflow: visible !important;
+}
+
+.firstRight{
+  top: 210px;
+  right: 161.75px;
+  overflow: visible !important;
+}
+
+.secRight{
+  top: 410px;
+  right: 101.75px;
+  overflow: visible!important;
+}
+
+.thirdRight{
+  top: 610px;
+  right: 161.75px;
+  overflow: visible!important;
+}
+
+
+/*Styling ROWS*/
+
+.margin{
+  margin-bottom: 10px;
+}
+
+.spanRow{
+  position: relative;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  overflow: visible !important;
+}
+
+.spanRowRight{
+  position: relative;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  overflow: visible !important;
+}
+
+.h4Left{
+  color:#333;
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 400;
+  font-family: 'Lobster', sans-serif;
+  padding-left: 5px;
+}
+.p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+.left{
+  text-align: right;
+}
+.right{
+  text-align: left;
+}
+.padding{
+  padding: 0 0 0 5px;
+}
+/*STYLING IMAGES SVG
+*/
+.svg{
+  position: absolute;
+  width: 45px;
+  height: 40px;
+}
+
+.smaller{
+  height: 35px!important;
+}

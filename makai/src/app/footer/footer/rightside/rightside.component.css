@@ -1,0 +1,18 @@
+#wrapperFooterLinks{
+  position: relative;
+  width: 167px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#wrapperFooterLinks1{
+  position: relative;
+  width: 176px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}

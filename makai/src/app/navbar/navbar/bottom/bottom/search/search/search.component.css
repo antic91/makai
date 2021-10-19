@@ -1,0 +1,25 @@
+.clicked{
+  position: relative;
+  width: 165px;
+  height: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0 0 4px 0;
+  box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid #81d0d8;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.imageWrapper{
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.image{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}

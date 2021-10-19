@@ -1,0 +1,121 @@
+<div class="header">
+  <div class="headerWrapper">
+    <h1>Man</h1>
+  </div>
+  <div class="headerWrapper">
+    <h1>Woman</h1>
+  </div>
+</div>
+
+<div class="top">
+  <div class="imagesWrapper">
+
+    <span class="imgAndText">
+      <img src="../../../../../../../assets/dropDown/man1.jpg" alt="" class="img">
+      <span class="text">
+        <span class="inline" (mouseenter)="changeHover('man1')" (mouseleave)="reverse('man1')">
+          <span class="absolute">
+            <a [@hover]="!displayMan1 ? 'active' : 'inactive'">T-Shirts</a>
+          </span>
+          <span class="absolute">
+            <a class="color" [@hoverBlue]="displayMan1 ? 'active' : 'inactive'">T-Shirts</a>
+          </span>
+        </span>
+      </span>
+    </span>
+
+    <span class="imgAndText">
+      <img src="../../../../../../../assets/dropDown/man2.jpg" alt="" class="img">
+      <span class="text">
+
+        <span class="inline" (mouseenter)="changeHover('man2')" (mouseleave)="reverse('man2')">
+          <span class="absolute">
+            <a [@hover]="!displayMan2 ? 'active' : 'inactive'">Surfboards</a>
+          </span>
+          <span class="absolute">
+            <a style="color: '#81d0d8';" [@hoverBlue]="displayMan2 ? 'active' : 'inactive'">Surfboards</a>
+          </span>
+        </span>
+
+      </span>
+    </span>
+
+    <span class="imgAndText">
+      <img src="../../../../../../../assets/dropDown/man3.jpg" alt="" class="img">
+      <span class="text">
+
+        <span class="inline" (mouseenter)="changeHover('man3')" (mouseleave)="reverse('man3')">
+          <span class="absolute">
+            <a [@hover]="!displayMan3 ? 'active' : 'inactive'">Swimwears</a>
+          </span>
+          <span class="absolute">
+            <a style="color: '#81d0d8';" [@hoverBlue]="displayMan3 ? 'active' : 'inactive'">Swimwears</a>
+          </span>
+        </span>
+
+      </span>
+    </span>
+
+  </div>
+
+  <div class="middle">
+    <div class="border"></div>
+  </div>
+
+  <div class="imagesWrapper">
+
+    <span class="imgAndText">
+      <img src="../../../../../../../assets/dropDown/woman1.jpg" alt="" class="img">
+      <span class="text">
+
+        <span class="inline" (mouseenter)="changeHover('woman1')" (mouseleave)="reverse('woman1')">
+          <span class="absolute">
+            <a [@hover]="!displayWoman1 ? 'active' : 'inactive'">T-Shirts</a>
+          </span>
+          <span class="absolute">
+            <a [@hoverBlue]="displayWoman1 ? 'active' : 'inactive'" style="color: '#81d0d8';">T-Shirts</a>
+          </span>
+        </span>
+
+      </span>
+    </span>
+
+    <span class="imgAndText">
+      <img src="../../../../../../../assets/dropDown/woman2.jpg" alt="" class="img">
+      <span class="text">
+
+        <span class="inline" (mouseenter)="changeHover('woman2')" (mouseleave)="reverse('woman2')">
+          <span class="absolute">
+            <a [@hover]="!displayWoman2 ? 'active' : 'inactive'">Surfboards</a>
+          </span>
+          <span class="absolute">
+            <a [@hoverBlue]="displayWoman2 ? 'active' : 'inactive'" style="color: '#81d0d8';">Surfboards</a>
+          </span>
+        </span>
+
+      </span>
+    </span>
+
+    <span class="imgAndText">
+      <img src="../../../../../../../assets/dropDown/woman3.jpg" alt="" class="img">
+      <span class="text">
+
+        <span class="inline" (mouseenter)="changeHover('woman3')" (mouseleave)="reverse('woman3')">
+          <span class="absolute">
+            <a [@hover]="!displayWoman3 ? 'active' : 'inactive'">Swimwears</a>
+          </span>
+          <span class="absolute">
+            <a [@hoverBlue]="displayWoman3 ? 'active' : 'inactive'" style="color: '#81d0d8';">Swimwears</a>
+          </span>
+        </span>
+
+      </span>
+    </span>
+
+  </div>
+</div>
+
+
+<div class="bottomWrapper">
+  <a href="" class="allProducts">All Products</a>
+</div>

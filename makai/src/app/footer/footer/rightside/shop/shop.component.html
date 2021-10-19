@@ -1,0 +1,12 @@
+<h3 class="h3">Shop</h3>
+
+<span class="spanA" (mouseenter)="changeHover('man')" (mouseleave)="reverse('man')">
+    <a [@hover]="!hoverMan ? 'active' : 'inactive'">Man</a>
+    <a class="down" [@hoverBlue]="hoverMan ? 'active' : 'inactive'">Man</a>
+</span>
+
+<span class="spanA" (mouseenter)="changeHover('woman')" (mouseleave)="reverse('woman')">
+    <a [@hover]="!hoverWoman ? 'active' : 'inactive'">Woman</a>
+    <a class="down" [@hoverBlue]="hoverWoman ? 'active' : 'inactive'">Woman</a>
+</span>
+

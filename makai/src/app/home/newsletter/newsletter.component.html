@@ -1,0 +1,29 @@
+<div class="wrapper1">
+  <div class="disappear" *ngIf="!disappear" [@slideAnim]></div>
+  <div class="appear" *ngIf="appear" [@slideAnimA]>
+      <div class="childWrapper">
+        <span class="header">
+          <h4 class="h4">2021 Collection</h4>
+        </span>
+        <span class="header">
+          <h3 class="h3">man</h3>
+        </span>
+        <span class="header">
+          <button class="btn">View More</button>
+        </span>
+      </div>
+  </div>
+</div>
+<div class="wrapper1 background">
+  <div class="childWrapper">
+      <div class="header">
+        <h1 class="h1">Subscribe and receive</h1> <br>
+        <h1 class="h1">new issues twice a</h1> <br>
+        <h1 class="h1">month.</h1>
+      </div>
+  </div>
+  <div class="childWrapper backgroundInp">
+    <input placeholder="Your Email" type="text" class="input">
+    <button class="buttonSubscribe">Subscribe</button>
+  </div>
+</div>

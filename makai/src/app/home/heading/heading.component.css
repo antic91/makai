@@ -1,0 +1,51 @@
+.wrapperText {
+  position: relative;
+  width: 645px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+.wrapperText2  {
+  position: relative;
+  width: 645px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.headH1{
+  font-family: 'Lobster', sans-serif;
+  color: #333;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  padding: 10px 2px;
+}
+
+
+/**SPAN WITH TEXT*/
+.p{
+  position: relative;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.textSpan{
+  color: #81d0d8;
+}

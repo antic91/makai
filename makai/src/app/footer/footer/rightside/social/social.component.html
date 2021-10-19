@@ -1,0 +1,16 @@
+<h3 class="h3">Social</h3>
+
+<span class="spanA" (mouseenter)="changeHover('facebook')" (mouseleave)="reverse('facebook')">
+  <a [@hover]="!hoverFacebook ? 'active' : 'inactive'">Facebook</a>
+  <a class="down" [@hoverBlue]="hoverFacebook ? 'active' : 'inactive'">Facebook</a>
+</span>
+
+<span class="spanA" (mouseenter)="changeHover('instagram')" (mouseleave)="reverse('instagram')">
+  <a [@hover]="!hoverInstagram ? 'active' : 'inactive'">Instagram</a>
+  <a class="down" [@hoverBlue]="hoverInstagram ? 'active' : 'inactive'">Instagram</a>
+</span>
+
+<span class="spanA" (mouseenter)="changeHover('twitter')" (mouseleave)="reverse('twitter')">
+  <a [@hover]="!hoverTwitter ? 'active' : 'inactive'">Twitter</a>
+  <a class="down" [@hoverBlue]="hoverTwitter ? 'active' : 'inactive'">Twitter</a>
+</span>

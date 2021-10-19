@@ -1,0 +1,100 @@
+.header{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.header h1{
+  color: #333;
+  text-transform: lowercase;
+  font-size: 60px;
+  line-height: 0.9;
+  font-weight: 400;
+  font-family: 'Lobster', sans-serif;
+  padding: 0 5px;
+}
+
+
+/*Photos wrapper*/
+.photosWrapp{
+  position: relative;
+  width: 100%;
+  height: 584px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  z-index: 1;
+}
+
+/*LEFT SIDE*/
+.wrapperLeft{
+  position: relative;
+  width: 635px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+/*Right SIDE*/
+.wrapperRight{
+  position: relative;
+  width: 650px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.top{
+  position: relative;
+  width: 317.5px;
+  height: 284px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.bottom{
+  position: relative;
+  width: 100%;
+  height: 285px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+
+
+/*ABSOLUTE WRAPPER*/
+
+.absoluteWrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(255,255,255, 0.6);
+}
+

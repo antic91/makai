@@ -1,0 +1,18 @@
+<h3 class="h3">Utility</h3>
+
+<span class="spanA" (mouseenter)="changeHover('privacy')" (mouseleave)="reverse('privacy')">
+  <a [@hover]="!hoverPrivacy ? 'active' : 'inactive'">Privacy Policy</a>
+  <a class="down" [@hoverBlue]="hoverPrivacy ? 'active' : 'inactive'">Privacy Policy</a>
+</span>
+
+
+<span class="spanA" (mouseenter)="changeHover('terms')" (mouseleave)="reverse('terms')">
+  <a [@hover]="!hoverTerms ? 'active' : 'inactive'">Terms And Conditions</a>
+  <a class="down" [@hoverBlue]="hoverTerms ? 'active' : 'inactive'">Terms And Conditions</a>
+</span>
+
+
+<span class="spanA" (mouseenter)="changeHover('licensing')" (mouseleave)="reverse('licensing')">
+  <a [@hover]="!hoverLicensing ? 'active' : 'inactive'">Licensing</a>
+  <a class="down" [@hoverBlue]="hoverLicensing ? 'active' : 'inactive'">Licensing</a>
+</span>

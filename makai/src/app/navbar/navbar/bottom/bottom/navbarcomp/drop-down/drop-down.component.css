@@ -1,0 +1,157 @@
+/*HEADER*/
+.header{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+}
+.headerWrapper{
+  position: relative;
+  width: 540px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.headerWrapper h1{
+
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  line-height: 1.25;
+  font-weight: 300;
+  font-family: 'Lobster', sans-serif;
+}
+/*TOP CATEGORIES*/
+.top{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.imagesWrapper{
+  position: relative;
+  width: 540px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  background-color: #fff;
+}
+
+/*MIDDLEDIV */
+.middle{
+  position: relative;
+  width: 140px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.middle .border{
+  position: relative;
+  width: 1px;
+  height: 80%;
+  background-color: #e2e2e2;
+}
+
+
+/*IMAGE ANDE TEXT */
+.imgAndText{
+  position: relative;
+  width: 170px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+}
+.img{
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+.text{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.inline{
+  position: relative;
+  width: 100px;
+  height: 20px;
+}
+.absolute{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.inline a{
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+
+}
+.color{
+  color: #81d0d8!important;
+}
+
+
+/*BOTTOM WRAPPER ANDBUTTON*/
+
+.bottomWrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  margin: 40px 0 40px 0;
+
+}
+.allProducts{
+  color: rgb(51, 51, 51);
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid #333;
+}
+.allProducts:hover{
+  background-color: #81d0d8;
+  color: #fff;
+  border-color: #81d0d8;
+}

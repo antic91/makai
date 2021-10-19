@@ -1,0 +1,167 @@
+.wrapper1{
+  position: relative;
+  width: 645px;
+  height: 100%;
+}
+
+/*DIV DISAPPEAR*/
+.disappear{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #81d0d8;
+}
+/*DIV APPEAR*/
+.appear{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../assets/manOnBoard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+/*TEXT AND BUTTON LEFT ON DIV WITH PHOTO*/
+.h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 29px;
+  color: #fff;
+  line-height: 0.9;
+  padding: 5px;
+
+}
+.h3{
+  font-family: 'Lobster', sans-serif;
+  font-size: 75px;
+  color: #fff;
+  line-height: 0.9;
+  padding: 0 5px;
+
+}
+/*BUTTON*/
+.btn {
+  position: relative;
+  overflow: hidden;
+  padding: 14px 37px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #fff;
+}
+
+
+/*BACKGROUND AND STYLE FOR DIV ITEMS ON THE RIGHT SIDE*/
+.background{
+  background-color: #81d0d8;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.childWrapper{
+  position: relative;
+  width: 416px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/*HEADER AND H1 TAG*/
+.header{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.h1{
+  font-size: 48px;
+  text-align: center;
+  line-height: 0.9;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Lobster', sans-serif;
+  padding: 0 5px;
+}
+
+
+/*INPUT AND BUTTON*/
+.backgroundInp{
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 40px;
+}
+.input{
+  position: relative;
+  width: 70%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: #81d0d8;
+
+}
+.buttonSubscribe{
+  position: relative;
+  width: 30%;
+  height: 40px;
+  padding: 10px 15px;
+  line-height: 16px;
+  border: none;
+  outline: none;
+  background-color: #81d0d8;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+}
+
+
+
+.input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #adb5bd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #adb5bd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #adb5bd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}

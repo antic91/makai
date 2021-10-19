@@ -1,0 +1,38 @@
+<div class="wrapp">
+  <div class="leftWrapp">
+    <div class="userDetails" *ngIf="!displayText" [@fadeIn]>
+
+      <div class="picWrapper marginBottom">
+        <img [src]="photo" alt="" class="image">
+        <div class="textWrapper">
+          <span class="head">{{name}}</span>
+          <span class="pText">{{text}}</span>
+        </div>
+      </div>
+
+      <div class="picWrapper">
+        <h3 class="h3">
+        {{header}}
+        </h3>
+      </div>
+
+      <div class="picWrapper">
+        <img *ngFor="let star of stars" [src]="star" alt="" class="stars">
+
+      </div>
+
+    </div>
+
+    <div class="chagneButtons" *ngIf="!displayText" [@fadeIn]>
+      <h1 class="leftRight" (click)="remove()"> < </h1>
+      <h1 class="leftRight" (click)="add()"> > </h1>
+    </div>
+
+  </div>
+
+  <div class="rightWrapp">
+    <img [src]="coverImage" class="imageRight" alt="">
+    <div class="absolute" *ngIf="show" [@slideAnim]></div>
+  </div>
+
+</div>

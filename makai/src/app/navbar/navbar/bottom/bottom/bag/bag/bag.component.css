@@ -1,0 +1,48 @@
+#iconsWrapper{
+  position: relative;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.quantity{
+  position: relative;
+  width: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 700;
+  color:#fff;
+  border-radius: 50px;
+  background-color: #81d0d8;
+}
+
+.imageWrapper1 {
+  position: relative;
+  height: 100%;
+  padding-top: 5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+
+
+/*Image Bag*/
+.imageWrapper{
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.images {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}

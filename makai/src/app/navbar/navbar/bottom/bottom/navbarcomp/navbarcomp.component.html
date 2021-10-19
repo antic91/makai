@@ -1,0 +1,30 @@
+<span class="link about" (mouseenter)="changeHover('about')" (mouseleave)="reverse('about')">
+    <a class="a" href="" [@hover]="!hoverAbout ? 'active' : 'inactive'">About</a>
+    <a class="a down" href="" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'">About</a>
+</span>
+
+<span class="link shop" (mouseenter)="changeHover('shop')" (mouseleave)="reverse('shop')">
+  <span class="text">
+    <a class="a" href="" [@hover]="!hoverShop ? 'active' : 'inactive'">Shop</a>
+    <a class="a down" href="" [@hoverBlue]="hoverShop ? 'active' : 'inactive'">Shop</a>
+  </span>
+
+  <span class="icon">
+    <img class="imageIcon" [@hoverImg]="!hoverShop ? 'active' : 'inactive'" src="../../../../../../assets/arrow-right-black.svg" width="14px" alt="">
+    <img class="imageIcon1" [@hoverImgBlue]="hoverShop ? 'active' : 'inactive'" src="../../../../../../assets/arrow-right-blue.svg" width="14px" alt="">
+  </span>
+
+</span>
+
+<span class="link blog" (mouseenter)="changeHover('blog')" (mouseleave)="reverse('blog')">
+  <a class="a" href="" [@hover]="!hoverBlog ? 'active' : 'inactive'">Blog</a>
+  <a class="a down" href="" [@hoverBlue]="hoverBlog ? 'active' : 'inactive'">Blog</a>
+</span>
+
+<span class="link contact" (mouseenter)="changeHover('contact')" (mouseleave)="reverse('contact')">
+  <a class="a" href="" [@hover]="!hoverContact ? 'active' : 'inactive'">Contact</a>
+  <a class="a down" href="" [@hoverBlue]="hoverContact ? 'active' : 'inactive'">Contact</a>
+</span>
+
+
+<app-drop-down id="absoluteDropDown" *ngIf="displayDropDown" [@slideAnim] (mouseover)="changeHoverAbsolute()" (mouseleave)="reverseAbsolute()"></app-drop-down>

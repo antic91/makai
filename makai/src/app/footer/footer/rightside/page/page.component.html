@@ -1,0 +1,21 @@
+<h3 class="h3">Page</h3>
+
+<span class="spanA" (mouseenter)="changeHover('about')" (mouseleave)="reverse('about')">
+    <a [@hover]="!hoverAbout ? 'active' : 'inactive'">About</a>
+    <a class="down" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'">About</a>
+</span>
+
+<span class="spanA" (mouseenter)="changeHover('shop')" (mouseleave)="reverse('shop')">
+    <a [@hover]="!hoverShop ? 'active' : 'inactive'">Shop</a>
+    <a class="down" [@hoverBlue]="hoverShop ? 'active' : 'inactive'">Shop</a>
+</span>
+
+<span class="spanA" (mouseenter)="changeHover('blog')" (mouseleave)="reverse('blog')">
+    <a [@hover]="!hoverBlog ? 'active' : 'inactive'">Blog</a>
+    <a class="down" [@hoverBlue]="hoverBlog ? 'active' : 'inactive'">Blog</a>
+</span>
+
+<span class="spanA" (mouseenter)="changeHover('contact')" (mouseleave)="reverse('contact')">
+    <a [@hover]="!hoverContact ? 'active' : 'inactive'">Contact</a>
+    <a class="down" [@hoverBlue]="hoverContact ? 'active' : 'inactive'">Contact</a>
+</span>

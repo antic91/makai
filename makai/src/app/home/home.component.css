@@ -1,0 +1,164 @@
+#homeWrapper{
+  position: relative;
+  width: 1300px;
+  padding-top: 165.08px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+}
+/*Banner wrapper*/
+
+#banner{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+}
+/*BRANDS WRAPPER */
+#brands{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 40px 0;
+}
+/*SECTION WRAPPER */
+#section{
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+/*SECTION-COLLECTION WRAPPER */
+#sectionColl{
+  position: relative;
+  width: 100%;
+  height: 625px;
+  padding: 125px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+/*Video WRAPPER */
+#video{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+/*newsletter WRAPPER */
+#newsletter{
+  position: relative;
+  width: 100%;
+  height: 760px;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+/*heading WRAPPER */
+#heading{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding-bottom: 50px;
+  margin-top: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/*SURF WRAPPER */
+#surf{
+  position: relative;
+  width: 100%;
+  height: 992px;
+  padding: 95px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  border-top: 1px solid #81d0d8;
+}
+
+/*blogSection WRAPPER */
+#blogSection{
+  position: relative;
+  width: 100%;
+  height: 784px;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+/*heading Bottom WRAPPER */
+#headingBottom {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  padding-bottom: 50px;
+  margin-top: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/*reviews Bottom WRAPPER */
+#reviews {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  background-color: #81d0d8;
+}
+
+/*icons Bottom WRAPPER */
+#icons {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  padding: 79px 0;
+  margin-top: 140px;
+  border-top: 1px solid #81d0d8;
+  border-bottom: 1px solid #81d0d8;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:  space-around;
+  align-content: center;
+}

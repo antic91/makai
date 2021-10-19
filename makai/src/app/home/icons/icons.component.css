@@ -1,0 +1,53 @@
+.wrapperGif{
+  position: relative;
+  width:420px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+/*ALL CHILDRENS*/
+.ChildrensWrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+ /*GIF IMAGE WRAPPER AND GIF STYLE*/
+.gifWrapperHeight{
+  height: 80px;
+}
+.gif{
+  position: relative;
+  height: 80px;
+}
+
+
+/*H1 STYLE*/
+.h1Wrapper{
+  height: 24px;
+}
+.h1Size{
+  font-size: 24px;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 0.9;
+}
+
+/*TEXT P STYLE*/
+.pWrapper{
+  height: 20px;
+}
+.PText{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+}

@@ -1,0 +1,69 @@
+.link{
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.blog{
+  width: 80px!important;
+}
+.about{
+  width: 95px!important;
+}
+.shop{
+  width: 105px!important;
+}
+.contact{
+  width: 105px!important;
+}
+
+.text{
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+.a{
+  position: absolute;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.25;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  }
+  .down{
+    color:#81d0d8;
+  }
+.icon{
+  display: flex;
+  height: 14px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.imageIcon{
+  position: absolute;
+}
+.imageIcon1{
+  position: absolute;
+}
+
+
+
+/*DROP DOWN*/
+
+#absoluteDropDown{
+  position: absolute;
+  width: 1300px;
+  padding: 0 40px;
+  top: 50px;
+  left: -118.8%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}

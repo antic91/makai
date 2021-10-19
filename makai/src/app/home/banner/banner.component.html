@@ -1,0 +1,14 @@
+<div class="firstDiv" [ngStyle]="{'z-index': z1}" *ngIf="display1" [@slideAnim]>
+  <h1 class="h1" *ngIf="!display2 && !display3" [@textSlideAnim]>Lets break the</h1> <br>
+  <h1 class="h1" *ngIf="!display2 && !display3" [@textSlideAnim]>barriers together</h1>
+</div>
+
+<div class="secondDiv" [ngStyle]="{'z-index': z2}" *ngIf="display2" [@slideAnim]>
+  <h1 class="h1" *ngIf="!display1 && !display3" [@textSlideAnim]>Lets break the</h1> <br>
+  <h1 class="h1" *ngIf="!display1 && !display3" [@textSlideAnim]> barriers together</h1>
+</div>
+
+<div class="thirdDiv" [ngStyle]="{'z-index': z3}" *ngIf="display3" [@slideAnim]>
+  <h1 class="h1" *ngIf="!display2 && !display1" [@textSlideAnim]>Lets break the</h1> <br>
+  <h1 class="h1" *ngIf="!display2 && !display1" [@textSlideAnim]>barriers together</h1>
+</div>
