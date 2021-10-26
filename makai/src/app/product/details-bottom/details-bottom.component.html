@@ -1,0 +1,30 @@
+<div class="buttons">
+  <div class="aDetails" [style.backgroundColor]="displayColor ? '#81d0d8' : '#fff'" [style.color]="displayColor ? '#fff' : '#333333'" href="" (click)="clicked('description')" [@fadeInOut]>Description</div>
+  <div class="aDetails" [style.backgroundColor]="!displayColor ? '#81d0d8' : '#fff'" [style.color]="!displayColor ? '#fff' : '#333333'" href="" (click)="clicked('info')" [@fadeInOut]>Extra Info</div>
+</div>
+
+<div class="bottom" *ngIf="show1" [@fadeInOut]>
+  <span class="wrapperText wrapperText1">
+    <span class="header">  <h4>Weight</h4> </span>
+    <h4>{{product.prod_weight}}</h4>
+  </span>
+
+  <span class="wrapperText wrapperText1">
+    <span class="header">  <h4>Height</h4> </span>
+    <h4>{{product.prod_height}}</h4>
+  </span>
+
+  <span class="wrapperText wrapperText1">
+    <span class="header">  <h4>Width</h4> </span>
+    <h4>{{product.prod_width}}</h4>
+  </span>
+
+  <span class="wrapperText">
+    <span class="header">  <h4>Colors</h4> </span>
+    <h4>{{product.prod_colors}}</h4>
+  </span>
+</div>
+
+<div class="bottom" *ngIf="show2" [@fadeInOut]>
+  <p>{{product.prod_description}}</p>
+</div>

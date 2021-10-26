@@ -1,0 +1,7 @@
+<div id="contactWrapper" appPosition (position)="detect($event)">
+  <app-contact-top id="contactTopWrapper"></app-contact-top>
+  <app-text-comp id="contactTopWrapper" #textCopm [showText]="showText"></app-text-comp>
+  <app-follow id="follow" #follow [showFollow]="showFollow"></app-follow>
+  <app-photo-box id="photoBox" #box [showItems]="showItems"></app-photo-box>
+  <app-icons id="icons"></app-icons>
+</div>

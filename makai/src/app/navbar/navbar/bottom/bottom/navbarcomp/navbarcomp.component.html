@@ -1,6 +1,6 @@
-<span class="link about" (mouseenter)="changeHover('about')" (mouseleave)="reverse('about')">
-    <a class="a" href="" [@hover]="!hoverAbout ? 'active' : 'inactive'">About</a>
-    <a class="a down" href="" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'">About</a>
+<span class="link about" (mouseenter)="changeHover('about')" (mouseleave)="reverse('about')" routerLink="/about">
+    <a class="a" routerLink="/about" href="" [@hover]="!hoverAbout ? 'active' : 'inactive'">About</a>
+    <a class="a down" routerLink="/about" href="" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'">About</a>
 </span>
 
 <span class="link shop" (mouseenter)="changeHover('shop')" (mouseleave)="reverse('shop')">
@@ -16,14 +16,14 @@
 
 </span>
 
-<span class="link blog" (mouseenter)="changeHover('blog')" (mouseleave)="reverse('blog')">
-  <a class="a" href="" [@hover]="!hoverBlog ? 'active' : 'inactive'">Blog</a>
-  <a class="a down" href="" [@hoverBlue]="hoverBlog ? 'active' : 'inactive'">Blog</a>
+<span class="link blog" (mouseenter)="changeHover('blog')" (mouseleave)="reverse('blog')" routerLink="/blog">
+  <a class="a" href="" [@hover]="!hoverBlog ? 'active' : 'inactive'" routerLink="/blog">Blog</a>
+  <a class="a down" href="" [@hoverBlue]="hoverBlog ? 'active' : 'inactive'" routerLink="/blog">Blog</a>
 </span>
 
-<span class="link contact" (mouseenter)="changeHover('contact')" (mouseleave)="reverse('contact')">
-  <a class="a" href="" [@hover]="!hoverContact ? 'active' : 'inactive'">Contact</a>
-  <a class="a down" href="" [@hoverBlue]="hoverContact ? 'active' : 'inactive'">Contact</a>
+<span class="link contact" (mouseenter)="changeHover('contact')" (mouseleave)="reverse('contact')" routerLink="/contact">
+  <a class="a" href="" [@hover]="!hoverContact ? 'active' : 'inactive'" routerLink="/contact">Contact</a>
+  <a class="a down" href="" [@hoverBlue]="hoverContact ? 'active' : 'inactive'" routerLink="/contact">Contact</a>
 </span>
 
 

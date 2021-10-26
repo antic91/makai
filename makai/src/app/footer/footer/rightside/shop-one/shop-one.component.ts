@@ -3,15 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import { hover, hoverBlue } from 'src/app/animations/animations';
 
 @Component({
-  selector: 'app-shop',
-  templateUrl: './shop.component.html',
-  styleUrls: ['./shop.component.css'],
+  selector: 'app-shop-one',
+  templateUrl: './shop-one.component.html',
+  styleUrls: ['./shop-one.component.css'],
   animations: [
     hover.animeTrigger,
     hoverBlue.animeTrigger
   ]
 })
-export class ShopComponent implements OnInit {
+export class ShopComponent1 implements OnInit {
 
   hoverMan: boolean = false;
 

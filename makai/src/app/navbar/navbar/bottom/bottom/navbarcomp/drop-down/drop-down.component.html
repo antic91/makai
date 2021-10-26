@@ -10,7 +10,7 @@
 <div class="top">
   <div class="imagesWrapper">
 
-    <span class="imgAndText">
+    <span class="imgAndText" [routerLink]="['/shop','Man','T-shirts']">
       <img src="../../../../../../../assets/dropDown/man1.jpg" alt="" class="img">
       <span class="text">
         <span class="inline" (mouseenter)="changeHover('man1')" (mouseleave)="reverse('man1')">
@@ -24,7 +24,7 @@
       </span>
     </span>
 
-    <span class="imgAndText">
+    <span class="imgAndText" [routerLink]="['/shop','Man','Surfboards']">
       <img src="../../../../../../../assets/dropDown/man2.jpg" alt="" class="img">
       <span class="text">
 
@@ -40,7 +40,7 @@
       </span>
     </span>
 
-    <span class="imgAndText">
+    <span class="imgAndText" [routerLink]="['/shop','Man','Swimwears']">
       <img src="../../../../../../../assets/dropDown/man3.jpg" alt="" class="img">
       <span class="text">
 
@@ -64,7 +64,7 @@
 
   <div class="imagesWrapper">
 
-    <span class="imgAndText">
+    <span class="imgAndText" [routerLink]="['/shop','Woman','T-shirts']">
       <img src="../../../../../../../assets/dropDown/woman1.jpg" alt="" class="img">
       <span class="text">
 
@@ -80,7 +80,7 @@
       </span>
     </span>
 
-    <span class="imgAndText">
+    <span class="imgAndText" [routerLink]="['/shop','Woman','Surfboards']">
       <img src="../../../../../../../assets/dropDown/woman2.jpg" alt="" class="img">
       <span class="text">
 
@@ -96,7 +96,7 @@
       </span>
     </span>
 
-    <span class="imgAndText">
+    <span class="imgAndText" [routerLink]="['/shop','Woman','Swimwears']">
       <img src="../../../../../../../assets/dropDown/woman3.jpg" alt="" class="img">
       <span class="text">
 
@@ -117,5 +117,5 @@
 
 
 <div class="bottomWrapper">
-  <a href="" class="allProducts">All Products</a>
+  <a href="" [routerLink]="['/shop','AllItems','AllItems']" class="allProducts">All Products</a>
 </div>

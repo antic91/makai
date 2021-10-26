@@ -1,5 +1,6 @@
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { transformBottom } from './animations/animations'
 
 @Component({
@@ -24,8 +25,8 @@ import { transformBottom } from './animations/animations'
 })
 export class AppComponent implements OnInit{
   absoluteWrapp: boolean = true;
-  constructor() {
-
+  change: boolean = false;
+  constructor(private router: Router) {
   }
   ngOnInit(): void {
     setTimeout(() => {

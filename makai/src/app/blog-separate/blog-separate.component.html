@@ -1,0 +1,10 @@
+<div id="blogSeparateWrapper" >
+  <app-blog-details id="blogDetails" *ngIf="object" [object]="object"></app-blog-details>
+
+  <app-blog-photo id="blogPhoto" *ngIf="object" [object]="object"></app-blog-photo>
+
+</div>
+  <div class="classFeatures">
+    <h1 class="h1Features">Features</h1>
+  </div>
+  <app-other-blogs appPosition (position)="detect($event)" id="otherBlogsWrapper" #other [showOther]="showOther" [data]="arrayData"></app-other-blogs>

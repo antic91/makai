@@ -1,0 +1,12 @@
+<div class="photos" *ngIf="displayPhoto" [@slideAnim]>
+  <span class="imageSpan" *ngFor="let item of photos; let i=index" (mouseover)="mouseOver(i)" (mouseleave)="mouseLeave(i)">
+    <img [src]="item" alt="">
+  </span>
+</div>
+<div class="header" *ngIf="displayPhoto" [@textSlideAnim]>
+  <img *ngIf="displayHead" [@fadeInOut] [src]="headerPhoto" alt="">
+  <img *ngIf="displayOne" [@fadeInOut] [src]="photos[0]" alt="">
+  <img *ngIf="displayTwo" [@fadeInOut] [src]="photos[1]" alt="">
+  <img *ngIf="displayThree" [@fadeInOut] [src]="photos[2]" alt="">
+  <img *ngIf="displayFour" [@fadeInOut] [src]="photos[3]" alt="">
+</div>

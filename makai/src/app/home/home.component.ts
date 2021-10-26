@@ -1,3 +1,4 @@
+import { PostService } from './../services/post.service';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -14,6 +15,11 @@ export class HomeComponent implements OnInit {
   @ViewChild('blog', { read: ElementRef }) blog!: ElementRef;
   @ViewChild('reviews', { read: ElementRef }) reviews!: ElementRef;
   @ViewChild('headingSec', { read: ElementRef }) headingSec!: ElementRef;
+  @ViewChild('itemsOne', { read: ElementRef }) itemsOne!: ElementRef;
+  @ViewChild('itemsTWo', { read: ElementRef }) itemsTWo!: ElementRef;
+
+  data: any[] = [];
+  data1: any[] = [];
 
   textHead!: string;
   textSpan!: string;
@@ -56,9 +62,20 @@ export class HomeComponent implements OnInit {
   show!: boolean;
   displayText!: boolean;
 
-  constructor() { }
+  /*Display items products*/
+  displayItemOne: boolean = false;
+  displayItemTwo: boolean = false;
+
+
+  constructor(private service: PostService) { }
 
   ngOnInit(): void {
+
+    this.service.getAll("https://heroku-makai.herokuapp.com/getRandom")
+      .subscribe((response: any) => {
+        this.data = response.responseSurfboard;
+        this.data1 = response.responseAllItems;
+    })
 
     this.textHead = "We are";
     this.textSpan = "Makai";
@@ -71,6 +88,8 @@ export class HomeComponent implements OnInit {
     this.textHead2Bottom = "";
 
   }
+
+
   detect($event: number): void{
     /*Banner*/
     let a = (this.section.nativeElement.offsetTop / 2) - (this.section.nativeElement.offsetTop / 10);
@@ -95,6 +114,12 @@ export class HomeComponent implements OnInit {
 
     /*REVIEW SECTION*/
     let g = (this.reviews.nativeElement.offsetTop / 2) + (this.reviews.nativeElement.offsetTop / 10) * 3;
+
+    /*ItemsOne product SECTION*/
+    let i = (this.itemsOne.nativeElement.offsetTop) - (this.itemsOne.nativeElement.offsetTop / 10) * 3;
+
+    /*ItemTwo product SECTION*/
+    let j = (this.itemsTWo.nativeElement.offsetTop) - (this.itemsTWo.nativeElement.offsetTop / 10) * 3;
 
     if ($event >= a) this.display = true;
 
@@ -169,5 +194,9 @@ export class HomeComponent implements OnInit {
       this.displayHeadSec = true;
       this.displaySpanSec = true;
     }
+    /*ITEMSOne PRODUCTS SECTION*/
+    if ($event >= i) this.displayItemOne = true;
+    /*ITEMSTwo PRODUCTS SECTION*/
+    if ($event >= j) this.displayItemTwo = true;
   }
 }

@@ -1,6 +1,6 @@
 #logoWrapper{
   position: relative;
-  width: 100%;
+  width: 1300px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -11,7 +11,7 @@
 
 #bottomWrapper{
   position: relative;
-  width: 100%;
+  width: 1300px;
   height: 60px;
   display: flex;
   flex-wrap: wrap;

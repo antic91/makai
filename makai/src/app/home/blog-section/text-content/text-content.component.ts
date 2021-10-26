@@ -9,6 +9,8 @@ export class TextContentComponent implements OnInit {
   @Input("date") date!: string;
   @Input("header") header!: string;
   @Input("readMore") readMore!: string;
+  @Input("name") name!: string;
+  @Input("idBlog") idBlog!: number;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,30 @@
+#oneItemWrapper {
+  position: relative;
+  width: 305px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+#oneItemWrapper:hover {
+  cursor: pointer;
+}
+
+
+/*NO DATA DIV*/
+.noData{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.noData h3{
+  font-family: 'Poppins', sans-serif;
+
+}

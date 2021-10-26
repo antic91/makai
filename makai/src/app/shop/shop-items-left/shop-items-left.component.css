@@ -1,0 +1,38 @@
+.linksWrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.linksWrapper h3{
+  text-transform: lowercase;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aLinks{
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  width: 100%;
+  text-align: start;
+  margin: 20px 0 0 0;
+}
+.aLinks:hover{
+  opacity: .7;
+}
+
+.woman{
+  margin-top: 60px;
+}
+.active{
+  color: #81d0d8;
+}

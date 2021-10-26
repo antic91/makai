@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger, useAnimation } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { slideAnim, transformBottom } from 'src/app/animations/animations';
 
 @Component({
@@ -17,6 +17,10 @@ import { slideAnim, transformBottom } from 'src/app/animations/animations';
   ]
 })
 export class BrandsComponent implements OnInit {
+  @Input('width') width!: string;
+  @Input('height') height!: string;
+
+
   display1: boolean = true;
   display2: boolean = true;
   display3: boolean = true;
@@ -43,4 +47,5 @@ export class BrandsComponent implements OnInit {
     if(value == "display5")this.display5 = true;
     if (value == "display6") this.display6 = true;
   }
+
 }

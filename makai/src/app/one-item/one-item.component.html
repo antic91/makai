@@ -1,0 +1,20 @@
+<div id="animWrapper" *ngIf="display" [@bottomInSec] [routerLink]="['/shop',item.cat_metaTitle,item.sub_metaTitle,item.prod_metaTitle,item.cat_id,item.sub_cat_id,item.prod_id]">
+  <div class="imageWrapper">
+    <img [src]="firstPicture" alt="" class="imageItem">
+  </div>
+  <div class="bottomWrapper">
+    <div class="child chidl1">
+      <h4>{{item.prod_title}}</h4>
+      <h6>{{item.prod_title}}</h6>
+    </div>
+    <div class="child chidl2">
+      <h4 *ngIf="displayPrice" [@leftOut]>$ {{item.prod_price}} USD</h4>
+      <h4 *ngIf="displayAddTo" [@rightIn]>Add to Cart</h4>
+    </div>
+  </div>
+
+  <div class="absoluteWrapper">
+    <span *ngIf="displayAddTo" [@bottomIn] class="text">quick look</span>
+  </div>
+
+</div>

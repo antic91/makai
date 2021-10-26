@@ -1,0 +1,66 @@
+#blogSeparateWrapper {
+  position: relative;
+  width: 1300px;
+  padding-top: 165.08px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  overflow: visible!important;
+}
+/*blogDetails Component*/
+#blogDetails {
+  position: relative;
+  width: 988px;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  z-index: 9;
+}
+
+/*blogPhoto Component*/
+#blogPhoto {
+  position: sticky;
+  width: 247px;
+  height: 100vh;
+  top:165.08px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  overflow: visible!important;
+
+}
+
+/*OTHER BLOGS*/
+#otherBlogsWrapper {
+  position: relative;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+/*FEATURES HEADER*/
+
+.classFeatures{
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.h1Features{
+  color: #333;
+  font-size: 60px;
+  line-height: 0.9;
+  font-weight: 400;
+  font-family: 'Lobster', sans-serif;
+}

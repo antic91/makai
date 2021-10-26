@@ -1,15 +1,31 @@
-<div id="homeWrapper">
+<div id="homeWrapper" appPosition (position)="detect($event)">
+
   <app-banner id="banner"></app-banner>
-  <app-brands id="brands"></app-brands>
-  <app-section  id="section" appPosition (position)="detect($event)" [display]="display" #section></app-section>
-  <app-section-collection id="sectionColl" appPosition (position)="detect($event)" [displaySec]="displaySec" #sectionCol></app-section-collection>
+  <app-brands id="brands" [width]="'100px'" [height]="'100px'"></app-brands>
+
+  <app-section  id="section" [display]="display" #section></app-section>
+
+  <app-section-collection id="sectionColl" [displaySec]="displaySec" #sectionCol></app-section-collection>
+
+  <app-items-show id="dataItems" [data]="data" #itemsOne [display]="displayItemOne"></app-items-show>
+
   <app-video id="video"></app-video>
-  <app-newsletter id="newsletter" appPosition (position)="detect($event)" [news]="displayNews" [appear]="appear" #news></app-newsletter>
-  <app-heading id="heading" appPosition (position)="detect($event)" [displayHead]="displayHead" [displaySpan]="displaySpan" [textHead]="textHead" [textSpan]="textSpan" [textHead1]="textHead1" [textHead2]="textHead2" #heading></app-heading>
-  <app-surf id="surf" appPosition (position)="detect($event)" [displaySurfOne]="displaySurfOne" [displaySurfTwo]="displaySurfTwo" [displaySurfThree]="displaySurfThree" [displaySurfFour]="displaySurfFour" [displaySurfFive]="displaySurfFive" [displaySurfSix]="displaySurfSix" [displaySurfText]="displaySurfText" #surf></app-surf>
-  <app-blog-section id="blogSection" appPosition (position)="detect($event)" [displayBlog]="displayBlog" #blog></app-blog-section>
-  <app-heading id="headingBottom" appPosition (position)="detect($event)" [displayHead]="displayHeadSec" [displaySpan]="displaySpanSec" [textHead]="textHeadBottom" [textSpan]="textSpanBottom" [textHead1]="textHead1Bottom" [textHead2]="textHead2Bottom" #headingSec></app-heading>
-  <app-reviews id="reviews" appPosition (position)="detect($event)" [show]="show" [displayText]="displayText" #reviews></app-reviews>
+
+  <app-items-show id="dataItems" [data]="data1" #itemsTWo [display]="displayItemTwo"></app-items-show>
+
+  <app-newsletter id="newsletter" [news]="displayNews" [appear]="appear" #news></app-newsletter>
+
+  <app-heading id="heading" [displayHead]="displayHead" [displaySpan]="displaySpan" [textHead]="textHead" [textSpan]="textSpan" [textHead1]="textHead1" [textHead2]="textHead2" #heading></app-heading>
+
+  <app-surf id="surf" [displaySurfOne]="displaySurfOne" [displaySurfTwo]="displaySurfTwo" [displaySurfThree]="displaySurfThree" [displaySurfFour]="displaySurfFour" [displaySurfFive]="displaySurfFive" [displaySurfSix]="displaySurfSix" [displaySurfText]="displaySurfText" #surf></app-surf>
+
+  <app-blog-section id="blogSection" [displayBlog]="displayBlog" #blog></app-blog-section>
+
+  <app-heading id="headingBottom" [displayHead]="displayHeadSec" [displaySpan]="displaySpanSec" [textHead]="textHeadBottom" [textSpan]="textSpanBottom" [textHead1]="textHead1Bottom" [textHead2]="textHead2Bottom" #headingSec></app-heading>
+
+  <app-reviews id="reviews" [show]="show" [displayText]="displayText" #reviews></app-reviews>
+
   <app-icons id="icons"></app-icons>
+
 </div>
 

@@ -1,0 +1,39 @@
+<div class="headerTop">
+  <h1 *ngIf="showTeam" [@showFromBottom]>Meet the Team</h1>
+</div>
+
+<div class="pitcuresWrapper">
+
+  <div class="imageDiv img1"(mouseover)="mouseOver('img1')" (mouseleave)="reset()" *ngIf="showTeam" [@showFromBottom]>
+
+    <div class="absoluteDiv" *ngIf="img1" [@hover]>
+
+      <h3>Frank Aruta</h3>
+      <p>Product manager</p>
+    </div>
+
+  </div>
+
+
+  <div class="imageDiv img2" (mouseover)="mouseOver('img2')" (mouseleave)="reset()" *ngIf="showTeam" [@showFromBottom]>
+
+    <div class="absoluteDiv" *ngIf="img2" [@hover]>
+
+      <h3>Sarha Fox</h3>
+      <p>Product manager</p>
+    </div>
+
+  </div>
+
+
+  <div class="imageDiv img3" (mouseover)="mouseOver('img3')" (mouseleave)="reset()" *ngIf="showTeam" [@showFromBottom]>
+
+    <div class="absoluteDiv" *ngIf="img3" [@hover]>
+
+      <h3>Linda Christie</h3>
+      <p>Product manager</p>
+    </div>
+
+  </div>
+
+</div>

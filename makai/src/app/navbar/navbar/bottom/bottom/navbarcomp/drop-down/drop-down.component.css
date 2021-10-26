@@ -51,7 +51,9 @@
   align-content: flex-start;
   background-color: #fff;
 }
-
+.imagesWrapper:hover{
+  cursor: pointer;
+}
 /*MIDDLEDIV */
 .middle{
   position: relative;

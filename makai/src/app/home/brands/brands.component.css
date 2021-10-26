@@ -1,7 +1,5 @@
 .wrapperImage{
   position: relative;
-  width: 100px;
-  height: 100px;
 }
 .child{
   position: absolute;
@@ -12,7 +10,7 @@
   justify-content: flex-start;
   align-content: flex-start;
 }
-.image{
+.img{
   position: relative;
   width: 100%;
 }

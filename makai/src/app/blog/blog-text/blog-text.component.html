@@ -1,0 +1,22 @@
+<div class="wrapperText">
+  <span class="text" *ngIf="showText" [@slideInBottom]>
+    <p class="pTop">{{pTop}}</p>
+  </span>
+
+  <span class="text" *ngIf="showText" [@slideInBottom]>
+    <h1>{{Header}}</h1>
+  </span>
+
+
+  <span class="text" *ngIf="showText" [@slideInBottom]>
+    <p class="pBottom">{{pBottom}}</p>
+  </span>
+
+  <span class="textLast" *ngIf="showText" [@slideInBottom]>
+    <span class="hover" (mouseenter)="changeHover()" (mouseleave)="reverse()" [routerLink]="['/blog', name, idBlog]">
+      <a href="" class="a" [@hover]="!onHover ? 'active' : 'inactive'" [routerLink]="['/blog', name, idBlog]">Read More</a>
+      <a href="" class="aBlue" [@hoverBlue]="onHover ? 'active' : 'inactive'" [routerLink]="['/blog', name, idBlog]">Read More</a>
+    </span>
+  </span>
+</div>
+

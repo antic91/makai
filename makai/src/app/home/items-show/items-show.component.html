@@ -1,0 +1,1 @@
+<app-one-item id="oneItemWrapper" *ngFor="let item of data; let i=index" [item]="item" [display]="display" [hover]="hover"  (mouseover)="mouseover(item.prod_id)" (mouseleave)="mouseleave(item.prod_id)" [prodId]="prod_id"></app-one-item>

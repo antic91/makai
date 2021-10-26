@@ -1,0 +1,40 @@
+<div class="childFourWrapper">
+  <img src="assets/about/Tshirt.jpeg" *ngIf="fourSections" [@SlideInLeft] alt="" class="img1">
+</div>
+
+<div class="childFourWrapper">
+  <span class="textWrapp" *ngIf="fourSections" [@showFromBottom]>
+    <h1>We take care of your <br> feelings</h1>
+  </span>
+  <span class="textWrapp">
+    <p class="p" *ngIf="fourSections" [@showFromBottom]>Lorem ipsum dolor sit amet, con secte tur <br>
+      adip si cin elit, do eius mod tempor
+    </p>
+  </span>
+
+  <span class="textWrapp">
+    <span class="iconWrapper">
+      <img src="assets/about/OK_Slag-01.svg" *ngIf="fourSections" [@showFromBottom] class="icon" alt="">
+      <p class="p1" *ngIf="fourSections" [@showFromBottom]>custom products</p>
+    </span>
+    <span class="iconWrapper">
+      <img src="assets/about/OK_Slag-01.svg" *ngIf="fourSections" [@showFromBottom] class="icon" alt="">
+      <p class="p1" *ngIf="fourSections" [@showFromBottom]>100% eco fabrics</p>
+    </span>
+    <span class="iconWrapper">
+      <img src="assets/about/OK_Slag-01.svg" *ngIf="fourSections" [@showFromBottom] class="icon" alt="">
+      <p class="p1" *ngIf="fourSections" [@showFromBottom]>approved boards</p>
+    </span>
+  </span>
+
+</div>
+
+<div class="childFourWrapper">
+  <h2 *ngIf="fourSections" [@showFromBottom]>
+    “Subscribe and receive <br> new issues twice a month.”
+  </h2>
+</div>
+
+<div class="childFourWrapper">
+  <img src="assets/about/board.jpg" *ngIf="fourSections" [@SlideInRight] alt="" class="img1">
+</div>

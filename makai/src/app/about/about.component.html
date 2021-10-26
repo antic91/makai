@@ -1,0 +1,9 @@
+<div id="wrapperAbout" appPosition (position)="detect($event)">
+  <app-top-component id="topWrapper" #top [scaleTop]="scaleTop"></app-top-component>
+  <app-man-with-board id="ManWithBoardWrapper" #manBoard [manBoardCompOne]="manBoardCompOne" [manBoardCompTwo]="manBoardCompTwo"></app-man-with-board>
+  <app-text-component id="TextCompWrapper" #text [textPos]="textPos"></app-text-component>
+  <app-four-sections id="fourSecWrapper" #fourSec [fourSections]="fourSections"></app-four-sections>
+  <app-team id="team" #team [showTeam]="showTeam"></app-team>
+  <app-brands-about id="brandsAbout" #brands [showBrands]="showBrands"></app-brands-about>
+  <app-photo-box id="photoBox" #box [showItems]="showItems"></app-photo-box>
+</div>

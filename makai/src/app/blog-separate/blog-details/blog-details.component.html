@@ -1,0 +1,6 @@
+<app-top id="topWrapper" [object]="object"></app-top>
+<app-second-details id="secondDetails" [object]="object"  appPosition (position)="detect($event)" #secDetails [showText]="showText"></app-second-details>
+<app-group-photos id="groupPhotos" [object]="object" #groupPhotos [showGroupPhotos]="showGroupPhotos"></app-group-photos>
+<app-second-text id="secondText" [object]="object" #secText [showSecText]="showSecText"></app-second-text>
+<app-last-photo id="topWrapper" [object]="object" #lastPhoto [showlastPhoto]="showlastPhoto"></app-last-photo>
+<app-bottom-text id="botomText" [object]="object" #bottomText [showBottomText]="showBottomText"></app-bottom-text>

@@ -1,0 +1,100 @@
+#wrapperAbout{
+  position: relative;
+  width: 100%;
+  padding-top: 165.08px;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom: 50px;
+}
+
+/*FIRST CHILD COMPONENT WRAPPER*/
+#topWrapper{
+  position: relative;
+  width: 1300px;
+  height: 636px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+/*ManWithBoardWrapper COMPONENT WRAPPER*/
+#ManWithBoardWrapper{
+  position: relative;
+  width: 120vw!important;
+  height: 795px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  background-image: url('../../assets/about/Man.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*TextCompWrapper COMPONENT WRAPPER*/
+#TextCompWrapper{
+  position: relative;
+  width: 1300px;
+  height: 478px;
+  padding: 140px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+/*fourSecWrapper COMPONENT WRAPPER*/
+#fourSecWrapper{
+  position: relative;
+  width: 1300px;
+  height: 1410px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 50px;
+}
+/*team COMPONENT WRAPPER*/
+#team {
+  position: relative;
+  width: 1300px;
+  height: 614px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin: 100px 0;
+}
+/*brandsAbout COMPONENT WRAPPER*/
+#brandsAbout {
+  position: relative;
+  width: 1300px;
+  height: 527px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  margin: 140px 0;
+}
+/*photoBox COMPONENT WRAPPER*/
+#photoBox {
+  position: relative;
+  width: 1300px;
+  height: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 126px;
+}

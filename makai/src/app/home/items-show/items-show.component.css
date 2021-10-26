@@ -1,0 +1,12 @@
+#oneItemWrapper{
+  position: relative;
+  width: 305px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#oneItemWrapper:hover{
+  cursor: pointer;
+}

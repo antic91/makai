@@ -1,0 +1,32 @@
+.wrappTextTop{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.wrappTextTop h4{
+  position: relative;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.wrappTextTop h1{
+  position: relative;
+  text-transform: none;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
+  margin-bottom: 35px;
+  font-size: 64px;
+  margin-top: 10px;
+  line-height: 1.25;
+}
+.wrappTextTop p {
+  position: relative;
+  font-size: 18px;
+  text-transform: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  max-width: 50%;
+}
