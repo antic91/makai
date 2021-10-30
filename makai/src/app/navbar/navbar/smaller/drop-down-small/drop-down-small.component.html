@@ -1,0 +1,54 @@
+<!--wrapped for all links together-->
+<div class="wrapperAll">
+
+  <!--Link Wrapper and Link-->
+  <span class="linkWrapper paddingTop">
+    <a class="a" routerLink="/about" href="" (click)="displayNone()">About</a>
+
+  </span>
+
+  <!--SHOP WRAPPER WITH DROP DOWN-->
+  <span class="linkWrapper">
+
+    <span class="a" href="" (click)="showSubLinks()">Shop</span>
+
+    <span class="subLinks paddingBottom" *ngIf="displaySubLinks" [@slideInTop]>
+      <!--Man Links list-->
+      <ul>
+        <li class="headerShow">Man</li>
+
+        <li class="a marginDrop" [routerLink]="['/shop','Man','T-shirts']" (click)="displayNone()" *ngIf="displaySubLinks" [@fadeInAnimation]>T-Shirts</li>
+
+        <li class="a marginDrop" [routerLink]="['/shop','Man','Surfboards']" (click)="displayNone()" *ngIf="displaySubLinks" [@fadeInAnimation]>Surfboards</li>
+
+        <li class="a marginDrop" [routerLink]="['/shop','Man','Swimwears']" (click)="displayNone()" *ngIf="displaySubLinks" [@fadeInAnimation]>Swimwears</li>
+
+      </ul>
+
+      <!--Woman links list-->
+      <ul>
+
+        <li class="headerShow">Woman</li>
+
+        <li class="a marginDrop" [routerLink]="['/shop','Woman','T-shirts']" (click)="displayNone()" *ngIf="displaySubLinks" [@fadeInAnimation]>T-Shirts</li>
+
+        <li class="a marginDrop" [routerLink]="['/shop','Woman','Surfboards']" (click)="displayNone()" *ngIf="displaySubLinks" [@fadeInAnimation]>Surfboards</li>
+
+        <li class="a" [routerLink]="['/shop','Woman','Swimwears']" (click)="displayNone()" *ngIf="displaySubLinks" [@fadeInAnimation]>Swimwears</li>
+
+      </ul>
+    </span>
+  </span>
+
+  <!--Link Wrapper and Link-->
+  <span class="linkWrapper">
+    <a class="a" routerLink="/blog" href="" (click)="displayNone()">Blog</a>
+  </span>
+
+  <!--Link Wrapper and Link-->
+  <span class="linkWrapper marginDrop">
+    <a class="a" routerLink="/contact" href="" (click)="displayNone()">Contact</a>
+  </span>
+
+
+</div>

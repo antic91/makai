@@ -1,4 +1,4 @@
-/*Wrapper*/
+/*Wrapper reviews*/
 .wrapp{
   position: relative;
   width: 100%;
@@ -10,6 +10,7 @@
   align-content: flex-start;
 }
 
+/*Left side Wrapper reviews*/
 .leftWrapp{
   position: relative;
   width: 491px;
@@ -42,12 +43,15 @@
   justify-content: flex-start;
   align-content: center;
 }
+
+/*Image positionand size*/
 .image {
   position: relative;
   height: 100px;
   border-radius: 50px;
   margin-right: 20px;
 }
+
 /*Text Wrapper Near Picture*/
 .textWrapper{
   position: relative;
@@ -59,6 +63,7 @@
   justify-content: flex-start;
   align-content: center;
 }
+  /*name in text wrapper*/
 .head{
   position: relative;
   width: 100%;
@@ -73,10 +78,12 @@
   font-size: 22px;
   text-align: left;
 }
+
 /*First element bottom MArgin*/
 .marginBottom{
   margin-bottom: 39px;
 }
+/*text after name*/
 .pText{
   position: relative;
   width: 100%;
@@ -149,4 +156,112 @@
   left: 0;
   background-color: #81d0d8;
   z-index: 9;
+}
+/*MEDIA Q. */
+
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+
+  /*Left side Wrapper reviews*/
+  .leftWrapp {
+    width: 100%;
+    height: 335px;
+    padding: 0 70px;
+  }
+
+  /*Text Wrapper Near Picture*/
+  .textWrapper{
+    width: 150px;
+    height: auto;
+  }
+
+  /*USER DETAILS WRAPPER*/
+  .userDetails {
+    width: 100%;
+    height: auto;
+  }
+
+  .picWrapper {
+    width: 50%;
+  }
+
+  .marginBottom {
+    margin: 0;
+  }
+
+  /*RIGHT SIDE*/
+  .rightWrapp {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+
+  /*Left side Wrapper reviews*/
+  .leftWrapp {
+    width: 100%;
+    height: 300px;
+    padding: 0 70px;
+  }
+  /*USER DETAILS WRAPPER*/
+  .userDetails {
+    width: 100%;
+    height: auto;
+  }
+
+  /*PICTURE DIV AND CHILDRENS----------------------------------------------*/
+  .picWrapper {
+    width: 50%;
+  }
+  .marginBottom{
+    margin: 0;
+  }
+
+  /*RIGHT SIDE*/
+  .rightWrapp {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+
+  /*Left side Wrapper reviews*/
+  .leftWrapp {
+    width: 400px;
+  }
+  /*USER DETAILS WRAPPER*/
+  .userDetails {
+    width: 330px;
+    height: 290px;
+  }
+
+  /*RIGHT SIDE*/
+  .rightWrapp {
+    position: relative;
+    width: 585px;
+    height: 100%;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+
+  /*Left side Wrapper reviews*/
+  .leftWrapp {
+    width: 440px;
+  }
+
+  /*RIGHT SIDE*/
+  .rightWrapp {
+    position: relative;
+    width: 680px;
+    height: 100%;
+  }
+
 }

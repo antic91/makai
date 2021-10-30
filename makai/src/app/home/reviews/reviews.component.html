@@ -1,5 +1,8 @@
+<!--reviews wrapper-->
 <div class="wrapp">
+  <!--reviews left side with text and photo wrapper-->
   <div class="leftWrapp">
+
     <div class="userDetails" *ngIf="!displayText" [@fadeIn]>
 
       <div class="picWrapper marginBottom">
@@ -30,9 +33,15 @@
 
   </div>
 
+  <!--reviews right side with photos wrapper-->
   <div class="rightWrapp">
+
     <img [src]="coverImage" class="imageRight" alt="">
+
+    <!--reviews abolute photo on right wrapper-->
     <div class="absolute" *ngIf="show" [@slideAnim]></div>
+
   </div>
+
 
 </div>

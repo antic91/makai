@@ -1,3 +1,4 @@
+/*Wrapper all text*/
 .wrappTextTop{
   position: relative;
   width: 100%;
@@ -5,6 +6,8 @@
   flex-flow: row wrap;
   justify-content: flex-start;
 }
+
+/*h4 style*/
 .wrappTextTop h4{
   position: relative;
   font-size: 18px;
@@ -12,6 +15,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
+
+/*h1 style*/
 .wrappTextTop h1{
   position: relative;
   text-transform: none;
@@ -22,6 +27,8 @@
   margin-top: 10px;
   line-height: 1.25;
 }
+
+/*paragraph style*/
 .wrappTextTop p {
   position: relative;
   font-size: 18px;
@@ -29,4 +36,109 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   max-width: 50%;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+    /*h1 style*/
+  .wrappTextTop h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 95%;
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+    /*h1 style*/
+  .wrappTextTop h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 95%;
+    font-size: 16px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*h1 style*/
+  .wrappTextTop h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 95%;
+    font-size: 16px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*h1 style*/
+  .wrappTextTop h1 {
+    font-size: 50px;
+  }
+
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 95%;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*h1 style*/
+  .wrappTextTop h1 {
+    font-size: 50px;
+  }
+
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 85%;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*h1 style*/
+  .wrappTextTop h1 {
+    font-size: 50px;
+  }
+
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 85%;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 75%;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*paragraph style*/
+  .wrappTextTop p {
+    max-width: 70%;
+  }
+
 }

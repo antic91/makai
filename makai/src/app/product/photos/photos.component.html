@@ -1,8 +1,11 @@
+<!--Photos left-->
 <div class="photos" *ngIf="displayPhoto" [@slideAnim]>
   <span class="imageSpan" *ngFor="let item of photos; let i=index" (mouseover)="mouseOver(i)" (mouseleave)="mouseLeave(i)">
     <img [src]="item" alt="">
   </span>
 </div>
+
+<!--Photo on the right side to show, on hover on upper photos it changes-->
 <div class="header" *ngIf="displayPhoto" [@textSlideAnim]>
   <img *ngIf="displayHead" [@fadeInOut] [src]="headerPhoto" alt="">
   <img *ngIf="displayOne" [@fadeInOut] [src]="photos[0]" alt="">

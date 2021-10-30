@@ -1,8 +1,11 @@
-.wrapper1{
+/*Wrapper*/
+
+.wrapper1 {
   position: relative;
   width: 645px;
   height: 100%;
 }
+
 
 /*DIV DISAPPEAR*/
 .disappear{
@@ -11,6 +14,7 @@
   height: 100%;
   background-color: #81d0d8;
 }
+
 /*DIV APPEAR*/
 .appear{
   position: absolute;
@@ -25,6 +29,7 @@
   justify-content: center;
   align-content: center;
 }
+
 /*TEXT AND BUTTON LEFT ON DIV WITH PHOTO*/
 .h4{
   font-family: 'Poppins', sans-serif;
@@ -72,6 +77,7 @@
   justify-content: center;
   align-content: center;
 }
+/*Wrapper for text left and right*/
 .childWrapper{
   position: relative;
   width: 416px;
@@ -164,4 +170,203 @@
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 16px;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  .wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 523px;
+  }
+  .childWrapper {
+    width: 100%;
+  }
+  .backgroundInp {
+    width: 210px;
+  }
+  .childWrapper h1 {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  .buttonSubscribe {
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+  }
+
+  /*Wrapper for text left and right*/
+  .childWrapper {
+    width: 100%;
+  }
+
+  /*Input and button background*/
+  .backgroundInp {
+    width: 280px;
+  }
+
+  .childWrapper h1 {
+    width: 100%;
+  }
+
+  /*input width*/
+  .input {
+    width: 100%;
+  }
+
+  /*button width*/
+  .buttonSubscribe {
+    width: 100%;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 417px;
+  }
+
+  /*Wrapper for text left and right*/
+  .childWrapper {
+    width: 100%;
+  }
+
+  /*Input and button background*/
+  .backgroundInp {
+    width: 323px;
+  }
+
+  /*h1 style*/
+  .childWrapper h1 {
+    width: 100%;
+  }
+
+  /*Input width*/
+  .input{
+    width: 60%;
+  }
+  /*Button width*/
+  .buttonSubscribe{
+    width: 40%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 356px;
+  }
+
+  /*Wrapper for text left and right*/
+  .childWrapper {
+    width: 100%;
+  }
+  /*Input and button background*/
+  .backgroundInp {
+    width: 440px;
+  }
+
+  /*h1 style*/
+  .childWrapper h1 {
+    width: 100%;
+  }
+
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 356px;
+  }
+
+  /*Wrapper for text left and right*/
+  .childWrapper {
+    width: 100%;
+  }
+  .backgroundInp {
+    width: 440px;
+  }
+  /*h1 style*/
+  .childWrapper h1 {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 356px;
+  }
+
+  /*Wrapper for text left and right*/
+  .childWrapper {
+    width: 100%;
+  }
+  /**/
+  .backgroundInp{
+    width: 440px;
+  }
+
+  /*H1 style*/
+  .childWrapper h1{
+    width: 100%;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 487.5px;
+    height: 100%;
+  }
+
+  /*Wrapper for text left and right*/
+  .childWrapper {
+    width: 400px;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+
+  /*Wrapper*/
+  .wrapper1 {
+    position: relative;
+    width: 555px;
+    height: 100%;
+  }
+
 }

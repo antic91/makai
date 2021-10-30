@@ -1,3 +1,4 @@
+/*BIGGER SCREENS*/
 #logoWrapper{
   position: relative;
   width: 1300px;
@@ -20,5 +21,141 @@
   align-content: center;
   align-items: center;
   overflow: visible !important;
+}
+/*--------------------------*/
 
+/*Smaller Screens*/
+#smaller {
+  position: relative;
+  width: 730px;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  overflow: visible !important;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  #logoWrapper {
+    display: none;
+  }
+
+  #bottomWrapper {
+    display: none;
+  }
+  #smaller {
+    width: 238px;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  #logoWrapper {
+    display: none;
+  }
+
+  #bottomWrapper {
+    display: none;
+  }
+  #smaller {
+    width: 300px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  #logoWrapper {
+    display: none;
+  }
+
+  #bottomWrapper {
+    display: none;
+  }
+  #smaller {
+    width: 395px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  #logoWrapper {
+    display: none;
+  }
+
+  #bottomWrapper {
+    display: none;
+  }
+
+  #smaller {
+    width: 556px;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  #logoWrapper {
+    display: none;
+  }
+
+  #bottomWrapper {
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  #logoWrapper {
+    width: 879px;
+  }
+
+  #bottomWrapper {
+    width: 879px;
+  }
+  #smaller {
+    display: none;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  #logoWrapper {
+    width: 985px;
+  }
+
+  #bottomWrapper {
+    width: 985px;
+  }
+  #smaller {
+    display: none;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  #logoWrapper {
+    width: 1120px;
+  }
+
+  #bottomWrapper {
+    width: 1120px;
+  }
+  #smaller {
+    display: none;
+  }
+
+}
+@media (min-width: 1400.001px) {
+  #smaller {
+    display: none;
+  }
 }

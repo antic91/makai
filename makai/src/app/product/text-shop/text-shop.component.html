@@ -1,27 +1,34 @@
+<!--Price wrapper-->
 <span class="wrapperText">
   <h2 *ngIf="displayText" [@rotate]>$&nbsp;{{product.prod_price}}&nbsp;USD</h2>
 </span>
 
+<!--Product title wrapper-->
 <span class="wrapperText">
   <h1 *ngIf="displayText" [@rotate]>{{product.prod_title}}</h1>
 </span>
 
+<!--Product about wrapper-->
 <span class="wrapperText">
   <p *ngIf="displayText" [@rotate]>{{product.prod_about}}</p>
 </span>
 
+
+<!--Product add to cart wrapper-->
 <span class="wrapperText input">
-  <input class="InputNum" type="number" name="" id="" min="1" value="1" *ngIf="displayText" [@rotate]>
+  <input title="NumberToAdd" class="InputNum" type="number" name="" id="" min="1" value="1" *ngIf="displayText" [@rotate]>
   <button class="addTo" *ngIf="displayText" [@rotate]>Add To Cart</button>
 </span>
 
 
+<!--Product Quantity  wrapper-->
 <span class="wrapperText wrapperText1">
   <span class="header" *ngIf="displayText" [@rotate]>  <h4>SKU</h4> </span>
   <h4 *ngIf="displayText" [@rotate]>{{product.prod_quantity}}</h4>
 </span>
 
 
+<!--Product category wrapper-->
 <span class="wrapperText">
   <span class="header" *ngIf="displayText" [@rotate]> <h4>Category</h4> </span>
   <h4 *ngIf="displayText" [@rotate]>{{product.sub_title}}</h4>

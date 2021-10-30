@@ -1,17 +1,20 @@
+/*wrapper text left*/
 .wrapperText {
   position: relative;
   width: 645px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-end;
 }
+
+/*wrapper text right*/
 .wrapperText2  {
   position: relative;
   width: 645px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,13 +22,14 @@
   align-content: flex-end;
 }
 
+/*H1 style*/
 .headH1{
   font-family: 'Lobster', sans-serif;
   color: #333;
-  font-size: 60px;
-  line-height: 1;
+  font-size: 64px;
+  line-height: 1.23;
   font-weight: 400;
-  padding: 10px 2px;
+  padding: 0px 2px 0px 2px;
 }
 
 
@@ -33,7 +37,6 @@
 .p{
   position: relative;
   width: 60%;
-  height: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -48,4 +51,172 @@
 
 .textSpan{
   color: #81d0d8;
+}
+
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 100%;
+    height: auto;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .headH1 {
+    font-size: 32px;
+  }
+  .p {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 100%;
+    height: auto;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .headH1{
+    font-size: 32px;
+  }
+  .p {
+    width: 90%;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 100%;
+    height: auto;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .p {
+    width: 80%;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 100%;
+    height: auto;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .p {
+    width: 70%;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 100%;
+    height: auto;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .p {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 100%;
+    height: auto;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .p {
+    width: 60%;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 620px;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    width: 340px;
+  }
+  .p {
+    width: 100%;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+
+  /*wrapper text left*/
+  .wrapperText {
+    width: 645px;
+  }
+
+  /*wrapper text right*/
+  .wrapperText2 {
+    width: 475px;
+  }
+
 }

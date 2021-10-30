@@ -1,4 +1,5 @@
-<div class="child">
+<!--Left side text-->
+<div class="child heightBottomText">
   <div class="div" *ngIf="left" [@slideInBottom]>
     <h4>MAKAI ADVENTURE</h4>
   </div>
@@ -11,6 +12,8 @@
   </div>
 </div>
 
+
+<!--Right side Image-->
 <div class="child">
   <span class="span" *ngIf="imageShow" [@SlideInLeft]>
       <img src="assets/about/Woman_hero-p-800.jpeg" [@ScaleOut]="scaleTop ? 'begin' : 'end' " alt="" class="img">

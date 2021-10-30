@@ -1,0 +1,184 @@
+/*WRAPPER For Right side icons*/
+.wrapperRight{
+  position: relative;
+  width: 630px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+}
+/*Wrapper for search input*/
+#searchWrapper {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+/*Wrapper for Bag icon*/
+#bagWrapper {
+  position: relative;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+
+/*Wrapper for logo*/
+.wrapperLeft{
+  position: relative;
+  width: 100px;
+}
+.image {
+  position: relative;
+  width: 100%;
+}
+
+
+/*Button For drop down menu*/
+
+.buttonWrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 25px;
+  height: 15px;
+}
+.one{
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  transform-origin: 10% 0%;
+
+}
+.two{
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+}
+.three{
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  transform-origin: 10% 0%;
+
+}
+
+/*ABSOLUTE DROP DOWN MENu*/
+#DropDownSmallWrapper{
+  position: fixed;
+  width: 100%;
+  top: 90px;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  z-index: 999;
+}
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  /*WRAPPER For Right side icons*/
+  .wrapperRight {
+    width: 100%;
+    height: 60px;
+  }
+  /*Wrapper for search input*/
+  #searchWrapper {
+    width: 150px;
+  }
+  /*Wrapper for logo*/
+  .wrapperLeft {
+    position: relative;
+    width: 100px;
+    height: 35px;
+    justify-content: center!important;
+    align-content:center!important;
+    align-items:center!important;
+  }
+  /*Button For drop down menu*/
+  .buttonWrapper{
+    margin-left: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  /*WRAPPER For Right side icons*/
+  .wrapperRight {
+    width: 225px;
+  }
+  /*Wrapper for search input*/
+  #searchWrapper {
+    width: 150px;
+  }
+  /*Wrapper for logo*/
+  .wrapperLeft {
+    position: relative;
+    width: 75px;
+  }
+  /*Wrapper for Bag icon*/
+  #bagWrapper{
+    width: 45px;
+  }
+  /*Button For drop down menu*/
+  .buttonWrapper {
+    margin-left: 5px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*WRAPPER For Right side icons*/
+  .wrapperRight {
+    width: 295px;
+  }
+  /*Button For drop down menu*/
+  .buttonWrapper {
+    margin-left: 8px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*WRAPPER For Right side icons*/
+  .wrapperRight {
+    width: 456px;
+  }
+  /*Button For drop down menu*/
+  .buttonWrapper {
+    margin-left: 8px;
+  }
+
+}
+
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*Button For drop down menu*/
+  .buttonWrapper {
+    margin-left: 8px;
+  }
+
+}

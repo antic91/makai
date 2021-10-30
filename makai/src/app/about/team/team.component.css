@@ -1,7 +1,9 @@
+/*Header wrapper and h1*/
 .headerTop{
   position: relative;
   width: 100%;
   text-align: start;
+  margin-bottom: 75px;
 }
 
 .headerTop h1{
@@ -16,7 +18,7 @@
 
 /*Pictures wrapper*/
 
-.pitcuresWrapper{
+.picturesWrapper{
   position: relative;
   width: 100%;
   height: 485px;
@@ -32,23 +34,27 @@
 .imageDiv{
   position: relative;
   width: 420px;
-  height: 485px;
+  height: 100%
 }
 
+/*Background for image divs*/
 .img1{
   background-image: url('../../../assets/about/leftMan.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .img2{
   background-image: url('../../../assets/about/secWoman.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 .img3{
   background-image: url('../../../assets/about/LastWoman.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 
 
@@ -84,4 +90,156 @@
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  /*Pictures wrapper*/
+  .picturesWrapper {
+    width: 100%;
+    height: 1495px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 100%;
+    height: 485px;
+  }
+    /*Header wrapper and h1*/
+  .headerTop {
+    margin-bottom: 20px;
+  }
+    .headerTop h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  /*Pictures wrapper*/
+  .picturesWrapper {
+    width: 100%;
+    height: 1495px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 100%;
+    height: 485px;
+  }
+    /*Header wrapper and h1*/
+  .headerTop {
+    margin-bottom: 20px;
+  }
+    .headerTop h1 {
+    font-size: 32px;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*Pictures wrapper*/
+  .picturesWrapper {
+    width: 100%;
+    height: 1495px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 100%;
+    height: 485px;
+  }
+    /*Header wrapper and h1*/
+  .headerTop {
+    margin-bottom: 20px;
+  }
+  .headerTop h1 {
+    font-size: 32px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*Pictures wrapper*/
+  .picturesWrapper {
+    width: 100%;
+    height: 1495px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 100%;
+    height: 485px;
+  }
+  /*Header wrapper and h1*/
+  .headerTop {
+    margin-bottom: 20px;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*Pictures wrapper*/
+  .picturesWrapper {
+    width: 100%;
+    height: 1495px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 100%;
+    height: 485px;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*Pictures wrapper*/
+  .picturesWrapper {
+    width: 100%;
+    height: 1495px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 100%;
+    height: 485px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 315px;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*DIV IMAGE*/
+  .imageDiv {
+    width: 360px;
+  }
+
 }

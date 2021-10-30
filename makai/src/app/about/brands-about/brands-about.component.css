@@ -1,3 +1,4 @@
+/*Header Brands*/
 .headerText{
   position: relative;
   width: 100%;
@@ -7,6 +8,7 @@
   justify-content: center;
   align-content: center;
 }
+/*Header Brands h1*/
 
 .headerText h1{
   color: #81d0d8;
@@ -15,10 +17,11 @@
   line-height: 0.9;
   font-weight: 400;
   font-family: 'Lobster', sans-serif;
+  margin-bottom: 80px;
 }
 
+/*Wrapper Brands*/
 
-/*brandswrapper*/
 .wrapperBrands{
   position: relative;
   width: 684px;
@@ -31,4 +34,61 @@
 }
 .wrapperBrands:first-child{
   margin-right: 117px!important;
+}
+
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+    /*Header Brands h1*/
+
+  .headerText h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .wrapperBrands {
+    height: 570px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+    /*Header Brands h1*/
+
+  .headerText h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .wrapperBrands {
+    height: 570px;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*Header Brands h1*/
+
+  .headerText h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .wrapperBrands {
+    height: 570px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  .wrapperBrands {
+    width: 779px;
+  }
+
 }

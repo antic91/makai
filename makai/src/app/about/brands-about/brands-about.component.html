@@ -1,5 +1,7 @@
+<!--Header brands-->
 <div class="headerText">
   <h1 *ngIf="showBrands" [@showFromBottom]>Our brands</h1>
 </div>
 
+<!--Brands component-->
 <app-brands class="wrapperBrands" [width]="'150px'" [height]="'150px'" *ngIf="showBrands" [@showFromBottom]></app-brands>

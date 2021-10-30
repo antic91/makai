@@ -46,3 +46,44 @@
   width: 20px;
   height: 20px;
 }
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  .imageWrapper1 {
+    top: 10px;
+    right: 3px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  .imageWrapper1 {
+    top: 10px;
+    right: 3px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  .imageWrapper1 {
+    top: 10px;
+    right: 3px;
+  }
+
+}
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  .imageWrapper1 {
+    top: 10px;
+    right: 3px;
+  }
+
+}

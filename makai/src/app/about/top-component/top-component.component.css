@@ -1,3 +1,4 @@
+/*Wrapper*/
 .child{
   position: relative;
   width: 638px;
@@ -8,6 +9,7 @@
   justify-content: flex-start;
   align-content: center;
 }
+/*Image wrapper*/
 .span{
   position: relative;
   width: 100%;
@@ -35,13 +37,14 @@
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
+  align-items: center;
 }
 
 .div h4{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
   color: #333;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -50,17 +53,169 @@
   font-family: 'Lobster', sans-serif;
   color: #333;
   font-size: 64px;
-  line-height: 0.9;
+  line-height: 1;
   font-weight: 300;
   text-decoration: none;
   padding-left: 2px;
 }
 .div p{
-  margin-top: 20px;
+  margin-top: 15px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 1.3;
   color: #333;
   font-weight: 400;
   text-decoration: none;
+}
+
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+    /*Wrapper*/
+  .child {
+    width: 100%;
+    height: 273px;
+  }
+  /*Text div height and margin*/
+  .heightBottomText {
+    height: 155px !important;
+    margin: 40px 0 20px 0 !important;
+  }
+  /*H1 size*/
+  .div h1 {
+    font-size: 35px;
+  }
+  /*Text size of p */
+  .div p{
+    font-size: 16px;
+  }
+  /*margin bottom h4*/
+  .div h4 {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+    /*Wrapper*/
+  .child {
+    width: 100%;
+    height: 388px;
+  }
+  /*Text div height and margin*/
+  .heightBottomText {
+    height: 155px !important;
+    margin: 40px 0 20px 0 !important;
+  }
+  /*H1 size*/
+  .div h1 {
+    font-size: 35px;
+  }
+  /*Text size of p */
+  .div p{
+    font-size: 16px;
+  }
+  /*margin bottom h4*/
+  .div h4 {
+    margin-bottom: 10px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*Wrapper*/
+  .child {
+    width: 100%;
+    height: 480px;
+  }
+  /*Text div height and margin*/
+  .heightBottomText {
+    height: 135px !important;
+    margin: 40px 0 20px 0 !important;
+  }
+  /*H1 size*/
+  .div h1 {
+    font-size: 35px;
+  }
+  /*Text size of p */
+  .div p{
+    font-size: 16px;
+  }
+  /*margin bottom h4*/
+  .div h4 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*Wrapper*/
+  .child {
+    width: 100%;
+    height: 591px;
+  }
+  /*Text div height and margin*/
+  .heightBottomText {
+    height: 196px !important;
+    margin: 40px 0 30px 0 !important;
+  }
+  /*margin bottom h4*/
+  .div h4 {
+    margin-bottom: 10px;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*Wrapper*/
+  .child {
+    width: 100%;
+    height: 591px;
+  }
+  /*Text div height and margin*/
+  .heightBottomText {
+    height: 196px !important;
+    margin: 40px 0 30px 0 !important;
+  }
+  /*margin bottom h4*/
+  .div h4 {
+    margin-bottom: 10px;
+  }
+
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*Wrapper*/
+  .child {
+    width: 100%;
+    height: 591px;
+  }
+  /*Text div height and margin*/
+  .heightBottomText{
+    height: 196px!important;
+    margin: 40px 0 30px 0!important;
+  }
+  /*margin bottom h4*/
+  .div h4{
+    margin-bottom: 10px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*Wrapper*/
+  .child {
+    width: 50%;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*Wrapper*/
+  .child {
+    width: 50%;
+  }
 }

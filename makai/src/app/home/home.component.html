@@ -1,17 +1,18 @@
 <div id="homeWrapper" appPosition (position)="detect($event)">
 
   <app-banner id="banner"></app-banner>
-  <app-brands id="brands" [width]="'100px'" [height]="'100px'"></app-brands>
+
+  <app-brands id="brands" [width]="'105px'" [height]="'105px'"></app-brands>
 
   <app-section  id="section" [display]="display" #section></app-section>
 
   <app-section-collection id="sectionColl" [displaySec]="displaySec" #sectionCol></app-section-collection>
 
-  <app-items-show id="dataItems" [data]="data" #itemsOne [display]="displayItemOne"></app-items-show>
+  <app-items-show id="dataItemsHome" class="marginBottom" [data]="data" #itemsOne [display]="displayItemOne"></app-items-show>
 
   <app-video id="video"></app-video>
 
-  <app-items-show id="dataItems" [data]="data1" #itemsTWo [display]="displayItemTwo"></app-items-show>
+  <app-items-show id="dataItemsHomeBottom" [data]="data1" #itemsTWo [display]="displayItemTwo"></app-items-show>
 
   <app-newsletter id="newsletter" [news]="displayNews" [appear]="appear" #news></app-newsletter>
 

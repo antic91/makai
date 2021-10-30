@@ -1,7 +1,9 @@
+<!--Wrapper left top h1 tag-->
 <div class="leftWrapper leftTop">
   <h1 *ngIf="showText" [@slideInBottom]>Opening Hours</h1>
 </div>
 
+<!--Wrapper right top paragraph -->
 <div class="rightWrapper rightTop">
   <span class="wrapperText">
     <p *ngIf="showText" [@slideInBottom]>
@@ -23,15 +25,21 @@
 
 </div>
 
+
+<!--Wrapper left bottom h1 tag-->
 <div class="leftWrapper leftBottom">
   <h1 *ngIf="showText" [@slideInBottom]>Wholesale Enquiries</h1>
 </div>
 
+<!--Wrapper right bottom paragraph -->
 <div class="divBottomChildWrapper rightBottom">
+
   <div class="wrapperText rightChildBottom">
 
     <span class="wrapperText">
+
       <p *ngIf="showText" [@slideInBottom]>For all wholesale enquiries in the EU region, please contact:</p>
+
     </span>
 
     <span class="wrapperText">
@@ -42,11 +50,15 @@
       </p>
     </span>
 
+
     <span class="wrapperText">
       <p *ngIf="showText" [@slideInBottom]>+43 666 5555555</p>
     </span>
 
   </div>
+
+
+
   <div class="wrapperText rightChildBottom">
 
     <span class="wrapperText">
@@ -66,4 +78,5 @@
     </span>
 
   </div>
+
 </div>

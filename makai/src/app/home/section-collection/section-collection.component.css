@@ -1,3 +1,4 @@
+/*Small header top*/
 .firstHeader{
   position: relative;
   width: 100%;
@@ -11,8 +12,8 @@
   text-transform: lowercase;
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
-
 }
+/*Big header*/
 .secondHeader{
   position: relative;
   width: 100%;
@@ -22,18 +23,21 @@
   justify-content: center;
   align-content: flex-start;
 }
+/*Big header h1*/
+
 .secondHeader h1{
   position: relative;
   color: #333;
-  font-size: 68px;
+  font-size: 63px;
   font-weight: 500;
   text-align: center;
   text-transform: capitalize;
   font-family: 'Lobster', sans-serif;
   line-height: 1.225;
   margin-bottom: 30px;
-  text-size-adjust: 100%;
 }
+
+/*paragraph tag style*/
 .secondHeader p{
   position: relative;
   font-family: 'Poppins', sans-serif;
@@ -61,5 +65,40 @@
   background-color: #81d0d8;
   color: #fff;
   border: 1px solid #fff;
+
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+
+  /*Big header h1*/
+  .secondHeader h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  /*paragraph tag style*/
+  .secondHeader p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+
+  /*Big header h1*/
+  .secondHeader h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  /*paragraph tag style*/
+  .secondHeader p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 
 }

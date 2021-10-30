@@ -3,15 +3,15 @@
     <a class="a down" routerLink="/about" href="" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'">About</a>
 </span>
 
-<span class="link shop" (mouseenter)="changeHover('shop')" (mouseleave)="reverse('shop')">
-  <span class="text">
-    <a class="a" href="" [@hover]="!hoverShop ? 'active' : 'inactive'">Shop</a>
-    <a class="a down" href="" [@hoverBlue]="hoverShop ? 'active' : 'inactive'">Shop</a>
+<span class="link shop" (click)="changeHover('shop')" (mouseleave)="reverse('shop')">
+  <span class="text" (mouseenter)="changeHover('shop1')" (mouseleave)="reverse('shop1')">
+    <span class="a" href="" [@hover]="!hoverShop ? 'active' : 'inactive'">Shop</span>
+    <span class="a down" href="" [@hoverBlue]="hoverShop ? 'active' : 'inactive'">Shop</span>
   </span>
 
   <span class="icon">
-    <img class="imageIcon" [@hoverImg]="!hoverShop ? 'active' : 'inactive'" src="../../../../../../assets/arrow-right-black.svg" width="14px" alt="">
-    <img class="imageIcon1" [@hoverImgBlue]="hoverShop ? 'active' : 'inactive'" src="../../../../../../assets/arrow-right-blue.svg" width="14px" alt="">
+    <img class="imageIcon" [@hoverImg]="!hoverShop1 ? 'active' : 'inactive'" src="../../../../../../assets/arrow-right-black.svg" width="14px" alt="">
+    <img class="imageIcon1" [@hoverImgBlue]="hoverShop1 ? 'active' : 'inactive'" src="../../../../../../assets/arrow-right-blue.svg" width="14px" alt="">
   </span>
 
 </span>

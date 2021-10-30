@@ -56,7 +56,7 @@
 /*NAVIGAION WRAPPER*/
 #navWrapper{
   position: fixed;
-  width: 100%px;
+  width: 100%;
   padding: 25px 0;
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +66,6 @@
   z-index: 81;
   background-color: #fff;
   overflow: visible !important;
-
 }
 /*FOOTER WRAPPER*/
 #footerWrapper{
@@ -78,4 +77,95 @@
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 238px;
+    padding: 60px 20px 40px 20px;
+  }
+  #navWrapper {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+    /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 300px;
+    padding: 60px 20px 40px 20px;
+  }
+  #navWrapper {
+    padding: 0;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 395px;
+    padding: 60px 20px 40px 20px;
+  }
+  #navWrapper {
+    padding: 0;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 556px;
+    padding: 60px 20px 40px 20px;
+  }
+  #navWrapper {
+    padding: 0;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 730px;
+    padding: 60px 40px 40px 40px;
+  }
+  #navWrapper {
+    padding: 0;
+  }
+
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 879px;
+    padding: 60px 40px 40px 40px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 985px;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*FOOTER WRAPPER*/
+  #footerWrapper {
+    width: 1120px;
+  }
+
 }

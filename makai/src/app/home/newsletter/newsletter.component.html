@@ -1,5 +1,9 @@
+<!--wrapper newsletter-->
 <div class="wrapper1">
+  <!--Div wrapper disapper on Init-->
   <div class="disappear" *ngIf="!disappear" [@slideAnim]></div>
+
+  <!--left side div with button-->
   <div class="appear" *ngIf="appear" [@slideAnimA]>
       <div class="childWrapper">
         <span class="header">
@@ -14,6 +18,8 @@
       </div>
   </div>
 </div>
+
+<!--right side div subscribe text-->
 <div class="wrapper1 background">
   <div class="childWrapper">
       <div class="header">
@@ -22,8 +28,10 @@
         <h1 class="h1">month.</h1>
       </div>
   </div>
+  <!--right side emailand button-->
   <div class="childWrapper backgroundInp">
     <input placeholder="Your Email" type="text" class="input">
     <button class="buttonSubscribe">Subscribe</button>
   </div>
+
 </div>

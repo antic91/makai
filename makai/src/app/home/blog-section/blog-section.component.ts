@@ -1,5 +1,5 @@
 import { trigger, transition, useAnimation, animate, state, style } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef, SimpleChanges } from '@angular/core';
 import { fadeIn, scale, slideAnim } from 'src/app/animations/animations';
 
 @Component({
@@ -94,14 +94,28 @@ import { fadeIn, scale, slideAnim } from 'src/app/animations/animations';
 })
 export class BlogSectionComponent implements OnInit {
   @Input("displayBlog") displayBlog!: boolean;
-  date!: string;
-  header!: string;
-  readMore!: string;
+  @ViewChild('headerWidth', { read: ElementRef }) headerWidth!: ElementRef;
+  date: string ='JUNE 25, 2021';
+  header: string = 'Do you want to get lost in nature?';
+  readMore: string = 'Read More';
+
+  date1: string = 'JULY 6, 2021';
+  header1: string = 'The 5 best surfboards';
+  readMore1: string = 'Read More';
+
+  date2: string = 'JULY 6, 2021';
+  header2: string = 'Makai by the sea';
+  readMore2: string = 'Read More';
+
+  date3: string = 'JULY 6, 2021';
+  header3: string = 'The importance of recycled materials';
+  readMore3: string = 'Read More';
 
   displayFirst: boolean = false;
   displaySec: boolean = false;
   displayThird: boolean = false;
   displayFourth: boolean = false;
+  displaySmaller: boolean = false;
 
   scale1: boolean = false;
   scale2: boolean = false;
@@ -110,37 +124,58 @@ export class BlogSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
-  setData(date: string,header: string, readMore: string, position: string): void{
-    this.date = date;
-    this.header = header;
-    this.readMore = readMore;
-    if (position == "displayFirst") {
-      this.displayFirst = true;
-      this.scale1 = true;
-    }
-    if (position == "displaySec") {
-      this.displaySec = true;
-      this.scale2 = true;
-    }
-    if (position == "displayThird") {
-      this.displayThird = true;
-      this.scale3 = true;
-    }
-    if (position == "displayFourth") {
-      this.displayFourth = true;
-      this.scale4 = true;
+
+  setData(position: string): void{
+
+    if (this.headerWidth.nativeElement.clientWidth > 730) {
+      if (position == "displayFirst") {
+        this.displayFirst = true;
+        this.scale1 = true;
+      }
+      if (position == "displaySec") {
+        this.displaySec = true;
+        this.scale2 = true;
+      }
+      if (position == "displayThird") {
+        this.displayThird = true;
+        this.scale3 = true;
+      }
+      if (position == "displayFourth") {
+        this.displayFourth = true;
+        this.scale4 = true;
+      }
     }
   }
 
   mouseOut(): void{
-    this.displayFirst = false;
-    this.displaySec = false;
-    this.displayThird = false;
-    this.displayFourth = false;
-    this.scale1 = false;
-    this.scale2 = false;
-    this.scale3 = false;
-    this.scale4 = false;
+    if (this.headerWidth.nativeElement.clientWidth > 730) {
+      this.displayFirst = false;
+      this.displaySec = false;
+      this.displayThird = false;
+      this.displayFourth = false;
+      this.scale1 = false;
+      this.scale2 = false;
+      this.scale3 = false;
+      this.scale4 = false;
+    }
+  }
+
+  position($event: any): void{
+    if (this.headerWidth.nativeElement.clientWidth > 730) {
+      this.displaySmaller = false;
+    } else {
+      this.displaySmaller = true;
+    }
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.displayBlog == true) {
+      if (this.headerWidth.nativeElement.clientWidth <= 730) {
+          setTimeout(() => {
+            this.displaySmaller = true;
+          }, 900);
+      }
+    }
   }
 }

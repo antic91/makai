@@ -30,7 +30,6 @@ import { NewsletterComponent } from './home/newsletter/newsletter.component';
 import { HeadingComponent } from './home/heading/heading.component';
 import { SurfComponent } from './home/surf/surf.component';
 import { BlogSectionComponent } from './home/blog-section/blog-section.component';
-import { ReviewSliderComponent } from './home/review-slider/review-slider.component';
 import { TextContentComponent } from './home/blog-section/text-content/text-content.component';
 import { ReviewsComponent } from './home/reviews/reviews.component';
 import { IconsComponent } from './home/icons/icons.component';
@@ -75,6 +74,9 @@ import { ProductComponent } from './product/product.component';
 import { PhotosComponent } from './product/photos/photos.component';
 import { TextShopComponent } from './product/text-shop/text-shop.component';
 import { DetailsBottomComponent } from './product/details-bottom/details-bottom.component';
+import { ResizeDirective } from './directives/resize.directive';
+import { SmallerComponent } from './navbar/navbar/smaller/smaller.component';
+import { DropDownSmallComponent } from './navbar/navbar/smaller/drop-down-small/drop-down-small.component';
 
 
 @NgModule({
@@ -104,7 +106,6 @@ import { DetailsBottomComponent } from './product/details-bottom/details-bottom.
     HeadingComponent,
     SurfComponent,
     BlogSectionComponent,
-    ReviewSliderComponent,
     TextContentComponent,
     ReviewsComponent,
     IconsComponent,
@@ -143,7 +144,10 @@ import { DetailsBottomComponent } from './product/details-bottom/details-bottom.
     ProductComponent,
     PhotosComponent,
     TextShopComponent,
-    DetailsBottomComponent
+    DetailsBottomComponent,
+    ResizeDirective,
+    SmallerComponent,
+    DropDownSmallComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,15 @@
 
+<!--First photo-->
 <span class="span1-2">
   <img [src]="object.middleOnePhoto" alt="" *ngIf="showGroupPhotos" [@SlideInRight] class="img1-2">
 </span>
+
+<!--second photo-->
 <span class="span1-2">
   <img [src]="object.middleTwoPhoto" alt="" *ngIf="showGroupPhotos" [@SlideInTop] class="img1-2">
 </span>
+
+<!--hird photo-->
 <span class="span3">
   <img [src]="object.middleThreePhoto" alt="" *ngIf="showGroupPhotos" [@SlideInLeft] class="img3">
 </span>

@@ -25,6 +25,7 @@
 #brands{
   position: relative;
   width: 100%;
+  height: 105px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -47,7 +48,6 @@
 #sectionColl{
   position: relative;
   width: 100%;
-  height: 625px;
   padding: 125px 0;
   display: flex;
   flex-wrap: wrap;
@@ -84,7 +84,7 @@
 #heading{
   position: relative;
   width: 100%;
-  height: 250px;
+  height: auto;
   padding-bottom: 50px;
   margin-top: 140px;
   display: flex;
@@ -112,8 +112,7 @@
 #blogSection{
   position: relative;
   width: 100%;
-  height: 784px;
-  padding-top: 100px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -125,7 +124,7 @@
 #headingBottom {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: auto;
   padding-bottom: 50px;
   margin-top: 140px;
   display: flex;
@@ -164,7 +163,7 @@
   align-content: center;
 }
 /*dataItems WRAPPER */
-#dataItems {
+#dataItemsHome {
   position: relative;
   width: 100%;
   height: 465px;
@@ -174,5 +173,572 @@
   justify-content:  space-between;
   align-content: flex-start;
   margin-bottom: 30px;
+}
+/*dataItemsHomeBottom WRAPPER */
+#dataItemsHomeBottom {
+  position: relative;
+  width: 100%;
+  height: 465px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:  space-between;
+  align-content: flex-start;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/*MEDIA Q. */
+
+@media(max-width: 320px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 238px;
+    padding-top: 90px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+    margin-bottom: 60px;
+  }
+
+  /*Brands wrapper*/
+  #brands {
+    display: none;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section{
+    height: 281px;
+  }
+
+  /*Text under photo with text*/
+  #sectionColl {
+    padding: 60px 0 60px 0;
+  }
+  #video {
+    display: none;
+  }
+
+  /*Newsletter wrapper*/
+  #newsletter {
+    height: 1116px;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+  /*Text under newsletter*/
+  #heading {
+    margin: 60px 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*SurfBoard wrapper*/
+  #surf {
+    display: none;
+  }
+
+  /*heading Bottom WRAPPER */
+  #headingBottom {
+    display: none;
+  }
+
+  /*reviews Bottom WRAPPER */
+  #reviews {
+    display: none;
+  }
+
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  /*Items above*/
+  #dataItemsHome {
+    height: 2316px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  /*Items bottom dataItemsHomeBottom*/
+  #dataItemsHomeBottom {
+    height: 2316px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  .marginBottom {
+    margin-bottom: 40px !important;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 300px;
+    padding-top: 90px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+    margin-bottom: 60px;
+  }
+
+  /*Brands wrapper*/
+  #brands {
+    display: none;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 335px;
+  }
+
+  /*Text under photo with text*/
+  #sectionColl {
+    padding: 60px 0 60px 0;
+  }
+  #video {
+    display: none;
+  }
+
+  /*Newsletter wrapper*/
+  #newsletter {
+    height: 1030px;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+  /*Text under newsletter*/
+  #heading {
+    margin: 60px 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*SurfBoard wrapper*/
+  #surf {
+    display: none;
+  }
+
+  /*heading Bottom WRAPPER */
+  #headingBottom {
+    display: none;
+  }
+
+  /*reviews Bottom WRAPPER */
+  #reviews {
+    display: none;
+  }
+
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  /*ITEMS*/
+  #dataItemsHome {
+    height: 2316px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  /*ITEMS dataItemsHomeBottom Bottom*/
+  #dataItemsHomeBottom {
+    height: 2316px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  .marginBottom {
+    margin-bottom: 40px !important;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 395px;
+    padding-top: 90px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+    margin-bottom: 60px;
+  }
+
+  /*Brands wrapper*/
+  #brands {
+    display: none;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 335px;
+  }
+
+  /*Text under photo with text*/
+  #sectionColl {
+    padding: 60px 0 60px 0;
+  }
+  #video {
+    display: none;
+  }
+
+  /*Newsletter wrapper*/
+  #newsletter {
+    height: 904px;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*Text under newsletter*/
+  #heading {
+    margin: 60px 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*SurfBoard wrapper*/
+  #surf {
+    display: none;
+  }
+
+  /*heading Bottom WRAPPER */
+  #headingBottom {
+    display: none;
+  }
+
+  /*reviews Bottom WRAPPER */
+  #reviews {
+    display: none;
+  }
+
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  /*ITEMS*/
+  #dataItemsHome {
+    height: 2316px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  /*dataItemsHomeBottom items bottom*/
+  #dataItemsHomeBottom {
+    height: 2316px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  .marginBottom {
+    margin-bottom: 40px !important;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 556px;
+    padding-top: 90px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+    margin-bottom: 60px;
+  }
+
+  /*Brands wrapper*/
+  #brands {
+    display: none;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 335px;
+  }
+
+  /*Text under photo with text*/
+  #sectionColl {
+    padding: 60px 0;
+  }
+
+  #video {
+    display: none;
+  }
+
+  /*Newsletter wrapper*/
+  #newsletter {
+    height: 782px;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*Text under newsletter*/
+  #heading {
+    margin: 60px 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*SurfBoard wrapper*/
+  #surf {
+    display:none;
+  }
+
+  /*heading Bottom WRAPPER */
+  #headingBottom {
+    display: none;
+  }
+
+  /*reviews Bottom WRAPPER */
+  #reviews {
+    display: none;
+  }
+
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  /*ITEMS*/
+  #dataItemsHome {
+    height: 2381px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  /*dataItemsHomeBottom Items bottom*/
+  #dataItemsHomeBottom {
+    height: 2381px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  .marginBottom{
+    margin-bottom: 40px!important;
+  }
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 730px;
+    padding-top: 90px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+  }
+
+  /*Brands wrapper*/
+  #brands {
+    height: 226px;
+    align-content: space-around;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 335px;
+  }
+
+  /*Text under photo with text*/
+  #sectionColl {
+    padding: 60px 0;
+  }
+  #video {
+    display: none;
+  }
+
+  /*Newsletter wrapper*/
+  #newsletter {
+    height: 782px;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*Text under newsletter*/
+  #heading {
+    margin: 60px 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*SurfBoard wrapper*/
+  #surf {
+    position: relative;
+    width: 100%;
+    height: 892px;
+  }
+
+  /*heading Bottom WRAPPER */
+  #headingBottom {
+    display: none;
+  }
+
+  /*reviews Bottom WRAPPER */
+  #reviews {
+    height: 635px;
+    margin-top: 60px;
+  }
+
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: 335px;
+  }
+
+  /*dataItems WRAPPER */
+  #dataItemsHome {
+    height: 945px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  /*dataItems WRAPPER */
+  #dataItemsHomeBottom {
+    height: 945px;
+    align-content: space-between;
+    margin-bottom: 0px;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 879px;
+    padding-top: 165.08px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+  }
+
+  /*Brands wrapper*/
+  #brands {
+    height: 226px;
+    align-content: space-around;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 335px;
+  }
+
+  /*Text under photo with text*/
+  #sectionColl {
+    padding: 60px 0;
+  }
+
+  /*Newsletter wrapper*/
+  #newsletter {
+    height: 782px;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  /*Text under newsletter*/
+  #heading {
+    margin: 60px 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+  /*SURF WRAPPER */
+  #surf {
+    position: relative;
+    width: 100%;
+    height: 942px;
+  }
+
+  /*heading Bottom WRAPPER */
+  #headingBottom {
+    display: none;
+  }
+
+  /*reviews Bottom WRAPPER */
+  #reviews {
+    height: 600px;
+    margin-top: 60px;
+  }
+
+  /*dataItems WRAPPER */
+  #dataItemsHome {
+    height: 945px;
+    align-content: space-between;
+  }
+
+  /*dataItemsHomeBottom WRAPPER */
+  #dataItemsHomeBottom {
+    height: 945px;
+    align-content: space-between;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 985px;
+    padding-top: 165.08px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 412px;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*Home wrapper*/
+  #homeWrapper {
+    width: 1120px;
+    padding-top: 165.08px;
+  }
+
+  /*Banner wrapper*/
+  #banner {
+    height: 450px;
+  }
+
+  /*section photo with button and text wrapper*/
+  #section {
+    height: 412px;
+  }
+
 
 }

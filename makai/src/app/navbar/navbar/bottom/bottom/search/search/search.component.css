@@ -23,3 +23,20 @@
   width: 20px;
   height: 20px;
 }
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  .clicked {
+    width: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  .clicked {
+    width: 120px;
+  }
+
+}

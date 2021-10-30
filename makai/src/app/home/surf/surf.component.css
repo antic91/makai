@@ -1,9 +1,11 @@
+/*Image center*/
 .imageSurf{
   position: relative;
   height: 100%;
   z-index: 9;
 }
 
+/*wrapper of divs left and right*/
 .divWrapper{
   position: absolute;
   width: 300px;
@@ -15,7 +17,8 @@
   align-content: flex-start;
   margin-right: 5px;
 }
-/*SETTING POSITIONS*/
+
+/*SETTING POSITIONS of items left and right*/
 .firstLeft{
   top: 210px;
   left: 161.75px;
@@ -58,7 +61,7 @@
 .margin{
   margin-bottom: 10px;
 }
-
+/*Rows in absolute divs left and right*/
 .spanRow{
   position: relative;
   width: 100%;
@@ -83,6 +86,7 @@
   overflow: visible !important;
 }
 
+/* h4 */
 .h4Left{
   color:#333;
   font-size: 30px;
@@ -91,11 +95,13 @@
   font-family: 'Lobster', sans-serif;
   padding-left: 5px;
 }
+/*p*/
 .p{
   font-size: 16px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
 }
+/*Text alihn and padding in items left and right*/
 .left{
   text-align: right;
 }
@@ -115,4 +121,180 @@
 
 .smaller{
   height: 35px!important;
+}
+
+
+
+/*MEDIA Q. */
+
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+
+  /*margin and width of wrapper*/
+  .divWrapper {
+    margin: 0;
+    width: 239px;
+  }
+  /*SETTING POSITIONS*/
+  .firstLeft {
+    top: 190px;
+    left: 30px;
+    overflow: visible !important;
+  }
+
+  .secLeft {
+    top: 410px;
+    left: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdLeft {
+    top: 630px;
+    left: 30px;
+    overflow: visible !important;
+  }
+
+  .firstRight {
+    top: 190px;
+    right: 30px;
+    overflow: visible !important;
+  }
+
+  .secRight {
+    top: 410px;
+    right: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdRight {
+    top: 630px;
+    right: 30px;
+    overflow: visible !important;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*margin and width of wrapper*/
+  .divWrapper{
+    margin: 0;
+    width: 250px;
+  }
+  /*SETTING POSITIONS*/
+  .firstLeft {
+    top: 190px;
+    left: 30px;
+    overflow: visible !important;
+  }
+
+  .secLeft {
+    top: 410px;
+    left: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdLeft {
+    top: 630px;
+    left: 30px;
+    overflow: visible !important;
+  }
+
+  .firstRight {
+    top: 190px;
+    right: 30px;
+    overflow: visible !important;
+  }
+
+  .secRight {
+    top: 410px;
+    right: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdRight {
+    top: 630px;
+    right: 30px;
+    overflow: visible !important;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*SETTING POSITIONS*/
+  .firstLeft {
+    top: 190px;
+    left: 40px;
+    overflow: visible !important;
+  }
+
+  .secLeft {
+    top: 410px;
+    left: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdLeft {
+    top: 630px;
+    left: 40px;
+    overflow: visible !important;
+  }
+
+  .firstRight {
+    top: 190px;
+    right: 40px;
+    overflow: visible !important;
+  }
+
+  .secRight {
+    top: 410px;
+    right: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdRight {
+    top: 630px;
+    right: 40px;
+    overflow: visible !important;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*SETTING POSITIONS*/
+  .firstLeft {
+    top: 210px;
+    left: 40px;
+    overflow: visible !important;
+  }
+
+  .secLeft {
+    top: 410px;
+    left: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdLeft {
+    top: 610px;
+    left: 40px;
+    overflow: visible !important;
+  }
+
+  .firstRight {
+    top: 210px;
+    right: 40px;
+    overflow: visible !important;
+  }
+
+  .secRight {
+    top: 410px;
+    right: 0px;
+    overflow: visible !important;
+  }
+
+  .thirdRight {
+    top: 610px;
+    right: 40px;
+    overflow: visible !important;
+  }
+
 }

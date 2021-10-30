@@ -44,6 +44,8 @@ export class NavbarcompComponent implements OnInit {
 
   hoverShop: boolean = false;
   hoverBlue: boolean = false;
+  hoverShop1: boolean = false;
+  hoverBlue1: boolean = false;
 
   hoverBlog: boolean = false;
 
@@ -56,9 +58,13 @@ export class NavbarcompComponent implements OnInit {
   changeHover(a:string): void{
     if (a == "about") this.hoverAbout = true;
     if (a == "shop") {
+      this.hoverShop1 = true;
+      this.hoverBlue1 = true;
+      this.displayDropDown = true;
+    }
+    if (a == "shop1") {
       this.hoverShop = true;
       this.hoverBlue = true;
-      this.displayDropDown = true;
     }
     if (a == "blog") this.hoverBlog = true;
     if (a == "contact") this.hoverContact = true;
@@ -68,6 +74,8 @@ export class NavbarcompComponent implements OnInit {
     if (b == "shop") {
       this.hoverShop = false;
       this.hoverBlue = false;
+      this.hoverShop1 = false;
+    this.hoverBlue1 = false;
       setTimeout(() => {
         if(!this.DropDownPosition) this.displayDropDown = false;
       }, 200);
@@ -85,5 +93,7 @@ export class NavbarcompComponent implements OnInit {
   reverseAbsolute(): void{
     this.displayDropDown = false;
     this.DropDownPosition = false;
+    this.hoverShop1 = false;
+    this.hoverBlue1 = false;
   }
 }

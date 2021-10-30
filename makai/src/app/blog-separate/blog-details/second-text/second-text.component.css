@@ -4,5 +4,31 @@
   text-transform: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  /*paragraph style*/
+  .pMiddle{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  /*paragraph style*/
+  .pMiddle {
+    font-size: 16px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*paragraph style*/
+  .pMiddle {
+    font-size: 16px;
+  }
 
 }

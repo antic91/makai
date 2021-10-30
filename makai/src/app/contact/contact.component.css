@@ -21,6 +21,18 @@
   align-content: space-between;
   margin-bottom: 126px;
 }
+/*Contact Text WRAPPER*/
+#contactTextWrapper {
+  position: relative;
+  width: 1300px;
+  height: 498px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-bottom: 126px;
+}
 /*follow TOP WRAPPER*/
 #follow {
   position: relative;
@@ -58,4 +70,306 @@
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  #contactWrapper {
+    width: 238px;
+    padding-top: 90px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 238px;
+    height: 882px;
+    flex-direction: column-reverse !important;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 238px;
+    height: auto;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 238px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 238px;
+    height: 595px;
+    margin-bottom: 40px;
+  }
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  #contactWrapper {
+    width: 300px;
+    padding-top: 90px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 300px;
+    height: 882px;
+    flex-direction: column-reverse !important;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 300px;
+    height: auto;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 300px;
+    height: 750px;
+    margin-bottom: 40px;
+  }
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  #contactWrapper {
+    width: 395px;
+    padding-top: 90px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 395px;
+    height: 882px;
+    flex-direction: column-reverse !important;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 395px;
+    height: auto;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 395px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 395px;
+    height: 987.5px;
+    margin-bottom: 40px;
+  }
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  #contactWrapper {
+    width: 556px;
+    padding-top: 90px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 556px;
+    height: 882px;
+    flex-direction: column-reverse !important;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 556px;
+    height: auto;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 556px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 555px;
+    height: 740px;
+    margin-bottom: 40px;
+  }
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  #contactWrapper {
+    width: 730px;
+    padding-top: 90px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 730px;
+    height: 1142px;
+    flex-direction: column-reverse !important;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 730px;
+    height: auto;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 730px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 729px;
+    height: 820px;
+    margin-bottom: 40px;
+  }
+  /*icons Bottom WRAPPER */
+  #icons {
+    height: 335px;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  #contactWrapper {
+    width: 879px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 879px;
+    height: 1182px;
+    flex-direction: column-reverse!important;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 879px;
+    height: auto;
+    align-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 879px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 879px;
+    height: 860px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  #contactWrapper {
+    width: 985px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 985px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 985px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 985px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 985px;
+    height: 370px;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  #contactWrapper {
+    width: 1120px;
+  }
+  /*Contact TOP WRAPPER*/
+  #contactTopWrapper {
+    width: 1120px;
+  }
+  /*Contact Text WRAPPER*/
+  #contactTextWrapper {
+    width: 1120px;
+  }
+
+  /*follow TOP WRAPPER*/
+  #follow {
+    width: 1120px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 1120px;
+    height: 430px;
+  }
 }

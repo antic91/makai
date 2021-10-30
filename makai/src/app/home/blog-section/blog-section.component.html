@@ -1,35 +1,47 @@
-<div class="header">
+<!--header for blog component-->
+<div class="header" appResize (position)="position($event)">
   <h1 *ngIf="displayBlog" [@slideRight]>makai news</h1>
 </div>
 
-<div class="photosWrapp" >
-    <div class="wrapperLeft" (mouseleave)="mouseOut()" (mouseover)="setData('JUNE 25, 2021','Do you want to get lost in nature?','Read More','displayFirst')">
+<!--wrapper for photos-->
+<div class="photosWrapp" #headerWidth>
+
+  <!--left side -->
+    <div class="wrapperLeft" (mouseleave)="mouseOut()" (mouseover)="setData('displayFirst')">
       <img src="../../../assets/carBlog.jpg" alt="" class="image" *ngIf="displayBlog" [@slideRight] [@scale]="!scale1 ? 'begin' : 'end' ">
 
-      <app-text-content class="absoluteWrapper" [idBlog]="10" [name]="'Alexa Alexa'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displayFirst" [@fadeIn]></app-text-content>
+      <app-text-content class="absoluteWrapper display" [idBlog]="10" [name]="'Alexa Alexa'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displayFirst" [@fadeIn]></app-text-content>
+      <app-text-content class="absoluteWrapper noDisplay" [idBlog]="10" [name]="'Alexa Alexa'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displaySmaller" [@fadeIn]></app-text-content>
 
     </div>
 
+      <!--right side -->
     <div class="wrapperRight">
 
-      <div class="top" (mouseleave)="mouseOut()" (mouseover)="setData('JULY 6, 2021','The 5 best surfboards','Read More','displaySec')">
+        <!--right side  one photo-->
+      <div class="top" (mouseleave)="mouseOut()" (mouseover)="setData('displaySec')">
         <img src="assets/stap.jpg" alt="" class="image" *ngIf="displayBlog" [@slideTop] [@scale]="!scale2 ? 'begin' : 'end' ">
 
-        <app-text-content class="absoluteWrapper" [idBlog]="1" [name]="'Alexa Alexa'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displaySec" [@fadeIn]></app-text-content>
+        <app-text-content class="absoluteWrapper display" [idBlog]="1" [name]="'Alexa Alexa'" [readMore]="readMore1" [header]="header1" [date]="date1" *ngIf="displaySec" [@fadeIn]></app-text-content>
+        <app-text-content class="absoluteWrapper noDisplay" [idBlog]="1" [name]="'Alexa Alexa'" [readMore]="readMore1" [header]="header1" [date]="date1" *ngIf="displaySmaller" [@fadeIn]></app-text-content>
 
       </div>
 
-      <div class="top" (mouseleave)="mouseOut()" (mouseover)="setData('JULY 6, 2021','Makai by the sea','Read More','displayThird')">
+      <!--right side  one photo-->
+      <div class="top" (mouseleave)="mouseOut()" (mouseover)="setData('displayThird')">
         <img src="assets/beach.jpg" alt="" class="image" *ngIf="displayBlog" [@slideLeft] [@scale]="!scale3 ? 'begin' : 'end' ">
 
-        <app-text-content class="absoluteWrapper" [idBlog]="2" [name]="'Damian Damian'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displayThird" [@fadeIn]></app-text-content>
+        <app-text-content class="absoluteWrapper display" [idBlog]="2" [name]="'Damian Damian'" [readMore]="readMore2" [header]="header2" [date]="date2" *ngIf="displayThird" [@fadeIn]></app-text-content>
+        <app-text-content class="absoluteWrapper noDisplay" [idBlog]="2" [name]="'Damian Damian'" [readMore]="readMore2" [header]="header2" [date]="date2" *ngIf="displaySmaller" [@fadeIn]></app-text-content>
 
       </div>
 
-      <div class="bottom" (mouseleave)="mouseOut()" (mouseover)="setData('JULY 6, 2021','The importance of recycled materials','Read More','displayFourth')">
+      <!--right side  one photo-->
+      <div class="bottom" (mouseleave)="mouseOut()" (mouseover)="setData('displayFourth')">
         <img src="assets/woman.jpg" alt="" class="image" *ngIf="displayBlog" [@slideTop] [@scale]="!scale4 ? 'begin' : 'end' ">
 
-        <app-text-content class="absoluteWrapper" [idBlog]="3" [name]="'Mary Mary'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displayFourth" [@fadeIn]></app-text-content>
+        <app-text-content class="absoluteWrapper display" [idBlog]="3" [name]="'Mary Mary'" [readMore]="readMore3" [header]="header3" [date]="date3" *ngIf="displayFourth" [@fadeIn]></app-text-content>
+        <app-text-content class="absoluteWrapper noDisplay" [idBlog]="3" [name]="'Mary Mary'" [readMore]="readMore3" [header]="header3" [date]="date3" *ngIf="displaySmaller" [@fadeIn]></app-text-content>
 
       </div>
 

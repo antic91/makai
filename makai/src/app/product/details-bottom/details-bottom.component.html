@@ -1,8 +1,10 @@
+<!--Button Details top-->
 <div class="buttons">
   <div class="aDetails" [style.backgroundColor]="displayColor ? '#81d0d8' : '#fff'" [style.color]="displayColor ? '#fff' : '#333333'" href="" (click)="clicked('description')" [@fadeInOut]>Description</div>
   <div class="aDetails" [style.backgroundColor]="!displayColor ? '#81d0d8' : '#fff'" [style.color]="!displayColor ? '#fff' : '#333333'" href="" (click)="clicked('info')" [@fadeInOut]>Extra Info</div>
 </div>
 
+<!--Div with options like weight ...-->
 <div class="bottom" *ngIf="show1" [@fadeInOut]>
   <span class="wrapperText wrapperText1">
     <span class="header">  <h4>Weight</h4> </span>
@@ -25,6 +27,7 @@
   </span>
 </div>
 
+<!--Div with description-->
 <div class="bottom" *ngIf="show2" [@fadeInOut]>
   <p>{{product.prod_description}}</p>
 </div>

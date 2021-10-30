@@ -54,7 +54,7 @@
 #fourSecWrapper{
   position: relative;
   width: 1300px;
-  height: 1410px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -66,19 +66,19 @@
 #team {
   position: relative;
   width: 1300px;
-  height: 614px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   align-content: space-between;
-  margin: 100px 0;
+  margin: 100px 0 0;
 }
 /*brandsAbout COMPONENT WRAPPER*/
 #brandsAbout {
   position: relative;
   width: 1300px;
-  height: 527px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -97,4 +97,451 @@
   justify-content: flex-start;
   align-content: flex-start;
   margin-bottom: 126px;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+
+  /*Wrapper about*/
+  #wrapperAbout {
+    padding-top: 90px;
+  }
+
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 238px;
+    height: 488px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    display: none;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    margin-top: 10px;
+    width: 238px;
+    padding: 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 238px;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 238px;
+    margin: 0 0 60px 0;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    display: none;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 238px;
+    height: 595px;
+    margin-bottom: 40px;
+  }
+
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+
+  /*Wrapper about*/
+  #wrapperAbout {
+    padding-top: 90px;
+  }
+
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 300px;
+    height: 603px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    display: none;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    margin-top: 10px;
+    width: 300px;
+    padding: 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 300px;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 300px;
+    margin-top: 0;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 300px;
+    margin: 60px 0;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 300px;
+    height: 750px;
+    margin-bottom: 40px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+
+  /*Wrapper about*/
+  #wrapperAbout {
+    padding-top: 90px;
+  }
+
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 395px;
+    height: 675px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    display: none;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    width: 395px;
+    padding: 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 395px;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 40px;
+
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 395px;
+    margin-top: 0;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 395px;
+    margin: 60px 0;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 395px;
+    height: 987.5px;
+    margin-bottom: 40px;
+  }
+
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+
+  /*Wrapper about*/
+  #wrapperAbout {
+    padding-top: 90px;
+  }
+
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 556px;
+    height: 857px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+  }
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    display: none;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    width: 556px;
+    padding: 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 556px;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 556px;
+    margin: 60px 0 0 0;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 556px;
+    margin: 60px 0;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 555px;
+    height: 740px;
+    margin-bottom: 40px;
+  }
+
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+
+  /*Wrapper about*/
+  #wrapperAbout {
+    padding-top: 90px;
+  }
+
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 730px;
+    height: 857px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    display: none;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    width: 730px;
+    padding: 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 730px;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 730px;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 730px;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 729px;
+    height: 820px;
+    margin-bottom: 40px;
+  }
+
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+    /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 879px;
+    height: 857px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    display: none;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    width: 879px;
+    padding: 0;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 879px;
+    height: auto;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 879px;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 879px;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 879px;
+    height: 860px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 985px;
+    height: 470px;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    height: 560px;
+  }
+
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    width: 985px;
+    height: 560px;
+  }
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 985px;
+  }
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 985px;
+  }
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 985px;
+  }
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 985px;
+    height: 370px;
+  }
+
+}
+
+
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+
+  /*FIRST CHILD COMPONENT WRAPPER*/
+  #topWrapper {
+    width: 1120px;
+    height: 555px;
+  }
+
+  /*ManWithBoardWrapper COMPONENT WRAPPER*/
+  #ManWithBoardWrapper {
+    height: 670px;
+  }
+
+  /*TextCompWrapper COMPONENT WRAPPER*/
+  #TextCompWrapper {
+    width: 1120px;
+    height: 505px;
+  }
+
+  /*fourSecWrapper COMPONENT WRAPPER*/
+  #fourSecWrapper {
+    width: 1120px;
+  }
+
+  /*team COMPONENT WRAPPER*/
+  #team {
+    width: 1120px;
+  }
+
+  /*brandsAbout COMPONENT WRAPPER*/
+  #brandsAbout {
+    width: 1120px;
+    position: relative;
+    height: 527px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin: 140px 0;
+  }
+
+  /*photoBox COMPONENT WRAPPER*/
+  #photoBox {
+    width: 1120px;
+    height: 430px;
+  }
+
 }

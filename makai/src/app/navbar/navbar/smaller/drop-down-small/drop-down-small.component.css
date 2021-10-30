@@ -1,0 +1,115 @@
+
+/*Wrapper for all links together*/
+
+.wrapperAll{
+  position: relative;
+  width: 730px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+/*Wrapper for 3 links*/
+.linkWrapper{
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/* a tag Links*/
+.a{
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.a:hover{
+  cursor: pointer;
+}
+/* Shop Link tag*/
+.shopLink{
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+
+/*SHOP link dropdown wrapper*/
+.subLinks{
+  position: relative;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 20px;
+}
+/* Header in Drop down Show menu*/
+.headerShow{
+  position: relative;
+  margin: 20px 0;
+  font-size: 30px;
+  font-family: 'Lobster', sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+/*Mrgin for drop down links*/
+.marginDrop{
+  margin-bottom: 25px;
+}
+.paddingTop{
+  padding-top: 0!important;
+}
+.paddingBottom{
+  padding-bottom: 0!important;
+}
+
+
+/*ACTIVE LINK*/
+.active{
+  background-clip: red;
+}
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  /*Wrapper for all links together*/
+
+  .wrapperAll {
+    width: 238px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  /*Wrapper for all links together*/
+
+  .wrapperAll {
+    width: 300px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+  /*Wrapper for all links together*/
+
+  .wrapperAll {
+    width: 395px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*Wrapper for all links together*/
+
+  .wrapperAll {
+    width: 556px;
+  }
+
+}

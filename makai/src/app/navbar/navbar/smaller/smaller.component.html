@@ -1,0 +1,26 @@
+
+<div class="wrapperLeft">
+  <img src="../../../../../assets/makai.svg" class="image" routerLink="/" alt="LogoImage">
+</div>
+
+
+<div class="wrapperRight">
+  <!--Search Icon-->
+  <app-search id="searchWrapper"></app-search>
+
+  <!--Bag Icon-->
+  <app-bag id="bagWrapper"></app-bag>
+
+  <!--Button for drop down menu-->
+  <div class="buttonWrapper" (click)="changeDisplay()">
+      <div class="one" [@rotatedState]="displayX ? 'default' : 'rotated'"></div>
+      <div class="two" *ngIf="displayX" [@fadeOut]></div>
+      <div class="three" [@rotatedStateSec]="displayX ? 'default' : 'rotated'"></div>
+  </div>
+
+</div>
+
+
+
+<!--DROP DOWN MENU ON SMALL SCREENS-->
+<app-drop-down-small id="DropDownSmallWrapper" *ngIf="!displayX" (NoDisplay)="displayX = !displayX"></app-drop-down-small>

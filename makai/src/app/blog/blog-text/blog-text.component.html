@@ -1,17 +1,20 @@
+<!--Wrapper text component-->
 <div class="wrapperText">
+  <!--date-->
   <span class="text" *ngIf="showText" [@slideInBottom]>
     <p class="pTop">{{pTop}}</p>
   </span>
-
+<!--header-->
   <span class="text" *ngIf="showText" [@slideInBottom]>
     <h1>{{Header}}</h1>
   </span>
 
-
+  <!--bottom text-->
   <span class="text" *ngIf="showText" [@slideInBottom]>
     <p class="pBottom">{{pBottom}}</p>
   </span>
 
+  <!--button -->
   <span class="textLast" *ngIf="showText" [@slideInBottom]>
     <span class="hover" (mouseenter)="changeHover()" (mouseleave)="reverse()" [routerLink]="['/blog', name, idBlog]">
       <a href="" class="a" [@hover]="!onHover ? 'active' : 'inactive'" [routerLink]="['/blog', name, idBlog]">Read More</a>

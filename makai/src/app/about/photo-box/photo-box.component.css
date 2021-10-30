@@ -1,3 +1,4 @@
+/*Left side Photo wrapper*/
 .left{
   position: relative;
   width: 520px;
@@ -9,7 +10,7 @@
   height: 100%;
 }
 
-/*RIGHT WRAPPER*/
+/*RIGHT side Photo WRAPPER*/
 .right{
   position: relative;
   width: 780px;
@@ -42,6 +43,7 @@
   align-items: center;
   background-color: rgba(129, 208, 216, 0.7);
 }
+/*Instagram icon and header*/
 .instagram{
   position: relative;
   width: 30px;
@@ -54,4 +56,150 @@
   line-height: 0.9;
   font-weight: 400;
   font-family: 'Lobster', sans-serif;
+}
+
+
+/*MEDIA Q. */
+
+@media (max-width: 320px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 100%;
+    height: 238px;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 100%;
+    height: 357px;
+  }
+  .images1 {
+    width: 119px;
+    height: 119px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 100%;
+    height: 300px;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 100%;
+    height: 450px;
+  }
+  .images1 {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+    /*Left side Photo wrapper*/
+  .left {
+    width: 100%;
+    height: 395px;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 100%;
+    height: 592.5px;
+  }
+  .images1 {
+    width: 197.5px;
+    height: 197.5px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 100%;
+    height: 370px;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 100%;
+    height: 370px;
+  }
+  .images1 {
+    width: 185px;
+    height: 185px;
+  }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 100%;
+    height: 380px;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 100%;
+    height: 480px;
+  }
+  .images1 {
+    width: 243px;
+    height: 200px;
+  }
+
+}
+@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 100%;
+    height: 380px;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 100%;
+    height: 480px;
+  }
+  .images1 {
+    width: 293px;
+    height: 240px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 360px;
+    height: 100%;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 625px;
+  }
+  .images1 {
+    width: 208.333333333px;
+    height: 185px;
+  }
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+  /*Left side Photo wrapper*/
+  .left {
+    width: 400px;
+    height: 100%;
+  }
+  /*RIGHT side Photo WRAPPER*/
+  .right {
+    width: 720px;
+  }
+  .images1 {
+    width: 240px;
+    height: 215px;
+  }
+
 }
