@@ -1,5 +1,5 @@
 import { PostService } from './../services/post.service';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +7,6 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  @ViewChild('section',{ read: ElementRef })section!: ElementRef;
-  @ViewChild('sectionCol',{ read: ElementRef })sectionCol!: ElementRef;
-  @ViewChild('news',{ read: ElementRef })news!: ElementRef;
-  @ViewChild('heading',{ read: ElementRef })heading!: ElementRef;
-  @ViewChild('surf', { read: ElementRef }) surf!: ElementRef;
-  @ViewChild('blog', { read: ElementRef }) blog!: ElementRef;
-  @ViewChild('reviews', { read: ElementRef }) reviews!: ElementRef;
-  @ViewChild('headingSec', { read: ElementRef }) headingSec!: ElementRef;
-  @ViewChild('itemsOne', { read: ElementRef }) itemsOne!: ElementRef;
-  @ViewChild('itemsTWo', { read: ElementRef }) itemsTWo!: ElementRef;
 
   data: any[] = [];
   data1: any[] = [];
@@ -31,17 +21,22 @@ export class HomeComponent implements OnInit {
   textHead1Bottom!: string;
   textHead2Bottom!: string;
 
+
+  /*section component*/
   display: boolean = false;
 
+  /*section Collection component*/
   displaySec: boolean = false;
 
-
+  /*Heading after newsletter */
   displayHead: boolean = false;
   displaySpan: boolean = false;
 
+  /*Newsletter display trigger*/
   appear: boolean = false;
   displayNews: boolean = false;
 
+  /*Surf/-- board component triggers*/
   displaySurfOne: boolean = false;
   displaySurfTwo: boolean = false;
   displaySurfThree: boolean = false;
@@ -62,9 +57,6 @@ export class HomeComponent implements OnInit {
   show!: boolean;
   displayText!: boolean;
 
-  /*Display items products*/
-  displayItemOne: boolean = false;
-  displayItemTwo: boolean = false;
 
 
   constructor(private service: PostService) { }
@@ -90,81 +82,59 @@ export class HomeComponent implements OnInit {
   }
 
 
-  detect($event: number): void{
-    /*Banner*/
-    let a = (this.section.nativeElement.offsetTop / 2) - (this.section.nativeElement.offsetTop / 10);
+  /*detecting section change*/
+  detectPosition($event: boolean): void{
+    this.display = $event;
+  }
 
-    /*BRANDS */
-    let b = (this.sectionCol.nativeElement.offsetTop / 2) + (this.sectionCol.nativeElement.offsetTop / 10) * 2;
+  /*detecting section collection change*/
+  detectPositionCollection($event: boolean): void{
+    this.displaySec = $event;
+  }
 
-    /*SECTION */
-    let c = (this.news.nativeElement.offsetTop / 2) + (this.news.nativeElement.offsetTop / 10) * 2;
-
-    /*SECTION COLLECTION */
-    let d = (this.heading.nativeElement.offsetTop / 2) + (this.heading.nativeElement.offsetTop / 10) * 3;
-
-    /*SURF*/
-    let e = (this.surf.nativeElement.offsetTop / 2) + (this.surf.nativeElement.offsetTop / 10) * 3;
-
-    /*BLOG SECTION*/
-    let f = (this.blog.nativeElement.offsetTop / 2) + (this.blog.nativeElement.offsetTop / 10) * 3;
-
-    /*BLOG SECTION*/
-    let h = (this.headingSec.nativeElement.offsetTop / 2) + (this.headingSec.nativeElement.offsetTop / 10) * 3;
-
-    /*REVIEW SECTION*/
-    let g = (this.reviews.nativeElement.offsetTop / 2) + (this.reviews.nativeElement.offsetTop / 10) * 3;
-
-    /*ItemsOne product SECTION*/
-    let i = (this.itemsOne.nativeElement.offsetTop) - (this.itemsOne.nativeElement.offsetTop / 10) * 3;
-
-    /*ItemTwo product SECTION*/
-    let j = (this.itemsTWo.nativeElement.offsetTop) - (this.itemsTWo.nativeElement.offsetTop / 10) * 3;
-
-    if ($event >= a) this.display = true;
-
-    if ($event >= b) this.displaySec = true;
-
-      if ($event >= c) {
-
-        setTimeout(() => {
-          this.displayNews = true;
+  /*detecting Newsletter  change*/
+  detectNewsletter($event: boolean): void{
+    setTimeout(() => {
+          this.displayNews = $event;
         }, 10);
         setTimeout(() => {
-          this.appear = true
+          this.appear = $event;
         }, 1600);
-      };
+  }
 
-      if ($event >= d) {
-          this.displayHead = true;
-          this.displaySpan = true;
-      };
-      /*START E --SURF */
-      if ($event >= e) {
-        this.displaySurfFour = true;
+  /*detecting Heading  change*/
+  detectHeadeing($event: boolean): void{
+    this.displayHead = $event;
+    this.displaySpan = $event;
+  }
+
+  /*detecting Heading  change*/
+  detectSurf($event: boolean): void{
+
+        this.displaySurfFour = $event;
 
         setTimeout(() => {
 
-          this.displaySurfOne = true;
+          this.displaySurfOne = $event;
 
           setTimeout(() => {
 
-            this.displaySurfFive = true;
+            this.displaySurfFive = $event;
 
             setTimeout(() => {
 
-              this.displaySurfTwo = true;
+              this.displaySurfTwo = $event;
 
               setTimeout(() => {
 
-                this.displaySurfSix = true;
+                this.displaySurfSix = $event;
 
                 setTimeout(() => {
 
-                  this.displaySurfThree = true;
+                  this.displaySurfThree = $event;
 
                     setTimeout(() => {
-                      this.displaySurfText = true;
+                      this.displaySurfText = $event;
                     }, 600);
 
                 }, 100);
@@ -176,27 +146,23 @@ export class HomeComponent implements OnInit {
           }, 100);
 
         }, 100);
-      };
-    /*END E -- SURF */
-
-    /*BLOG SECTION*/
-    if ($event >= f) this.displayBlog = true;
-
-
-    /*SECOND HEADER SECTION*/
-    if ($event >= h) {
-      this.displayBlog = true;
-      this.displayBlog = true;
-    }
-
-    /*REVIEWS SECTION*/
-    if ($event >= g) {
-      this.displayHeadSec = true;
-      this.displaySpanSec = true;
-    }
-    /*ITEMSOne PRODUCTS SECTION*/
-    if ($event >= i) this.displayItemOne = true;
-    /*ITEMSTwo PRODUCTS SECTION*/
-    if ($event >= j) this.displayItemTwo = true;
   }
+
+    /*detecting Blog  change*/
+  detectBlog($event: boolean): void{
+    this.displayBlog = $event;
+  }
+
+    /*detecting Heading Bottom  change*/
+  detectHeadingBottom($event: boolean): void{
+    this.displayHeadSec = $event;
+    this.displaySpanSec = $event;
+  }
+
+    /*detecting Reviews  change*/
+  detectReviews($event: boolean): void{
+    this.show = $event;
+    this.displayText = $event;
+  }
+
 }

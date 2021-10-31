@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ShopItemsRightComponent implements OnInit {
   @Input("data") data!: any[];
-  @Input("display") display!: boolean;
   hover: boolean = false;
   prod_id!: number
   constructor() { }
@@ -22,4 +21,12 @@ export class ShopItemsRightComponent implements OnInit {
     this.hover = false;
     this.prod_id = i;
   }
+
+
+  /*Position detecting directive*/
+  detectPositionItem($event: any): void{
+    let id = this.data.map(data =>  data.prod_id ).indexOf($event)
+    this.data[id].prod_display = 1
+  }
+
 }

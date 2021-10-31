@@ -2,7 +2,7 @@
   position: relative;
   width: 1300px;
   padding-top: 165.08px;
-  min-height: 600px;
+  min-height: 900px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -13,6 +13,7 @@
 #right{
   position: relative;
   width: 975px;
+  min-height: 900px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

@@ -31,6 +31,7 @@ export class BrandsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  /*hover event*/
   change(value: string): void{
     if(value == "display1")this.display1 = false;
     if(value == "display2")this.display2 = false;
@@ -39,6 +40,8 @@ export class BrandsComponent implements OnInit {
     if(value == "display5")this.display5 = false;
     if (value == "display6") this.display6 = false;
   }
+
+  /*mouse out evet*/
   reverse(value: string): void{
     if(value == "display1")this.display1 = true;
     if(value == "display2")this.display2 = true;

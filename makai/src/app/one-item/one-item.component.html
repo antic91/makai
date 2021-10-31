@@ -1,6 +1,6 @@
 
 
-<div id="animWrapper" *ngIf="display" [@bottomInSec] [routerLink]="['/shop',item.cat_metaTitle,item.sub_metaTitle,item.prod_metaTitle,item.cat_id,item.sub_cat_id,item.prod_id]">
+<div id="animWrapper" *ngIf="item.prod_display != 0" [@bottomInSec] [routerLink]="['/shop',item.cat_metaTitle,item.sub_metaTitle,item.prod_metaTitle,item.cat_id,item.sub_cat_id,item.prod_id]">
 
   <div class="imageWrapper">
     <img [src]="firstPicture" alt="" class="imageItem">

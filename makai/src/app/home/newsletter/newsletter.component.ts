@@ -1,5 +1,5 @@
 import { trigger, transition, useAnimation } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { slideAnim } from 'src/app/animations/animations';
 
 @Component({

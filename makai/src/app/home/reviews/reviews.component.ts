@@ -80,6 +80,7 @@ export class ReviewsComponent implements OnInit {
   position: number = 0;
   length!: number;
 
+  /*FOR NOW REVIEWS ARE JUST ONE ARRAY BUT WE CAN GET IT FROM DATABASE etc..*/
   reviews: any[] = [
     { name: 'Lisa Ono', text: 'Lorem ipsum dolor sit amet, con',photo: 'assets/user_reviews/user1.jpeg', header: '“Lorem ipsum dolor sit amet, con secte tur adip si cin elit, do eiusmod tempor in cidi dut ut la bore magna aliquat enim.”', stars:'["assets/user_reviews/star.png","assets/user_reviews/star.png", "assets/user_reviews/star.png"]', coverImage:"assets/user_reviews/user1_banner.jpg", display: "true" },
     { name: 'Lisa Ono', text: 'Lorem ipsum dolor sit amet, con',photo: 'assets/user_reviews/user2.jpg', header: '“Lorem ipsum dolor sit amet, con secte tur adip si cin elit, do eiusmod tempor in cidi dut ut la bore magna aliquat enim.”', stars:'["assets/user_reviews/star.png","assets/user_reviews/star.png", "assets/user_reviews/star.png"]', coverImage:"assets/user_reviews/user2_banner.jpg", display: "true" },
@@ -91,8 +92,8 @@ export class ReviewsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    /*HERE CAN WE CALL THE SERVER AND GET REVIEWS..*/
     this.length = this.reviews.length;
-
     this.photo = this.reviews[this.position].photo;
     this.name = this.reviews[this.position].name;
     this.text = this.reviews[this.position].text;
@@ -101,6 +102,7 @@ export class ReviewsComponent implements OnInit {
     this.stars = JSON.parse(this.reviews[this.position].stars);
   }
 
+  /*next review*/
   add(): void{
     if (this.position == this.length-1) return;
     this.position++;
@@ -121,6 +123,8 @@ export class ReviewsComponent implements OnInit {
         }, 200);
     }, 1000);
   }
+
+  /*get one before review*/
   remove(): void{
     if (this.position == 0) return;
 

@@ -93,6 +93,7 @@ import { fadeIn, scale, slideAnim } from 'src/app/animations/animations';
   ]
 })
 export class BlogSectionComponent implements OnInit {
+
   @Input("displayBlog") displayBlog!: boolean;
   @ViewChild('headerWidth', { read: ElementRef }) headerWidth!: ElementRef;
   date: string ='JUNE 25, 2021';
@@ -127,6 +128,7 @@ export class BlogSectionComponent implements OnInit {
 
   }
 
+  /*Function to set dat of blogs*/
   setData(position: string): void{
 
     if (this.headerWidth.nativeElement.clientWidth > 730) {
@@ -149,6 +151,7 @@ export class BlogSectionComponent implements OnInit {
     }
   }
 
+  /*on mouse out reset display*/
   mouseOut(): void{
     if (this.headerWidth.nativeElement.clientWidth > 730) {
       this.displayFirst = false;
@@ -169,6 +172,8 @@ export class BlogSectionComponent implements OnInit {
       this.displaySmaller = true;
     }
   }
+
+  /*catch the width to set items all off the time visible*/
   ngOnChanges(changes: SimpleChanges): void {
     if (this.displayBlog == true) {
       if (this.headerWidth.nativeElement.clientWidth <= 730) {

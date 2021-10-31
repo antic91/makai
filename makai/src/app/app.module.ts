@@ -77,6 +77,7 @@ import { DetailsBottomComponent } from './product/details-bottom/details-bottom.
 import { ResizeDirective } from './directives/resize.directive';
 import { SmallerComponent } from './navbar/navbar/smaller/smaller.component';
 import { DropDownSmallComponent } from './navbar/navbar/smaller/drop-down-small/drop-down-small.component';
+import { ScrollDirective } from './directives/scroll.directive';
 
 
 @NgModule({
@@ -147,7 +148,8 @@ import { DropDownSmallComponent } from './navbar/navbar/smaller/drop-down-small/
     DetailsBottomComponent,
     ResizeDirective,
     SmallerComponent,
-    DropDownSmallComponent
+    DropDownSmallComponent,
+    ScrollDirective
   ],
   imports: [
     BrowserModule,
@@ -164,7 +166,8 @@ import { DropDownSmallComponent } from './navbar/navbar/smaller/drop-down-small/
   ],
   bootstrap: [AppComponent],
   exports: [
-    PositionDirective
+    PositionDirective,
+    ScrollDirective
   ]
 })
 export class AppModule { }

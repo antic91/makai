@@ -1,30 +1,30 @@
-<div id="homeWrapper" appPosition (position)="detect($event)">
+<div id="homeWrapper">
 
   <app-banner id="banner"></app-banner>
 
   <app-brands id="brands" [width]="'105px'" [height]="'105px'"></app-brands>
 
-  <app-section  id="section" [display]="display" #section></app-section>
+  <app-section  id="section" appScroll (positionSection)="detectPosition($event)" [display]="display"></app-section>
 
-  <app-section-collection id="sectionColl" [displaySec]="displaySec" #sectionCol></app-section-collection>
+  <app-section-collection id="sectionColl" [displaySec]="displaySec" appScroll (positionSectionCollection)="detectPositionCollection($event)"></app-section-collection>
 
-  <app-items-show id="dataItemsHome" class="marginBottom" [data]="data" #itemsOne [display]="displayItemOne"></app-items-show>
+  <app-items-show id="dataItemsHome" class="marginBottom" [data]="data"></app-items-show>
 
   <app-video id="video"></app-video>
 
-  <app-items-show id="dataItemsHomeBottom" [data]="data1" #itemsTWo [display]="displayItemTwo"></app-items-show>
+  <app-items-show id="dataItemsHomeBottom" [data]="data1"></app-items-show>
 
-  <app-newsletter id="newsletter" [news]="displayNews" [appear]="appear" #news></app-newsletter>
+  <app-newsletter id="newsletter" [news]="displayNews" [appear]="appear" appScroll (positionNewsletter)="detectNewsletter($event)"></app-newsletter>
 
-  <app-heading id="heading" [displayHead]="displayHead" [displaySpan]="displaySpan" [textHead]="textHead" [textSpan]="textSpan" [textHead1]="textHead1" [textHead2]="textHead2" #heading></app-heading>
+  <app-heading id="heading" [displayHead]="displayHead" [displaySpan]="displaySpan" [textHead]="textHead" [textSpan]="textSpan" [textHead1]="textHead1" [textHead2]="textHead2" appScroll (positionHeading)="detectHeadeing($event)"></app-heading>
 
-  <app-surf id="surf" [displaySurfOne]="displaySurfOne" [displaySurfTwo]="displaySurfTwo" [displaySurfThree]="displaySurfThree" [displaySurfFour]="displaySurfFour" [displaySurfFive]="displaySurfFive" [displaySurfSix]="displaySurfSix" [displaySurfText]="displaySurfText" #surf></app-surf>
+  <app-surf id="surf" [displaySurfOne]="displaySurfOne" [displaySurfTwo]="displaySurfTwo" [displaySurfThree]="displaySurfThree" [displaySurfFour]="displaySurfFour" [displaySurfFive]="displaySurfFive" [displaySurfSix]="displaySurfSix" [displaySurfText]="displaySurfText" appScroll (positionSurf)="detectSurf($event)"></app-surf>
 
-  <app-blog-section id="blogSection" [displayBlog]="displayBlog" #blog></app-blog-section>
+  <app-blog-section id="blogSection" [displayBlog]="displayBlog" appScroll (positionBlog)="detectBlog($event)"></app-blog-section>
 
-  <app-heading id="headingBottom" [displayHead]="displayHeadSec" [displaySpan]="displaySpanSec" [textHead]="textHeadBottom" [textSpan]="textSpanBottom" [textHead1]="textHead1Bottom" [textHead2]="textHead2Bottom" #headingSec></app-heading>
+  <app-heading id="headingBottom" [displayHead]="displayHeadSec" [displaySpan]="displaySpanSec" [textHead]="textHeadBottom" [textSpan]="textSpanBottom" [textHead1]="textHead1Bottom" [textHead2]="textHead2Bottom" appScroll (positionHeadingBottom)="detectHeadingBottom($event)"></app-heading>
 
-  <app-reviews id="reviews" [show]="show" [displayText]="displayText" #reviews></app-reviews>
+  <app-reviews id="reviews" [show]="show" [displayText]="displayText" appScroll (positionReviews)="detectReviews($event)"></app-reviews>
 
   <app-icons id="icons"></app-icons>
 

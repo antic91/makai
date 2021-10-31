@@ -10,10 +10,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class ShopComponent implements OnInit {
   @ViewChild('itemsOne', { read: ElementRef }) itemsOne!: ElementRef;
   data: any[] = [];
-  displayItem: boolean = false;
+
   constructor(private route: ActivatedRoute, private service: PostService) { }
 
   ngOnInit(): void {
+
+    /*Subscribe to get route paramsand then request data from server*/
     this.route.params.subscribe((x) => {
       var url = "";
       console.log(x)
@@ -30,19 +32,8 @@ export class ShopComponent implements OnInit {
     this.service.getAll(url)
       .subscribe((response:any) => {
         this.data = response.response;
-        this.detect(0)
+
     })
   }
 
-
-  detect($event: number): void{
-
-    /*ItemsOne product SECTION*/
-    let i = (this.itemsOne.nativeElement.offsetTop) - (this.itemsOne.nativeElement.offsetTop / 2) *2;
-
-    console.log(i)
-    /*ITEMSOne PRODUCTS SECTION*/
-    if ($event >= i) this.displayItem = true;
-
-  }
 }

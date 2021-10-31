@@ -138,8 +138,8 @@ import { slideAnim } from '../animations/animations';
   ]
 })
 export class OneItemComponent implements OnInit {
+
   @Input("item") item: any = {};
-  @Input("display") display!: boolean;
   @Input("hover") hover!: boolean;
   @Input("prodId") prodId!: number;
   firstPicture!: string;
@@ -147,20 +147,26 @@ export class OneItemComponent implements OnInit {
   displayPrice: boolean = true;
   displayAddTo: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
 
   }
+
+  ngOnInit(): void {
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
+
     const arr = this.item.prod_pictures.split(",");
+
     this.firstPicture = arr[0];
+
     if (this.hover == true && this.prodId == this.item.prod_id) {
       this.displayPrice = false;
       setTimeout(() => {
         this.displayAddTo = true;
       }, 50);
     }
+
     if (this.hover == false && this.prodId == this.item.prod_id) {
       this.displayAddTo = false;
       setTimeout(() => {
@@ -168,4 +174,6 @@ export class OneItemComponent implements OnInit {
       }, 50);
     }
   }
+
+
 }
