@@ -12,7 +12,13 @@
 
 <!--features and some other random blogs-->
   <div class="classFeatures">
-    <h1 class="h1Features">Features</h1>
+    <h1 class="h1Features" *ngIf="showOther" [@rotateInBottom]>Features</h1>
   </div>
 
-  <app-other-blogs appPosition (position)="detect($event)" id="otherBlogsWrapper" #other [showOther]="showOther" [data]="arrayData"></app-other-blogs>
+
+  <app-other-blogs
+  appPositionOneBlog
+  (positionOtherBlogs)="detectScroll($event)"
+  id="otherBlogsWrapper"
+  [showOther]="showOther"
+  [data]="arrayData"></app-other-blogs>

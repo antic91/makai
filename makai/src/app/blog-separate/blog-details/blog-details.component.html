@@ -1,12 +1,44 @@
 
-<app-top id="topWrapper" [object]="object"></app-top>
+<app-top
+id="topWrapper"
+[object]="object"></app-top>
 
-<app-second-details id="secondDetails" [object]="object"  appPosition (position)="detect($event)" #secDetails [showText]="showText"></app-second-details>
 
-<app-group-photos id="groupPhotos" [object]="object" #groupPhotos [showGroupPhotos]="showGroupPhotos"></app-group-photos>
+<app-second-details
+id="secondDetails"
+[object]="object"
+appPositionOneBlog
+(positionSecondBlogDetails)="detectSecondBlogDetails($event)"
+[showText]="showText"></app-second-details>
 
-<app-second-text id="secondText" [object]="object" #secText [showSecText]="showSecText"></app-second-text>
 
-<app-last-photo id="topWrapper1" [object]="object" #lastPhoto [showlastPhoto]="showlastPhoto"></app-last-photo>
+<app-group-photos
+id="groupPhotos"
+[object]="object"
+[showGroupPhotos]="showGroupPhotos"
+appPositionOneBlog
+(positionGroupPhotosBlogDetails)="detectGruopPhotos($event)"></app-group-photos>
 
-<app-bottom-text id="botomText" [object]="object" #bottomText [showBottomText]="showBottomText"></app-bottom-text>
+
+<app-second-text
+id="secondText"
+[object]="object"
+[showSecText]="showSecText"
+appPositionOneBlog
+(positionSecondDetailsText)="detectSecondTextBlogDetails($event)"></app-second-text>
+
+
+<app-last-photo
+id="topWrapper1"
+[object]="object"
+[showlastPhoto]="showlastPhoto"
+appPositionOneBlog
+(positionLastPhotoBlogDetails)="detectBottomTextBlogDetails($event)"></app-last-photo>
+
+
+<app-bottom-text
+id="botomText"
+[object]="object"
+[showBottomText]="showBottomText"
+appPositionOneBlog
+(positionBottomBlogDetails)="detectBottomBlogDetails($event)"></app-bottom-text>

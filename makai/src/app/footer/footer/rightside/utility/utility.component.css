@@ -25,6 +25,9 @@
   color: #333;
   text-decoration: none;
 }
+.spanA a:hover {
+  cursor: pointer;
+}
 
 .down {
   color: #81d0d8 !important;

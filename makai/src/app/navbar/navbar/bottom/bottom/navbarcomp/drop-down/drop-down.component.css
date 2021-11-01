@@ -1,7 +1,7 @@
 /*HEADER*/
 .header{
   position: relative;
-  width: 100%;
+  width: 1300px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -9,8 +9,8 @@
   align-content: flex-start;
   margin-top: 40px;
   margin-bottom: 10px;
-
 }
+/*header left and right*/
 .headerWrapper{
   position: relative;
   width: 540px;
@@ -20,8 +20,8 @@
   justify-content: center;
   align-content: center;
 }
+/*header h1 style*/
 .headerWrapper h1{
-
   font-size: 30px;
   text-align: center;
   color: #333;
@@ -29,17 +29,20 @@
   font-weight: 300;
   font-family: 'Lobster', sans-serif;
 }
+
+
 /*TOP CATEGORIES*/
 .top{
   position: relative;
-  width: 100%;
-  height: 200px;
+  width: 1300px;
+  height: 190px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: flex-start;
 }
+/*Wrapper categorie images */
 .imagesWrapper{
   position: relative;
   width: 540px;
@@ -54,7 +57,8 @@
 .imagesWrapper:hover{
   cursor: pointer;
 }
-/*MIDDLEDIV */
+
+/*MIDDLE DIV */
 .middle{
   position: relative;
   width: 140px;
@@ -63,8 +67,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .middle .border{
   position: relative;
@@ -74,7 +78,7 @@
 }
 
 
-/*IMAGE ANDE TEXT */
+/*IMAGE AND TEXT  Wrapper*/
 .imgAndText{
   position: relative;
   width: 170px;
@@ -84,13 +88,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-
 }
+.imgAndText:hover{
+  cursor: pointer;
+}
+/*Image styple images in the middle*/
 .img{
   position: relative;
   width: 100%;
   height: 160px;
 }
+
+
+/*text  under categorie photos*/
 .text{
   position: relative;
   width: 100%;
@@ -102,11 +112,13 @@
   justify-content: center;
   align-content: center;
 }
+
 .inline{
   position: relative;
   width: 100px;
   height: 20px;
 }
+
 .absolute{
   position: absolute;
   width: 100%;
@@ -132,18 +144,19 @@
 }
 
 
+
+
 /*BOTTOM WRAPPER ANDBUTTON*/
 
 .bottomWrapper{
   position: relative;
-  width: 100%;
+  width: 1300px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   margin: 40px 0 40px 0;
-
 }
 .allProducts{
   color: rgb(51, 51, 51);
@@ -156,4 +169,130 @@
   background-color: #81d0d8;
   color: #fff;
   border-color: #81d0d8;
+  cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 1025px) and (min-width: 921px) {
+  /*HEADER*/
+  .header {
+    width: 879px;
+  }
+
+  /*header left and right*/
+  .headerWrapper {
+    width: 390px;
+  }
+
+  /*TOP CATEGORIES*/
+  .top {
+    width: 879px;
+    height: 140px;
+  }
+
+  /*Wrapper categorie images */
+  .imagesWrapper {
+    width: 349.5px;
+  }
+
+  /*Image and text wrapper*/
+  .imgAndText {
+    width: 109px;
+  }
+
+  /*Images top in the middle style*/
+  .img {
+    height: 110px;
+  }
+
+  /*MIDDLE DIV */
+  .middle {
+    width: 100px;
+  }
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1200px) and (min-width: 1026px) {
+  /*HEADER*/
+  .header {
+    width: 985px;
+  }
+
+/*header left and right*/
+  .headerWrapper {
+    width: 442.5px;
+  }
+
+  /*TOP CATEGORIES*/
+  .top {
+    width: 985px;
+    height: 160px;
+  }
+
+  /*Wrapper categorie images */
+  .imagesWrapper {
+    width: 392.5px;
+  }
+
+  /*Image and text wrapper*/
+  .imgAndText {
+    width: 120.8px;
+  }
+
+  /*Images top in the middle style*/
+  .img {
+    height: 130px;
+  }
+
+  /*MIDDLE DIV */
+  .middle {
+    width: 120px;
+  }
+
+
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media only screen and (max-width: 1400px) and (min-width: 1201px) {
+  /*HEADER*/
+  .header {
+    width: 1120px;
+  }
+
+  /*header left and right*/
+  .headerWrapper {
+    width: 460px;
+  }
+
+  /*TOP CATEGORIES*/
+  .top {
+    width: 1120px;
+    height: 180px;
+  }
+
+  /*Wrapper categorie images */
+  .imagesWrapper {
+    width: 460px;
+  }
+
+  /*Image and text wrapper*/
+  .imgAndText {
+    width: 143.3px;
+  }
+
+  /*Images top in the middle style*/
+  .img {
+    height: 150px;
+  }
+
+  /*MIDDLE DIV */
+  .middle {
+    width: 140px;
+  }
+
+
 }

@@ -1,6 +1,6 @@
 
 <!--Wrapper Left-->
-<div class="left" (mouseover)="showAbsolute('1')" (mouseleave)="reset()">
+<div class="left" (mouseover)="showAbsolute('1')" (mouseleave)="reset()" #photoBox appResize (position)="position($event)">
   <!--Image-->
   <img src="assets/about/photosSection/ManLeft.jpg" class="images" *ngIf="showItems" [@SlideInLeft] alt="">
 

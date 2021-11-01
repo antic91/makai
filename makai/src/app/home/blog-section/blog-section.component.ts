@@ -96,6 +96,7 @@ export class BlogSectionComponent implements OnInit {
 
   @Input("displayBlog") displayBlog!: boolean;
   @ViewChild('headerWidth', { read: ElementRef }) headerWidth!: ElementRef;
+
   date: string ='JUNE 25, 2021';
   header: string = 'Do you want to get lost in nature?';
   readMore: string = 'Read More';
@@ -122,6 +123,7 @@ export class BlogSectionComponent implements OnInit {
   scale2: boolean = false;
   scale3: boolean = false;
   scale4: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

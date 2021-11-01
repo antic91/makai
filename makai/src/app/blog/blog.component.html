@@ -1,10 +1,26 @@
-<div id="blogWrapper" appPosition (position)="detect($event)">
+<div id="blogWrapper">
 
   <app-top-blog id="topBlogWrapper" [image]="image"></app-top-blog>
 
-  <app-blog-text id="blogTextWrapper" #blogText [showText]="showText" [pTop]="pTop" [Header]="Header" [pBottom]="pBottom" [name]="name" [idBlog]="idBlog"></app-blog-text>
+  <app-blog-text
+  id="blogTextWrapper"
+  [showText]="showText"
+  [pTop]="pTop"
+  [Header]="Header"
+  [pBottom]="pBottom"
+  [name]="name"
+  [idBlog]="idBlog"
+  appPositionBlog
+  (positionBlogText)="detectingTextPosition($event)"></app-blog-text>
 
-  <app-other-blogs id="otherBlogsWrapper" #other [showOther]="showOther" [data]="arrayData"></app-other-blogs>
+
+  <app-other-blogs
+  id="otherBlogsWrapper"
+  [showOther]="showOther"
+  [data]="arrayData"
+  appPositionBlog
+  (positionOtherBlogsText)="detectingOtherBlogsPosition($event)"></app-other-blogs>
+
 
 </div>
 

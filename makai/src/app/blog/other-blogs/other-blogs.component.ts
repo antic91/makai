@@ -1,5 +1,5 @@
 import { trigger, transition, useAnimation } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef, SimpleChanges } from '@angular/core';
 import { fadeIn, rotate } from 'src/app/animations/animations';
 
 @Component({
@@ -44,6 +44,9 @@ import { fadeIn, rotate } from 'src/app/animations/animations';
   ]
 })
 export class OtherBlogsComponent implements OnInit {
+
+  @ViewChild("otherBlogs", { read: ElementRef }) otherBlogs!: ElementRef;
+
   @Input('data') data!: any[];
   @Input('showOther') showOther!: boolean;
 
@@ -51,11 +54,34 @@ export class OtherBlogsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  setDisplay(i:number): void{
-    this.data[i].display = true;
+  setDisplay(i: number): void{
+    if (this.otherBlogs.nativeElement.parentElement.clientWidth > 730) {
+      this.data[i].display = true;
+    }
   }
-  removeDisplay(i:number): void{
-    this.data[i].display = false;
+  removeDisplay(i: number): void{
+    if (this.otherBlogs.nativeElement.parentElement.clientWidth > 730) {
+      this.data[i].display = false;
+    }
   }
 
+  /*catching width on resize*/
+  position($event: any): void{
+    if (this.otherBlogs.nativeElement.parentElement.clientWidth > 730) {
+      this.data.forEach(x=>x.display = false)
+    } else {
+      this.data.forEach(x=>x.display = true)
+    }
+  }
+
+  /*catch the width to set items all off the time visible*/
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.showOther == true) {
+      if (this.otherBlogs.nativeElement.parentElement.clientWidth <= 730) {
+          setTimeout(() => {
+            this.data.forEach(x=>x.display = true)
+          }, 900);
+      }
+    }
+  }
 }

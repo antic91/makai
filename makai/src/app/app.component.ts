@@ -24,13 +24,24 @@ import { transformBottom } from './animations/animations'
   ]
 })
 export class AppComponent implements OnInit{
-  absoluteWrapp: boolean = true;
+  absoluteWrapp!: boolean;
   change: boolean = false;
+
   constructor(private router: Router) {
-  }
-  ngOnInit(): void {
-    setTimeout(() => {
+    /*catchin route change and displaying absolute div*/
+    router.events.subscribe((val) => {
+      this.absoluteWrapp = true;
+        // see also
+      if (val instanceof NavigationEnd == true) {
+        setTimeout(() => {
       this.absoluteWrapp = false;
     }, 1300);
+      }
+    });
+
+  }
+
+  ngOnInit(): void {
+
   }
 }

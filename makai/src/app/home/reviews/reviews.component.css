@@ -127,6 +127,17 @@
   justify-content: space-between;
   align-content:  center;
 }
+/*Change button height*/
+.leftRight {
+  font-size: 65px;
+  font-weight: 300;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.leftRight:hover{
+  cursor: pointer;
+}
 
 
 /*RIGHT SIDE*/
@@ -135,13 +146,7 @@
   width: 809px;
   height: 100%;
 }
-.leftRight{
-  font-size: 65px;
-  font-weight: 300;
-  padding: 10px;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-}
+
 .imageRight{
   position: relative;
   width: 100%;
@@ -159,7 +164,7 @@
 }
 /*MEDIA Q. */
 
-@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+@media only screen and (max-width: 920px) and (min-width: 769px) {
 
   /*Left side Wrapper reviews*/
   .leftWrapp {
@@ -196,7 +201,7 @@
   }
 
 }
-@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+@media only screen and (max-width: 1025px) and (min-width: 921px) {
 
   /*Left side Wrapper reviews*/
   .leftWrapp {
@@ -228,7 +233,7 @@
 }
 
 /* Large devices (desktops, less than 1200px)*/
-@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+@media only screen and (max-width: 1200px) and (min-width: 1026px) {
 
   /*Left side Wrapper reviews*/
   .leftWrapp {
@@ -250,7 +255,7 @@
 }
 
 /* X-Large devices (large desktops, less than 1400px)*/
-@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+@media only screen and (max-width: 1400px) and (min-width: 1201px) {
 
   /*Left side Wrapper reviews*/
   .leftWrapp {

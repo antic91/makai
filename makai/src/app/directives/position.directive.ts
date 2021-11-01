@@ -42,14 +42,35 @@ export class PositionDirective {
 
   constructor(private el: ElementRef) { }
 
-  ngOnInit(): void {
+  ngAfterViewInit() {
+
     this.innerWidth = window.innerWidth + 17;
+
+    if (this.innerWidth <= 1025) {
+
+      /*Text component BLOG wrapper IF resize and inner with is under 1025*/
+      setTimeout(() => {
+          this.positionTextComponent.emit(true);
+      }, 1100);
+
+    }
   }
+
+
+
 
   /*Catching resize */
   @HostListener('window:resize', ['$event'])
   onResize($event: any) {
+
     this.innerWidth = window.innerWidth + 17;
+
+    if (this.innerWidth <= 1025) {
+      /*Text component BLOG wrapper IF resize and inner with is under 1025*/
+      this.positionTextComponent.emit(true);
+
+    }
+
   }
 
   /*Catching scroll down*/

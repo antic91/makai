@@ -65,7 +65,7 @@
   background-color: #81d0d8;
   color: #fff;
   border: 1px solid #fff;
-
+  cursor: pointer;
 }
 
 
@@ -87,7 +87,7 @@
 
 }
 
-@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+@media only screen and (max-width: 414px) and (min-width: 321px) {
 
   /*Big header h1*/
   .secondHeader h1 {

@@ -62,7 +62,7 @@
 
 }
 
-@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+@media only screen and (max-width: 414px) and (min-width: 321px) {
   /*Header h2  style*/
   .wrappTextTop h2 {
     max-width: 100%;
@@ -83,7 +83,7 @@
 }
 
 /* X-Small devices (portrait phones, less than 576px)*/
-@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+@media only screen and (max-width: 576px) and (min-width: 415px) {
   /*Header h2  style*/
   .wrappTextTop h2 {
     max-width: 100%;
@@ -104,7 +104,7 @@
 }
 
 /* Small devices (landscape phones, less than 768px)*/
-@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+@media only screen and (max-width: 768px) and (min-width: 577px) {
   /*Header h2  style*/
   .wrappTextTop h2 {
     max-width: 90%;
@@ -119,7 +119,7 @@
     max-width: 90%;
   }
 }
-@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+@media only screen and (max-width: 920px) and (min-width: 769px) {
   /*Header h2  style*/
   .wrappTextTop h2 {
     max-width: 90%;
@@ -134,7 +134,7 @@
     max-width: 90%;
   }
 }
-@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+@media only screen and (max-width: 1025px) and (min-width: 921px) {
   /*Header h2  style*/
   .wrappTextTop h2 {
     max-width: 90%;
@@ -152,7 +152,7 @@
 }
 
 /* Large devices (desktops, less than 1200px)*/
-@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+@media only screen and (max-width: 1200px) and (min-width: 1026px) {
   /*Header h2  style*/
   .wrappTextTop h2 {
     max-width: 80%;
@@ -170,5 +170,5 @@
 }
 
 /* X-Large devices (large desktops, less than 1400px)*/
-@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+@media only screen and (max-width: 1400px) and (min-width: 1201px) {
 }

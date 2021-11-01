@@ -1,5 +1,5 @@
 <!--Wrapper for other blogs-->
-<div class="imageWrapper" *ngFor="let item of data; let i = index" (mouseover)="setDisplay(i)" (mouseleave)="removeDisplay(i)" [routerLink]="['/blog', item.Name, item.id]">
+<div class="imageWrapper" *ngFor="let item of data; let i = index" (mouseover)="setDisplay(i)" (mouseleave)="removeDisplay(i)" [routerLink]="['/blog', item.Name, item.id]" #otherBlogs appResize (position)="position($event)">
 
   <!--absolute wrapper component with text and button-->
   <app-text-content class="absoluteWrapper" [readMore]="'Read More'" [header]="item.headerTop" [date]="item.date" *ngIf="item.display" [@fadeIn]></app-text-content>

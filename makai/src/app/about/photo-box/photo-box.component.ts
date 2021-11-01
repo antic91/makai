@@ -1,5 +1,5 @@
 import { trigger, transition, useAnimation } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { fadeIn, rotate } from 'src/app/animations/animations';
 
 @Component({
@@ -54,6 +54,10 @@ import { fadeIn, rotate } from 'src/app/animations/animations';
   ]
 })
 export class PhotoBoxComponent implements OnInit {
+
+  @ViewChild('photoBox', { read: ElementRef }) photoBox!: ElementRef;
+
+
   hover1: boolean = false;
   hover2: boolean = false;
   hover3: boolean = false;
@@ -68,22 +72,69 @@ export class PhotoBoxComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   showAbsolute(event: string): void{
-    if ("1" === event) this.hover1 = true;
-    if ("2" === event) this.hover2 = true;
-    if ("3" === event) this.hover3 = true;
-    if ("4" === event) this.hover4 = true;
-    if ("5" === event) this.hover5 = true;
-    if ("6" === event) this.hover6 = true;
-    if ("7" === event) this.hover7 = true;
+    if (this.photoBox.nativeElement.parentElement.clientWidth > 730) {
+      if ("1" === event) this.hover1 = true;
+      if ("2" === event) this.hover2 = true;
+      if ("3" === event) this.hover3 = true;
+      if ("4" === event) this.hover4 = true;
+      if ("5" === event) this.hover5 = true;
+      if ("6" === event) this.hover6 = true;
+      if ("7" === event) this.hover7 = true;
+    }
   }
+
   reset(): void{
-    this.hover1 = false;
-    this.hover2 = false;
-    this.hover3 = false;
-    this.hover4 = false;
-    this.hover5 = false;
-    this.hover6 = false;
-    this.hover7 = false;
+    if (this.photoBox.nativeElement.parentElement.clientWidth > 730) {
+      this.hover1 = false;
+      this.hover2 = false;
+      this.hover3 = false;
+      this.hover4 = false;
+      this.hover5 = false;
+      this.hover6 = false;
+      this.hover7 = false;
+    }
   }
+
+
+    /*Detecting width and setting up display of absolute image  on resize*/
+  position($event: any): void{
+
+    if (this.photoBox.nativeElement.parentElement.clientWidth > 730) {
+      this.hover1 = false;
+      this.hover2 = false;
+      this.hover3 = false;
+      this.hover4 = false;
+      this.hover5 = false;
+      this.hover6 = false;
+      this.hover7 = false;
+    } else {
+      this.hover1 = true;
+      this.hover2 = true;
+      this.hover3 = true;
+      this.hover4 = true;
+      this.hover5 = true;
+      this.hover6 = true;
+      this.hover7 = true;
+    }
+  }
+
+  /*catch the width to set items all off the time visible when refresh or page init*/
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.showItems == true) {
+      if (this.photoBox.nativeElement.parentElement.clientWidth <= 730) {
+          setTimeout(() => {
+            this.hover1 = true;
+            this.hover2 = true;
+            this.hover3 = true;
+            this.hover4 = true;
+            this.hover5 = true;
+            this.hover6 = true;
+            this.hover7 = true;
+          }, 900);
+      }
+    }
+  }
+
 }

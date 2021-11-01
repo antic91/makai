@@ -18,6 +18,9 @@
   font-style: 'Poppins', sans-serif;
   font-weight: 500;
 }
+.aDetails:hover{
+  cursor: pointer;
+}
 /*Wrapper text and options bottom*/
 .bottom {
   position: relative;

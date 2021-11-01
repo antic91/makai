@@ -11,11 +11,9 @@ import { PostService } from '../services/post.service';
 })
 export class BlogComponent implements OnInit {
 
-  @ViewChild('blogText',{ read: ElementRef }) blogText!: ElementRef;
-  @ViewChild('other',{ read: ElementRef }) other!: ElementRef;
-
   arrayData: any[]= [];
   arrayBlog: {} = {};
+
 
   image!: string;
 
@@ -40,11 +38,11 @@ export class BlogComponent implements OnInit {
       .subscribe((res: any[]) => {
         this.arrayBlog = res.pop();
         this.arrayData = res;
-        this.setImage()
+        this.setData()
       });
   }
-  setImage(): void{
-    console.log(this.arrayBlog)
+  setData(): void{
+
     this.image = JSON.parse(JSON.stringify(this.arrayBlog)).photoTop;
 
     this.pTop = JSON.parse(JSON.stringify(this.arrayBlog)).date;
@@ -58,13 +56,11 @@ export class BlogComponent implements OnInit {
     this.name = JSON.parse(JSON.stringify(this.arrayBlog)).Name;
   }
 
-  detect(event: any): void {
-
-    var TextPosition = (this.blogText.nativeElement.offsetTop) - this.blogText.nativeElement.offsetTop / 1.5;
-    if (event >= TextPosition) this.showText = true;
-
-    var OtherPosition = (this.other.nativeElement.offsetTop) - this.other.nativeElement.offsetTop / 1.5;
-    if (event >= OtherPosition) this.showOther = true;
-
+  detectingTextPosition($event: boolean): void{
+    this.showText = $event;
   }
+  detectingOtherBlogsPosition($event: boolean): void{
+    this.showOther = $event;
+  }
+
 }

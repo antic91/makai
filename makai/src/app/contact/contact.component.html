@@ -1,7 +1,27 @@
-<div id="contactWrapper" appPosition (position)="detect($event)">
+<div id="contactWrapper">
   <app-contact-top id="contactTopWrapper"></app-contact-top>
-  <app-text-comp id="contactTextWrapper" #textCopm [showText]="showText"></app-text-comp>
-  <app-follow id="follow" #follow [showFollow]="showFollow"></app-follow>
-  <app-photo-box id="photoBox" #box [showItems]="showItems"></app-photo-box>
+
+
+  <app-text-comp
+  id="contactTextWrapper"
+  [showText]="showText"
+  appPositionContact
+  (positionTextContact)="detectingPositionText($event)"></app-text-comp>
+
+
+  <app-follow
+  id="follow"
+  [showFollow]="showFollow"
+  appPositionContact
+  (positionFollowContact)="detectingPositionFollow($event)"></app-follow>
+
+
+  <app-photo-box
+  id="photoBox"
+  [showItems]="showItems"
+  appPositionContact
+  (positionItemsContact)="detectingPositionItems($event)"></app-photo-box>
+
+
   <app-icons id="icons"></app-icons>
 </div>

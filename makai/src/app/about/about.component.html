@@ -1,10 +1,25 @@
 <div id="wrapperAbout">
 
-  <app-top-component id="topWrapper" [scaleTop]="scaleTop" appPosition (positionTopAbout)="detectTopAbout($event)"></app-top-component>
+  <app-top-component
+  id="topWrapper"
+  [scaleTop]="scaleTop"
+  appPosition
+  (positionTopAbout)="detectTopAbout($event)"></app-top-component>
 
-  <app-man-with-board id="ManWithBoardWrapper" [manBoardCompOne]="manBoardCompOne" [manBoardCompTwo]="manBoardCompTwo" appPosition (positionManWithBoard)="detectManWithBoard($event)"></app-man-with-board>
 
-  <app-text-component id="TextCompWrapper" appPosition (positionTextComponent)="detectTextComponent($event)" [textPos]="textPos"></app-text-component>
+  <app-man-with-board
+  id="ManWithBoardWrapper"
+  [manBoardCompOne]="manBoardCompOne"
+  [manBoardCompTwo]="manBoardCompTwo"
+  appPosition (positionManWithBoard)="detectManWithBoard($event)"></app-man-with-board>
+
+
+  <app-text-component
+  id="TextCompWrapper"
+  appPosition
+  (positionTextComponent)="detectTextComponent($event)"
+  [textPos]="textPos"></app-text-component>
+
 
   <app-four-sections id="fourSecWrapper" appPosition (positionFourSection)="detectFourSection($event)" [fourSections]="fourSections"></app-four-sections>
 

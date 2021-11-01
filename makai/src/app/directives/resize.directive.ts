@@ -5,7 +5,7 @@ import { Directive, ElementRef, EventEmitter, HostListener, Output, ViewChild } 
 })
 export class ResizeDirective {
   @Output('position') position = new EventEmitter()
-  @ViewChild('headerWidth', { read: ElementRef }) headerWidth!: ElementRef;
+
   constructor() { }
 
   @HostListener('window:resize', ['$event'])

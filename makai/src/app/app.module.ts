@@ -78,6 +78,9 @@ import { ResizeDirective } from './directives/resize.directive';
 import { SmallerComponent } from './navbar/navbar/smaller/smaller.component';
 import { DropDownSmallComponent } from './navbar/navbar/smaller/drop-down-small/drop-down-small.component';
 import { ScrollDirective } from './directives/scroll.directive';
+import { PositionContactDirective } from './directives/position-contact.directive';
+import { PositionBlogDirective } from './directives/position-blog.directive';
+import { PositionOneBlogDirective } from './directives/position-one-blog.directive';
 
 
 @NgModule({
@@ -149,7 +152,10 @@ import { ScrollDirective } from './directives/scroll.directive';
     ResizeDirective,
     SmallerComponent,
     DropDownSmallComponent,
-    ScrollDirective
+    ScrollDirective,
+    PositionContactDirective,
+    PositionBlogDirective,
+    PositionOneBlogDirective
   ],
   imports: [
     BrowserModule,

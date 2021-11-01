@@ -1,32 +1,106 @@
 <div id="homeWrapper">
 
-  <app-banner id="banner"></app-banner>
+  <app-banner
+  id="banner"></app-banner>
 
-  <app-brands id="brands" [width]="'105px'" [height]="'105px'"></app-brands>
 
-  <app-section  id="section" appScroll (positionSection)="detectPosition($event)" [display]="display"></app-section>
+  <app-brands
+  id="brands"
+  [width]="'105px'"
+  [height]="'105px'"></app-brands>
 
-  <app-section-collection id="sectionColl" [displaySec]="displaySec" appScroll (positionSectionCollection)="detectPositionCollection($event)"></app-section-collection>
 
-  <app-items-show id="dataItemsHome" class="marginBottom" [data]="data"></app-items-show>
+  <app-section
+  id="section"
+  appScroll
+  (positionSection)="detectPosition($event)"
+  [display]="display"></app-section>
 
-  <app-video id="video"></app-video>
 
-  <app-items-show id="dataItemsHomeBottom" [data]="data1"></app-items-show>
+  <app-section-collection
+  id="sectionColl"
+  [displaySec]="displaySec"
+  appScroll
+  (positionSectionCollection)="detectPositionCollection($event)"></app-section-collection>
 
-  <app-newsletter id="newsletter" [news]="displayNews" [appear]="appear" appScroll (positionNewsletter)="detectNewsletter($event)"></app-newsletter>
 
-  <app-heading id="heading" [displayHead]="displayHead" [displaySpan]="displaySpan" [textHead]="textHead" [textSpan]="textSpan" [textHead1]="textHead1" [textHead2]="textHead2" appScroll (positionHeading)="detectHeadeing($event)"></app-heading>
+  <app-items-show
+  id="dataItemsHome"
+  class="marginBottom"
+  [data]="data"></app-items-show>
 
-  <app-surf id="surf" [displaySurfOne]="displaySurfOne" [displaySurfTwo]="displaySurfTwo" [displaySurfThree]="displaySurfThree" [displaySurfFour]="displaySurfFour" [displaySurfFive]="displaySurfFive" [displaySurfSix]="displaySurfSix" [displaySurfText]="displaySurfText" appScroll (positionSurf)="detectSurf($event)"></app-surf>
 
-  <app-blog-section id="blogSection" [displayBlog]="displayBlog" appScroll (positionBlog)="detectBlog($event)"></app-blog-section>
+  <app-video
+  id="video"></app-video>
 
-  <app-heading id="headingBottom" [displayHead]="displayHeadSec" [displaySpan]="displaySpanSec" [textHead]="textHeadBottom" [textSpan]="textSpanBottom" [textHead1]="textHead1Bottom" [textHead2]="textHead2Bottom" appScroll (positionHeadingBottom)="detectHeadingBottom($event)"></app-heading>
 
-  <app-reviews id="reviews" [show]="show" [displayText]="displayText" appScroll (positionReviews)="detectReviews($event)"></app-reviews>
+  <app-items-show
+  id="dataItemsHomeBottom"
+  [data]="data1"></app-items-show>
+
+
+  <app-newsletter
+  id="newsletter"
+  [news]="displayNews"
+  [appear]="appear"
+  appScroll
+  (positionNewsletter)="detectNewsletter($event)"></app-newsletter>
+
+
+  <app-heading
+  id="heading"
+  [displayHead]="displayHead"
+  [displaySpan]="displaySpan"
+  [textHead]="textHead"
+  [textSpan]="textSpan"
+  [textHead1]="textHead1"
+  [textHead2]="textHead2"
+  appScroll
+  (positionHeading)="detectHeadeing($event)"></app-heading>
+
+
+  <app-surf
+  id="surf"
+  [displaySurfOne]="displaySurfOne"
+  [displaySurfTwo]="displaySurfTwo"
+  [displaySurfThree]="displaySurfThree"
+  [displaySurfFour]="displaySurfFour"
+  [displaySurfFive]="displaySurfFive"
+  [displaySurfSix]="displaySurfSix"
+  [displaySurfText]="displaySurfText"
+  appScroll
+  (positionSurf)="detectSurf($event)"></app-surf>
+
+
+  <app-blog-section
+  id="blogSection"
+  [displayBlog]="displayBlog"
+  appScroll
+  (positionBlog)="detectBlog($event)"></app-blog-section>
+
+
+  <app-heading
+  id="headingBottom"
+  [displayHead]="displayHeadSec"
+  [displaySpan]="displaySpanSec"
+  [textHead]="textHeadBottom"
+  [textSpan]="textSpanBottom"
+  [textHead1]="textHead1Bottom"
+  [textHead2]="textHead2Bottom"
+  appScroll
+  (positionHeadingBottom)="detectHeadingBottom($event)"></app-heading>
+
+
+  <app-reviews
+  id="reviews"
+  [show]="show"
+  [displayText]="displayText"
+  appScroll
+  (positionReviews)="detectReviews($event)"></app-reviews>
+
 
   <app-icons id="icons"></app-icons>
+
 
 </div>
 

@@ -6,36 +6,31 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  @ViewChild("box", { read: ElementRef }) box!: ElementRef;
-  @ViewChild("textCopm", { read: ElementRef }) textCopm!: ElementRef;
-  @ViewChild("follow", { read: ElementRef }) follow!: ElementRef;
 
+  /*Position text*/
   showText: boolean = false;
 
+  /*Scroll position Follow*/
   showFollow: boolean = false;
 
+  /*Scroll position items bottom*/
   showItems: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-  detect(event: any): void {
-    /*TextPosition OUT IN */
-    var TextPosition = (this.textCopm.nativeElement.offsetTop) - this.textCopm.nativeElement.offsetTop / 2;
 
-    if (event >= TextPosition) this.showText = true;
-    /***************************** */
+  /*Detecting Text scroll position*/
+  detectingPositionText($event: boolean): void{
+    this.showText = $event;
+  }
 
-    /*follow OUT IN */
-    var followPosition = (this.follow.nativeElement.offsetTop) - this.follow.nativeElement.offsetTop / 2;
-
-    if (event >= followPosition) this.showFollow = true;
-    /***************************** */
-
-    /*BOX OUT IN */
-    var boxPosition = (this.box.nativeElement.offsetTop) - this.box.nativeElement.offsetTop / 3;
-
-    if (event >= boxPosition) this.showItems = true;
-    /***************************** */
+  /*Detecting Follow scroll position*/
+  detectingPositionFollow($event: boolean): void{
+    this.showFollow = $event;
+  }
+  /*Detecting items scroll position*/
+  detectingPositionItems($event: boolean): void{
+      this.showItems = $event;
   }
 }

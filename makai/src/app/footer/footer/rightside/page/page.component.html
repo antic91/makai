@@ -1,8 +1,8 @@
 <h3 class="h3">Page</h3>
 
 <span class="spanA" (mouseenter)="changeHover('about')" (mouseleave)="reverse('about')">
-    <a [@hover]="!hoverAbout ? 'active' : 'inactive'">About</a>
-    <a class="down" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'">About</a>
+    <a [@hover]="!hoverAbout ? 'active' : 'inactive'" routerLink="/about">About</a>
+    <a class="down" [@hoverBlue]="hoverAbout ? 'active' : 'inactive'" routerLink="/about">About</a>
 </span>
 
 <span class="spanA" (mouseenter)="changeHover('shop')" (mouseleave)="reverse('shop')">
@@ -11,11 +11,11 @@
 </span>
 
 <span class="spanA" (mouseenter)="changeHover('blog')" (mouseleave)="reverse('blog')">
-    <a [@hover]="!hoverBlog ? 'active' : 'inactive'">Blog</a>
-    <a class="down" [@hoverBlue]="hoverBlog ? 'active' : 'inactive'">Blog</a>
+    <a [@hover]="!hoverBlog ? 'active' : 'inactive'" routerLink="/blog">Blog</a>
+    <a class="down" [@hoverBlue]="hoverBlog ? 'active' : 'inactive'" routerLink="/blog">Blog</a>
 </span>
 
 <span class="spanA" (mouseenter)="changeHover('contact')" (mouseleave)="reverse('contact')">
-    <a [@hover]="!hoverContact ? 'active' : 'inactive'">Contact</a>
-    <a class="down" [@hoverBlue]="hoverContact ? 'active' : 'inactive'">Contact</a>
+    <a [@hover]="!hoverContact ? 'active' : 'inactive'" routerLink="/contact">Contact</a>
+    <a class="down" [@hoverBlue]="hoverContact ? 'active' : 'inactive'" routerLink="/contact">Contact</a>
 </span>

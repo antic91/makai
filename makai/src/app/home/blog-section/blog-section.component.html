@@ -1,10 +1,10 @@
 <!--header for blog component-->
-<div class="header" appResize (position)="position($event)">
+<div class="header">
   <h1 *ngIf="displayBlog" [@slideRight]>makai news</h1>
 </div>
 
 <!--wrapper for photos-->
-<div class="photosWrapp" #headerWidth>
+<div class="photosWrapp" #headerWidth appResize (position)="position($event)">
 
   <!--left side -->
     <div class="wrapperLeft" (mouseleave)="mouseOut()" (mouseover)="setData('displayFirst')">

@@ -36,7 +36,9 @@
   width: 420px;
   height: 100%
 }
-
+.imageDiv:hover{
+  cursor: pointer;
+}
 /*Background for image divs*/
 .img1{
   background-image: url('../../../assets/about/leftMan.jpg');
@@ -123,7 +125,7 @@
   }
 }
 
-@media only screen and (max-width: 414px) and (min-width: 320.001px) {
+@media only screen and (max-width: 414px) and (min-width: 321px) {
   /*Pictures wrapper*/
   .picturesWrapper {
     width: 100%;
@@ -152,7 +154,7 @@
 }
 
 /* X-Small devices (portrait phones, less than 576px)*/
-@media only screen and (max-width: 576px) and (min-width: 414.001px) {
+@media only screen and (max-width: 576px) and (min-width: 415px) {
   /*Pictures wrapper*/
   .picturesWrapper {
     width: 100%;
@@ -182,7 +184,7 @@
 }
 
 /* Small devices (landscape phones, less than 768px)*/
-@media only screen and (max-width: 768px) and (min-width: 576.001px) {
+@media only screen and (max-width: 768px) and (min-width: 577px) {
   /*Pictures wrapper*/
   .picturesWrapper {
     width: 100%;
@@ -207,7 +209,7 @@
   }
 
 }
-@media only screen and (max-width: 920px) and (min-width: 768.001px) {
+@media only screen and (max-width: 920px) and (min-width: 769px) {
   /*Pictures wrapper*/
   .picturesWrapper {
     width: 100%;
@@ -228,7 +230,7 @@
   }
 
 }
-@media only screen and (max-width: 1025px) and (min-width: 920.001px) {
+@media only screen and (max-width: 1025px) and (min-width: 921px) {
   /*Pictures wrapper*/
   .picturesWrapper {
     width: 100%;
@@ -250,7 +252,7 @@
 }
 
 /* Large devices (desktops, less than 1200px)*/
-@media only screen and (max-width: 1200px) and (min-width: 1025.001px) {
+@media only screen and (max-width: 1200px) and (min-width: 1026px) {
   /*DIV IMAGE*/
   .imageDiv {
     width: 315px;
@@ -259,7 +261,7 @@
 }
 
 /* X-Large devices (large desktops, less than 1400px)*/
-@media only screen and (max-width: 1400px) and (min-width: 1200.001px) {
+@media only screen and (max-width: 1400px) and (min-width: 1201px) {
   /*DIV IMAGE*/
   .imageDiv {
     width: 360px;
