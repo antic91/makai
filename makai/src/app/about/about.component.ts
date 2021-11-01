@@ -6,89 +6,77 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  @ViewChild("top", { read: ElementRef }) top!: ElementRef;
-  @ViewChild("manBoard", { read: ElementRef }) manBoard!: ElementRef;
-  @ViewChild("text", { read: ElementRef }) text!: ElementRef;
-  @ViewChild("fourSec", { read: ElementRef }) fourSec!: ElementRef;
-  @ViewChild("team", { read: ElementRef }) team!: ElementRef;
-  @ViewChild("brands", { read: ElementRef }) brands!: ElementRef;
-  @ViewChild("box", { read: ElementRef }) box!: ElementRef;
 
+  /*PHOTO Top scale in/out*/
   scaleTop: boolean = false;
 
+  /*Man with board component image size animation*/
   manBoardCompOne: boolean = false;
   manBoardCompTwo: boolean = false;
 
-
+  /*Text component animation*/
   textPos: boolean = false;
 
-
+  /*Four sections component*/
   fourSections: boolean = false;
 
+  /*Team section*/
   showTeam: boolean = false;
+  showTeam1: boolean = false;
+  showTeam2: boolean = false;
 
+  /*Brands animation trigger*/
   showBrands: boolean = false;
 
+  /*PhotoBox animation trigger*/
   showItems: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  detect(event: any): void{
-    /*TOP SCALE OUT IN */
-    var topComp = (this.top.nativeElement.offsetTop + this.top.nativeElement.offsetTop)- this.top.nativeElement.offsetTop/2
-    if (event <= topComp) this.scaleTop = true;
-    if (event > topComp) this.scaleTop = false;
 
-    /***************************** */
-    /*Man with board OUT IN */
-    var manBoardComp = (this.manBoard.nativeElement.offsetTop - this.manBoard.nativeElement.offsetTop / 10) - this.manBoard.nativeElement.offsetTop / 2;
-    var manBoardComp1 = this.manBoard.nativeElement.offsetTop - this.manBoard.nativeElement.offsetTop / 3;
+  /*Detecting top component position and scale photo*/
+  detectTopAbout($event: boolean): void{
+    this.scaleTop = $event;
 
-    if (event >= manBoardComp) this.manBoardCompOne = true;
-    if (event < manBoardComp) this.manBoardCompOne = false;
-
-    if (event >= manBoardComp1) this.manBoardCompTwo = true;
-    if (event < manBoardComp1) this.manBoardCompTwo = false;
-
-    /***************************** */
-    /*TEXT COMPONENT OUT IN */
-    var textPosition = (this.text.nativeElement.offsetTop - this.text.nativeElement.offsetTop/10) - this.text.nativeElement.offsetTop / 2;
-
-    if (event >= textPosition) this.textPos = true;
-
-
-    /***************************** */
-    /*fourSec OUT IN */
-    var fourSecPosition = (this.fourSec.nativeElement.offsetTop - this.fourSec.nativeElement.offsetTop/10) - this.fourSec.nativeElement.offsetTop / 2;
-
-    if (event >= fourSecPosition) this.fourSections = true;
-
-
-    /***************************** */
-    /*TEAM OUT IN */
-    var teamPosition = (this.team.nativeElement.offsetTop) - this.team.nativeElement.offsetTop / 6.5;
-
-    if (event >= teamPosition) this.showTeam = true;
-
-
-    /***************************** */
-    /*BRANDS OUT IN */
-    var brandsPosition = (this.brands.nativeElement.offsetTop) - this.brands.nativeElement.offsetTop / 6.5;
-
-    if (event >= brandsPosition) this.showBrands = true;
-
-
-    /***************************** */
-    /*BOX OUT IN */
-    var boxPosition = (this.box.nativeElement.offsetTop) - this.box.nativeElement.offsetTop / 6.5;
-
-    if (event >= boxPosition) this.showItems = true;
-
-
-    /***************************** */
-
-    console.log(this.top.nativeElement.offsetTop)
   }
+
+  /*Detecting Man with board component position */
+  detectManWithBoard($event: { compOne: boolean, compTwo: boolean }): void{
+    if(this.manBoardCompOne!=$event.compOne) this.manBoardCompOne = $event.compOne
+    if(this.manBoardCompTwo!=$event.compTwo) this.manBoardCompTwo = $event.compTwo
+  }
+
+    /*Detecting top component position*/
+    detectTextComponent($event: boolean): void{
+      this.textPos = true
+    }
+
+    /*Detecting Four Section component position*/
+    detectFourSection($event: boolean): void{
+      this.fourSections = true
+    }
+
+  /*DETECTING TEAM CHANGES */
+  detectTeamOne($event: boolean): void{
+      this.showTeam = $event
+    }
+    detectTeamTwo($event: boolean): void{
+      this.showTeam1 = $event
+    }
+    detectTeamThree($event: boolean): void{
+      this.showTeam2 = $event
+    }
+
+  /*Detecting Brands component*/
+    detectBrands($event: boolean): void{
+      this.showBrands = $event
+    }
+
+  /*Detecting PhotoBox component*/
+    detectPhotoBox($event: boolean): void{
+      this.showItems = $event
+    }
+
 }

@@ -54,7 +54,7 @@
 #fourSecWrapper{
   position: relative;
   width: 1300px;
-  height: auto;
+  height: 1410;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -66,7 +66,7 @@
 #team {
   position: relative;
   width: 1300px;
-  height: auto;
+  height: 589px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -78,7 +78,7 @@
 #brandsAbout {
   position: relative;
   width: 1300px;
-  height: auto;
+  height: 527px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -128,6 +128,7 @@
     margin-top: 10px;
     width: 238px;
     padding: 0;
+    min-height: 420px;
     height: auto;
     justify-content: flex-start;
   }
@@ -136,6 +137,7 @@
   #fourSecWrapper {
     width: 238px;
     height: auto;
+    min-height: 1115px;
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-top: 40px;
@@ -145,6 +147,7 @@
   #team {
     width: 238px;
     margin: 0 0 60px 0;
+    height: 1523px;
   }
 
   /*brandsAbout COMPONENT WRAPPER*/
@@ -188,6 +191,7 @@
     margin-top: 10px;
     width: 300px;
     padding: 0;
+    min-height: 360px;
     height: auto;
     justify-content: flex-start;
   }
@@ -196,6 +200,7 @@
   #fourSecWrapper {
     width: 300px;
     height: auto;
+    min-height: 1193px;
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-top: 40px;
@@ -205,12 +210,14 @@
   #team {
     width: 300px;
     margin-top: 0;
+    height: 1523px;
   }
 
   /*brandsAbout COMPONENT WRAPPER*/
   #brandsAbout {
     width: 300px;
     margin: 60px 0;
+    height: 621px;
   }
 
   /*photoBox COMPONENT WRAPPER*/
@@ -248,6 +255,7 @@
   #TextCompWrapper {
     width: 395px;
     padding: 0;
+    min-height: 240px;
     height: auto;
     justify-content: flex-start;
   }
@@ -256,6 +264,7 @@
   #fourSecWrapper {
     width: 395px;
     height: auto;
+    min-height: 1151px;
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-top: 40px;
@@ -266,12 +275,14 @@
   #team {
     width: 395px;
     margin-top: 0;
+    height: 1523px;
   }
 
   /*brandsAbout COMPONENT WRAPPER*/
   #brandsAbout {
     width: 395px;
     margin: 60px 0;
+    height: 621px;
   }
 
   /*photoBox COMPONENT WRAPPER*/
@@ -310,6 +321,7 @@
   #TextCompWrapper {
     width: 556px;
     padding: 0;
+    min-height: 267px;
     height: auto;
     justify-content: flex-start;
   }
@@ -318,6 +330,7 @@
   #fourSecWrapper {
     width: 556px;
     height: auto;
+    min-height: 1609px;
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-top: 40px;
@@ -328,11 +341,13 @@
   #team {
     width: 556px;
     margin: 60px 0 0 0;
+    height: 1549px;
   }
 
   /*brandsAbout COMPONENT WRAPPER*/
   #brandsAbout {
     width: 556px;
+    height: 507px;
     margin: 60px 0;
   }
 
@@ -370,6 +385,7 @@
   #TextCompWrapper {
     width: 730px;
     padding: 0;
+    min-height: 198px;
     height: auto;
     justify-content: flex-start;
   }
@@ -378,6 +394,7 @@
   #fourSecWrapper {
     width: 730px;
     height: auto;
+    min-height: 1609px;
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-top: 40px;
@@ -387,6 +404,7 @@
   /*team COMPONENT WRAPPER*/
   #team {
     width: 730px;
+    height: 1599px;
   }
 
   /*brandsAbout COMPONENT WRAPPER*/
@@ -422,6 +440,7 @@
   #TextCompWrapper {
     width: 879px;
     padding: 0;
+    min-height: 198px;
     height: auto;
     justify-content: flex-start;
   }
@@ -430,6 +449,7 @@
   #fourSecWrapper {
     width: 879px;
     height: auto;
+    min-height: 1609px;
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-top: 40px;
@@ -439,6 +459,7 @@
   /*team COMPONENT WRAPPER*/
   #team {
     width: 879px;
+    height: 1599px;
   }
 
   /*brandsAbout COMPONENT WRAPPER*/
@@ -476,6 +497,8 @@
   /*fourSecWrapper COMPONENT WRAPPER*/
   #fourSecWrapper {
     width: 985px;
+    height: 960px;
+
   }
   /*team COMPONENT WRAPPER*/
   #team {
@@ -518,6 +541,7 @@
   /*fourSecWrapper COMPONENT WRAPPER*/
   #fourSecWrapper {
     width: 1120px;
+    height: 1200px;
   }
 
   /*team COMPONENT WRAPPER*/

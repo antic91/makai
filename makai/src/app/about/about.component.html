@@ -1,18 +1,28 @@
-<div id="wrapperAbout" appPosition (position)="detect($event)">
+<div id="wrapperAbout">
 
-  <app-top-component id="topWrapper" #top [scaleTop]="scaleTop"></app-top-component>
+  <app-top-component id="topWrapper" [scaleTop]="scaleTop" appPosition (positionTopAbout)="detectTopAbout($event)"></app-top-component>
 
-  <app-man-with-board id="ManWithBoardWrapper" #manBoard [manBoardCompOne]="manBoardCompOne" [manBoardCompTwo]="manBoardCompTwo"></app-man-with-board>
+  <app-man-with-board id="ManWithBoardWrapper" [manBoardCompOne]="manBoardCompOne" [manBoardCompTwo]="manBoardCompTwo" appPosition (positionManWithBoard)="detectManWithBoard($event)"></app-man-with-board>
 
-  <app-text-component id="TextCompWrapper" #text [textPos]="textPos"></app-text-component>
+  <app-text-component id="TextCompWrapper" appPosition (positionTextComponent)="detectTextComponent($event)" [textPos]="textPos"></app-text-component>
 
-  <app-four-sections id="fourSecWrapper" #fourSec [fourSections]="fourSections"></app-four-sections>
+  <app-four-sections id="fourSecWrapper" appPosition (positionFourSection)="detectFourSection($event)" [fourSections]="fourSections"></app-four-sections>
 
-  <app-team id="team" #team [showTeam]="showTeam"></app-team>
 
-  <app-brands-about id="brandsAbout" #brands [showBrands]="showBrands"></app-brands-about>
+  <app-team
+  appPosition
+  (positionTeamOne)="detectTeamOne($event)"
+  (positionTeamTwo)="detectTeamTwo($event)"
+  (positionTeamThree)="detectTeamThree($event)"
+  [showTeam]="showTeam"
+  [showTeam1]="showTeam1"
+  [showTeam2]="showTeam2"
+  id="team"></app-team>
 
-  <app-photo-box id="photoBox" #box [showItems]="showItems"></app-photo-box>
+
+  <app-brands-about id="brandsAbout" [showBrands]="showBrands" appPosition (positionBrands)="detectBrands($event)"></app-brands-about>
+
+  <app-photo-box id="photoBox" #box [showItems]="showItems"  appPosition (positionPhotoBox)="detectPhotoBox($event)"></app-photo-box>
 
 </div>
 

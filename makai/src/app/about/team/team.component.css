@@ -102,7 +102,11 @@
     height: 1495px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-content: flex-start;
+  }
+  /*margin bottom*/
+  .marginBottom {
+    margin-bottom: 20px;
   }
 
   /*DIV IMAGE*/
@@ -126,7 +130,11 @@
     height: 1495px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-content: flex-start;
+  }
+  /*margin bottom*/
+  .marginBottom {
+    margin-bottom: 20px;
   }
 
   /*DIV IMAGE*/
@@ -151,7 +159,11 @@
     height: 1495px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-content: flex-start;
+  }
+  /*margin bottom*/
+  .marginBottom {
+    margin-bottom: 20px;
   }
 
   /*DIV IMAGE*/
@@ -177,7 +189,11 @@
     height: 1495px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-content: flex-start;
+  }
+  /*margin bottom*/
+  .marginBottom {
+    margin-bottom: 20px;
   }
 
   /*DIV IMAGE*/
@@ -198,7 +214,11 @@
     height: 1495px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-content: flex-start;
+  }
+  /*margin bottom*/
+  .marginBottom {
+    margin-bottom: 20px;
   }
 
   /*DIV IMAGE*/
@@ -215,9 +235,12 @@
     height: 1495px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-between;
+    align-content: flex-start;
   }
-
+  /*margin bottom*/
+  .marginBottom{
+    margin-bottom: 20px;
+  }
   /*DIV IMAGE*/
   .imageDiv {
     width: 100%;

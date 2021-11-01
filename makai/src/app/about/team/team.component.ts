@@ -57,7 +57,9 @@ export class TeamComponent implements OnInit {
   img2: boolean = false;
   img3: boolean = false;
 
-  @Input("showTeam") showTeam!: boolean;
+  @Input("showTeam")showTeam!: boolean;
+  @Input("showTeam1")showTeam1!: boolean;
+  @Input("showTeam2")showTeam2!: boolean;
 
   constructor() { }
 
@@ -74,4 +76,5 @@ export class TeamComponent implements OnInit {
     this.img2 = false;
     this.img3 = false;
   }
+
 }
