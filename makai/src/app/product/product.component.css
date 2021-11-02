@@ -98,6 +98,12 @@
     margin-bottom: 0px;
   }
 
+  /*Items bottom height*/
+  #dataItems {
+    align-content: space-between;
+    height: 2316px;
+  }
+
 }
 
 @media only screen and (max-width: 414px) and (min-width: 321px) {
@@ -130,6 +136,12 @@
   }
   #dataItems {
     margin-bottom: 0px;
+  }
+
+  /*Items bottom height*/
+  #dataItems {
+    align-content: space-between;
+    height: 2316px;
   }
 
 }
@@ -168,6 +180,12 @@
     margin-bottom: 0px;
   }
 
+   /*Items bottom height*/
+  #dataItems{
+    align-content: space-between;
+    height: 2316px;
+  }
+
 }
 
 /* Small devices (landscape phones, less than 768px)*/
@@ -189,7 +207,11 @@
   #textRight {
     width: 100%;
   }
-
+  /*Items bottom height*/
+  #dataItems{
+    align-content: space-between;
+    height: 2336px;
+  }
 }
 @media only screen and (max-width: 920px) and (min-width: 769px) {
   /*Wrapper product component*/
