@@ -37,6 +37,7 @@
   background-image: url('../../assets/about/Man.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 /*TextCompWrapper COMPONENT WRAPPER*/
 #TextCompWrapper{

@@ -21,7 +21,11 @@
   [textPos]="textPos"></app-text-component>
 
 
-  <app-four-sections id="fourSecWrapper" appPosition (positionFourSection)="detectFourSection($event)" [fourSections]="fourSections"></app-four-sections>
+  <app-four-sections
+  id="fourSecWrapper"
+  appPosition
+  (positionFourSection)="detectFourSection($event)"
+  [fourSections]="fourSections"></app-four-sections>
 
 
   <app-team
@@ -35,9 +39,22 @@
   id="team"></app-team>
 
 
-  <app-brands-about id="brandsAbout" [showBrands]="showBrands" appPosition (positionBrands)="detectBrands($event)"></app-brands-about>
 
-  <app-photo-box id="photoBox" #box [showItems]="showItems"  appPosition (positionPhotoBox)="detectPhotoBox($event)"></app-photo-box>
+
+  <app-brands-about
+  id="brandsAbout"
+  [showBrands]="showBrands"
+  appPosition
+  (positionBrands)="detectBrands($event)"></app-brands-about>
+
+
+
+  <app-photo-box
+  id="photoBox"
+  #box
+  [showItems]="showItems"
+  appPosition
+  (positionPhotoBox)="detectPhotoBox($event)"></app-photo-box>
 
 </div>
 

@@ -20,7 +20,6 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((x) => {
-      console.log(x)
       const object = {
         catId: x.catId,
         subCatId: x.subCatId,
@@ -28,17 +27,14 @@ export class ProductComponent implements OnInit {
       }
       this.service.getProduct("https://heroku-makai.herokuapp.com/getProduct", object)
         .subscribe((response: any) => {
-          console.log(response)
+
           this.data1 = response.array;
           this.product = response.result[0];
           this.photos = this.product.prod_pictures.split(",");
           this.headPhoto = this.photos[0];
           this.headerPhoto = this.headPhoto;
           this.photos.splice(0, 1);
-          console.log(this.headPhoto)
-          console.log(this.headerPhoto)
-          console.log(this.photos)
-          console.log(this.product,"product")
+
       })
     })
   }

@@ -3,7 +3,7 @@
   position: relative;
   width: 1300px;
   padding-top: 165.08px;
-  min-height: 600px;
+  min-height: 400px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -15,7 +15,7 @@
 #dataItems {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 419px ;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -231,6 +231,11 @@
   #textRight {
     width: 100%;
   }
+  /*Data items bottom height*/
+  #dataItems {
+    height: auto;
+  }
+
 
 }
 @media only screen and (max-width: 1025px) and (min-width: 921px) {
@@ -249,6 +254,10 @@
   /*textRight COMPONENT*/
   #textRight {
     width: 100%;
+  }
+  /*Data items bottom height*/
+  #dataItems {
+    height: auto;
   }
 
 }

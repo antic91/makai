@@ -23,6 +23,7 @@
   background-image: url('../../../assets/manOnBoard.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
