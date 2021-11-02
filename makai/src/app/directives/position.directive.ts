@@ -149,8 +149,9 @@ export class PositionDirective {
     /******************************************END TEAM********************************* */
 
     /*Brands About component*/
-    if (this.el.nativeElement.offsetTop < (window.pageYOffset + this.el.nativeElement.offsetHeight +(this.el.nativeElement.offsetHeight*0.2)) && this.el.nativeElement.localName === "app-brands-about") {
+    if (this.el.nativeElement.offsetTop -(this.el.nativeElement.offsetTop/6) < window.pageYOffset && this.el.nativeElement.localName === "app-brands-about") {
       this.positionBrands.emit(true)
+      console.log(this.el)
     }
 
     /*Brands About component*/

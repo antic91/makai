@@ -48,4 +48,8 @@ export class SmallerComponent implements OnInit {
   changeDisplay(): void{
     this.displayX = !this.displayX;
   }
+
+  changeDisplayLogo(): void{
+    this.displayX = true;
+  }
 }

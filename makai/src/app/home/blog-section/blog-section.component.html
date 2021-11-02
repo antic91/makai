@@ -8,7 +8,7 @@
 
   <!--left side -->
     <div class="wrapperLeft" (mouseleave)="mouseOut()" (mouseover)="setData('displayFirst')">
-      <img src="../../../assets/carBlog.jpg" alt="" class="image" *ngIf="displayBlog" [@slideRight] [@scale]="!scale1 ? 'begin' : 'end' ">
+      <img src="assets/carBlog.jpg" alt="" class="image" *ngIf="displayBlog" [@slideRight] [@scale]="!scale1 ? 'begin' : 'end' ">
 
       <app-text-content class="absoluteWrapper display" [idBlog]="10" [name]="'Alexa Alexa'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displayFirst" [@fadeIn]></app-text-content>
       <app-text-content class="absoluteWrapper noDisplay" [idBlog]="10" [name]="'Alexa Alexa'" [readMore]="readMore" [header]="header" [date]="date" *ngIf="displaySmaller" [@fadeIn]></app-text-content>

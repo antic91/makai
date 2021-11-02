@@ -63,7 +63,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: flex-start;
-  z-index: 81;
+  z-index: 99;
   background-color: #fff;
   overflow: visible !important;
 }

@@ -94,7 +94,6 @@ export class ScrollDirective {
     /*position Reviews component  wrapper*/
     if (this.el.nativeElement.offsetTop-this.el.nativeElement.offsetTop/7 < window.pageYOffset && this.el.nativeElement.localName === "app-reviews") {
       this.positionReviews.emit(false);
-      console.log(this.el)
     }
 
         /*position Shop Item elements Shop wrapper*/
